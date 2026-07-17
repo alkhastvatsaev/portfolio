@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { projects, provenStack } from "@/data/projects";
@@ -19,11 +20,21 @@ export default function Home() {
           I build useful web products from interface to backend.
         </h1>
         <div className="hero-footer">
-          <p className="hero-intro">
-            I’m Alkhast Vatsaev, a junior fullstack developer working with
-            React, Next.js and TypeScript. My portfolio is built around shipped
-            projects, not inflated titles.
-          </p>
+          <div className="hero-identity">
+            <Image
+              className="profile-photo"
+              src="/profile.png"
+              alt="Alkhast Vatsaev"
+              width={460}
+              height={460}
+              priority
+            />
+            <p className="hero-intro">
+              I’m Alkhast Vatsaev, a junior fullstack developer working with
+              React, Next.js and TypeScript. My portfolio is built around
+              shipped projects, not inflated titles.
+            </p>
+          </div>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">
               View selected work

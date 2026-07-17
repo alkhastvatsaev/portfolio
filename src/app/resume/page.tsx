@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import { PrintButton } from "@/components/print-button";
@@ -21,11 +22,20 @@ export default function ResumePage() {
 
       <article className="resume" aria-labelledby="resume-name">
         <header className="resume-header">
-          <div>
-            <p className="resume-kicker">
-              Junior Fullstack JavaScript / TypeScript Developer
-            </p>
-            <h1 id="resume-name">Alkhast Vatsaev</h1>
+          <div className="resume-identity">
+            <Image
+              className="resume-photo"
+              src="/profile.png"
+              alt=""
+              width={460}
+              height={460}
+            />
+            <div>
+              <p className="resume-kicker">
+                Junior Fullstack JavaScript / TypeScript Developer
+              </p>
+              <h1 id="resume-name">Alkhast Vatsaev</h1>
+            </div>
           </div>
           <address>
             Paris, France
