@@ -7,7 +7,9 @@ export default function Home() {
     <main id="main-content">
       <section className="hero" aria-labelledby="hero-title">
         <div className="eyebrow-row">
-          <p className="eyebrow">Paris · Fullstack JavaScript / TypeScript</p>
+          <p className="eyebrow">
+            Paris · Junior Fullstack JavaScript / TypeScript Developer
+          </p>
           <p className="availability">
             <span aria-hidden="true" />
             Open to junior opportunities

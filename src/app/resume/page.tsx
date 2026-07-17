@@ -22,7 +22,9 @@ export default function ResumePage() {
       <article className="resume" aria-labelledby="resume-name">
         <header className="resume-header">
           <div>
-            <p className="resume-kicker">Fullstack JavaScript / TypeScript</p>
+            <p className="resume-kicker">
+              Junior Fullstack JavaScript / TypeScript Developer
+            </p>
             <h1 id="resume-name">Alkhast Vatsaev</h1>
           </div>
           <address>
@@ -51,7 +53,7 @@ export default function ResumePage() {
         <section className="resume-section" aria-labelledby="resume-projects">
           <h2 id="resume-projects">Selected projects</h2>
           <div className="resume-projects">
-            {projects.map((project) => (
+            {projects.slice(0, 3).map((project) => (
               <article key={project.name}>
                 <div className="resume-project-heading">
                   <h3>{project.name}</h3>

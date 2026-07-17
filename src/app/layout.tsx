@@ -8,7 +8,8 @@ const siteUrl = "https://portfolio-github-alkhast-vatsaev.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Alkhast Vatsaev — Fullstack JavaScript & TypeScript Developer",
+    default:
+      "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
     template: "%s | Alkhast Vatsaev",
   },
   description:
@@ -25,7 +26,8 @@ export const metadata: Metadata = {
   creator: "Alkhast Vatsaev",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Alkhast Vatsaev — Fullstack JavaScript & TypeScript Developer",
+    title:
+      "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
     description:
       "Project-focused portfolio of a junior fullstack developer based in Paris.",
     url: siteUrl,
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Alkhast Vatsaev — Fullstack JS/TS Developer",
+    title: "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
     description:
       "Project-focused portfolio of a junior fullstack developer based in Paris.",
   },
