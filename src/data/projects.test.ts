@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { projects, provenStack } from "./projects";
+import { projects, projectsFr, provenStack } from "./projects";
 
 describe("portfolio data", () => {
   it("contains four verifiable case studies", () => {
@@ -17,5 +17,12 @@ describe("portfolio data", () => {
 
   it("lists only distinct stack entries", () => {
     expect(new Set(provenStack).size).toBe(provenStack.length);
+  });
+
+  it("keeps French and English project links aligned", () => {
+    expect(projectsFr).toHaveLength(projects.length);
+    expect(projectsFr.map(({ source, live }) => ({ source, live }))).toEqual(
+      projects.map(({ source, live }) => ({ source, live })),
+    );
   });
 });

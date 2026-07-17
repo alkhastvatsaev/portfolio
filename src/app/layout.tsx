@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import Link from "next/link";
 
+import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
 const siteUrl = "https://portfolio-github-alkhast-vatsaev.vercel.app";
@@ -24,7 +24,13 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Alkhast Vatsaev", url: siteUrl }],
   creator: "Alkhast Vatsaev",
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      fr: "/fr",
+    },
+  },
   openGraph: {
     title:
       "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
@@ -60,19 +66,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <a className="skip-link" href="#main-content">
-          Skip to content
+          Skip to content / Aller au contenu
         </a>
-        <header className="site-header">
-          <Link className="wordmark" href="/" aria-label="Alkhast Vatsaev, home">
-            AV<span aria-hidden="true">.</span>
-          </Link>
-          <nav aria-label="Primary navigation">
-            <Link href="/#work">Work</Link>
-            <Link href="/#stack">Stack</Link>
-            <Link href="/resume">Resume</Link>
-            <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
-          </nav>
-        </header>
+        <SiteHeader />
         {children}
         <footer className="site-footer">
           <p>Alkhast Vatsaev · Paris, France</p>

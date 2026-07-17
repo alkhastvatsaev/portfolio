@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PrintButton } from "@/components/print-button";
-import { projects, provenStack } from "@/data/projects";
+import { projectsFr, provenStack } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Resume",
+  title: "CV",
   description:
-    "Project-focused resume for Alkhast Vatsaev, junior fullstack JavaScript and TypeScript developer in Paris.",
+    "CV d’Alkhast Vatsaev, développeur Fullstack JavaScript et TypeScript junior à Paris.",
   alternates: {
-    canonical: "/resume",
+    canonical: "/fr/resume",
     languages: {
       en: "/resume",
       fr: "/fr/resume",
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ResumePage() {
+export default function FrenchResumePage() {
   return (
-    <main className="resume-shell" id="main-content">
+    <main className="resume-shell" id="main-content" lang="fr">
       <div className="resume-toolbar">
-        <Link href="/">← Back to portfolio</Link>
-        <PrintButton />
+        <Link href="/fr">← Retour au portfolio</Link>
+        <PrintButton label="Imprimer / enregistrer en PDF" />
       </div>
 
       <article className="resume" aria-labelledby="resume-name">
@@ -38,7 +38,7 @@ export default function ResumePage() {
             />
             <div>
               <p className="resume-kicker">
-                Junior Fullstack JavaScript / TypeScript Developer
+                Développeur Fullstack JavaScript / TypeScript junior
               </p>
               <h1 id="resume-name">Alkhast Vatsaev</h1>
             </div>
@@ -61,25 +61,25 @@ export default function ResumePage() {
         </header>
 
         <section className="resume-section" aria-labelledby="resume-profile">
-          <h2 id="resume-profile">Profile</h2>
+          <h2 id="resume-profile">Profil</h2>
           <p>
-            Junior fullstack developer building practical web applications
-            across user interfaces, backend services and third-party
-            integrations. Project experience includes operations tools,
-            logistics, local delivery and interactive 3D product configuration.
+            Développeur fullstack junior créant des applications web concrètes,
+            des interfaces utilisateur aux services backend et intégrations
+            tierces. Mes projets couvrent les outils opérationnels, la
+            logistique, la livraison locale et la configuration 3D.
           </p>
         </section>
 
         <section className="resume-section" aria-labelledby="resume-projects">
-          <h2 id="resume-projects">Selected projects</h2>
+          <h2 id="resume-projects">Projets sélectionnés</h2>
           <div className="resume-projects">
-            {projects.slice(0, 3).map((project) => (
+            {projectsFr.slice(0, 3).map((project) => (
               <article key={project.name}>
                 <div className="resume-project-heading">
                   <h3>{project.name}</h3>
                   <a href={project.source}>Source</a>
                   <span aria-hidden="true">·</span>
-                  <a href={project.live}>Live</a>
+                  <a href={project.live}>Démo</a>
                 </div>
                 <p>{project.summary}</p>
                 <p className="resume-tech">{project.stack.join(" · ")}</p>
@@ -88,8 +88,11 @@ export default function ResumePage() {
           </div>
         </section>
 
-        <section className="resume-section resume-skills" aria-labelledby="resume-stack">
-          <h2 id="resume-stack">Technical stack</h2>
+        <section
+          className="resume-section resume-skills"
+          aria-labelledby="resume-stack"
+        >
+          <h2 id="resume-stack">Stack technique</h2>
           <p>{provenStack.join(" · ")}</p>
         </section>
       </article>

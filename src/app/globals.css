@@ -75,12 +75,14 @@ main > section {
 .wordmark {
   font-size: 1.4rem;
   font-weight: 800;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.045em;
   text-decoration: none;
 }
 
-.wordmark span {
-  color: var(--accent);
+.header-actions {
+  align-items: center;
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 2rem);
 }
 
 .site-header nav {
@@ -98,8 +100,27 @@ main > section {
   text-transform: uppercase;
 }
 
+.language-switch {
+  border: 1px solid var(--ink);
+  display: flex;
+}
+
+.language-switch a {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.55rem 0.65rem;
+  text-decoration: none;
+}
+
+.language-switch a.active {
+  background: var(--ink);
+  color: var(--paper-light);
+}
+
 .site-header nav a:hover,
-.site-footer a:hover {
+.site-footer a:hover,
+.language-switch a:hover {
   text-decoration: underline;
 }
 
@@ -555,6 +576,10 @@ main > section {
     gap: 1rem;
   }
 
+  .header-actions {
+    gap: 1rem;
+  }
+
   .site-header nav a:nth-child(2) {
     display: none;
   }
@@ -612,6 +637,20 @@ main > section {
 
   .site-header nav a {
     font-size: 0.68rem;
+  }
+
+  .wordmark {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .header-actions {
+    gap: 0.7rem;
+  }
+
+  .language-switch a {
+    font-size: 0.6rem;
+    padding: 0.48rem 0.5rem;
   }
 
   .site-header nav a:nth-child(1) {
