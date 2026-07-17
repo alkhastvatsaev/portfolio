@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
 
 import { SiteHeader } from "@/components/site-header";
+import { StructuredData } from "@/components/structured-data";
 import "./globals.css";
 
-const siteUrl = "https://portfolio-github-alkhast-vatsaev.vercel.app";
+const siteUrl = "https://alkhastvatsaev.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -13,15 +14,24 @@ export const metadata: Metadata = {
     template: "%s | Alkhast Vatsaev",
   },
   description:
-    "Paris-based junior fullstack JavaScript and TypeScript developer building practical web products with React and Next.js.",
+    "Junior Fullstack JavaScript and TypeScript developer in Paris. Explore production-ready React, Next.js, Firebase and Node.js projects.",
   keywords: [
     "Alkhast Vatsaev",
+    "Junior Fullstack developer Paris",
     "Fullstack developer Paris",
+    "Développeur Full Stack Paris",
+    "Développeur Full Stack junior",
+    "Développeur JavaScript Paris",
+    "Développeur TypeScript Paris",
     "JavaScript developer",
     "TypeScript developer",
     "React developer",
     "Next.js developer",
   ],
+  applicationName: "Alkhast Vatsaev Portfolio",
+  category: "technology",
+  manifest: "/manifest.webmanifest",
+  referrer: "origin-when-cross-origin",
   authors: [{ name: "Alkhast Vatsaev", url: siteUrl }],
   creator: "Alkhast Vatsaev",
   alternates: {
@@ -29,23 +39,34 @@ export const metadata: Metadata = {
     languages: {
       en: "/",
       fr: "/fr",
+      "x-default": "/",
     },
   },
   openGraph: {
     title:
       "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
     description:
-      "Project-focused portfolio of a junior fullstack developer based in Paris.",
+      "Project-focused portfolio of a junior Fullstack JavaScript/TypeScript developer based in Paris.",
     url: siteUrl,
     siteName: "Alkhast Vatsaev",
     locale: "en_US",
+    alternateLocale: ["fr_FR"],
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer in Paris",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
     description:
-      "Project-focused portfolio of a junior fullstack developer based in Paris.",
+      "React, Next.js, TypeScript and Firebase projects from a junior fullstack developer in Paris.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -65,6 +86,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <StructuredData />
         <a className="skip-link" href="#main-content">
           Skip to content / Aller au contenu
         </a>

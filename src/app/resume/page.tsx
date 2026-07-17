@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: "/resume",
       fr: "/fr/resume",
+      "x-default": "/resume",
     },
   },
 };

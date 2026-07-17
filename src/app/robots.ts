@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap:
-      "https://portfolio-github-alkhast-vatsaev.vercel.app/sitemap.xml",
+    host: "https://alkhastvatsaev.dev",
+    sitemap: "https://alkhastvatsaev.dev/sitemap.xml",
   };
 }

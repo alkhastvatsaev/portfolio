@@ -49,6 +49,35 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        className="profile-section"
+        id="about"
+        aria-labelledby="profile-title"
+      >
+        <div className="section-heading">
+          <p className="section-index">Profile / Fullstack developer in Paris</p>
+          <h2 id="profile-title">
+            Junior Fullstack JavaScript and TypeScript developer in Paris.
+          </h2>
+        </div>
+        <div className="profile-copy">
+          <p>
+            I build end-to-end web applications with React, Next.js,
+            TypeScript, Node.js and Firebase. My work covers responsive
+            interfaces, backend logic, authentication, databases, payments,
+            third-party APIs, automated tests and deployment.
+          </p>
+          <p>
+            The projects below demonstrate operational dashboards, logistics
+            workflows, local delivery and interactive 3D product experiences.
+            Each flagship repository includes English documentation, a live
+            demo and automated quality checks. I am available for junior
+            Fullstack, JavaScript, TypeScript, React or Next.js roles in Paris,
+            hybrid or remote.
+          </p>
+        </div>
+      </section>
+
       <section className="work-section" id="work" aria-labelledby="work-title">
         <div className="section-heading">
           <p className="section-index">01 / Selected work</p>

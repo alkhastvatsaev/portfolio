@@ -13,7 +13,33 @@ export const metadata: Metadata = {
     languages: {
       en: "/",
       fr: "/fr",
+      "x-default": "/",
     },
+  },
+  openGraph: {
+    title: "Alkhast Vatsaev — Développeur Full Stack junior à Paris",
+    description:
+      "Portfolio de développeur Full Stack JavaScript/TypeScript junior : React, Next.js, Firebase, tests et projets déployés.",
+    url: "/fr",
+    siteName: "Alkhast Vatsaev",
+    locale: "fr_FR",
+    alternateLocale: ["en_US"],
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript junior à Paris",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alkhast Vatsaev — Développeur Full Stack junior à Paris",
+    description:
+      "Projets React, Next.js, TypeScript et Firebase testés et déployés.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -60,6 +86,39 @@ export default function FrenchHome() {
               Me contacter
             </a>
           </div>
+        </div>
+      </section>
+
+      <section
+        className="profile-section"
+        id="about"
+        aria-labelledby="profile-title"
+      >
+        <div className="section-heading">
+          <p className="section-index">
+            Profil / Développeur Full Stack à Paris
+          </p>
+          <h2 id="profile-title">
+            Développeur Full Stack JavaScript et TypeScript junior à Paris.
+          </h2>
+        </div>
+        <div className="profile-copy">
+          <p>
+            Je développe des applications web de bout en bout avec React,
+            Next.js, TypeScript, Node.js et Firebase. Mon travail couvre les
+            interfaces responsives, la logique backend, l’authentification, les
+            bases de données, les paiements, les API tierces, les tests
+            automatisés et le déploiement.
+          </p>
+          <p>
+            Les projets ci-dessous présentent des tableaux de bord
+            opérationnels, des workflows logistiques, une application de
+            livraison locale et une expérience produit 3D. Chaque dépôt
+            principal comprend une documentation en anglais, une démonstration
+            en ligne et des contrôles qualité automatisés. Je recherche un poste
+            de développeur Full Stack junior, JavaScript, TypeScript, React ou
+            Next.js à Paris, en hybride ou à distance.
+          </p>
         </div>
       </section>
 

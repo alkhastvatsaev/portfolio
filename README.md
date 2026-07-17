@@ -3,7 +3,7 @@
 Recruiter-focused portfolio for Alkhast Vatsaev, a junior fullstack JavaScript
 and TypeScript developer based in Paris.
 
-**Live site:** [portfolio-github-alkhast-vatsaev.vercel.app](https://portfolio-github-alkhast-vatsaev.vercel.app)
+**Live site:** [alkhastvatsaev.dev](https://alkhastvatsaev.dev)
 
 ## What is included
 

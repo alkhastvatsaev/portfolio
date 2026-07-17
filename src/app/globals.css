@@ -239,11 +239,26 @@ main > section {
   color: white;
 }
 
+.profile-section,
 .work-section,
 .stack-section,
 .contact-section {
   border-bottom: 1px solid var(--ink);
   padding: clamp(5rem, 10vw, 9rem) 0;
+}
+
+.profile-copy {
+  display: grid;
+  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: 1fr 1fr;
+  margin-left: calc(25% + 1rem);
+}
+
+.profile-copy p {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  line-height: 1.65;
+  margin: 0;
 }
 
 .section-heading {
@@ -620,6 +635,11 @@ main > section {
   }
 
   .stack-layout {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .profile-copy {
     grid-template-columns: 1fr;
     margin-left: 0;
   }
