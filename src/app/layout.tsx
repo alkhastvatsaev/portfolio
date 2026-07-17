@@ -84,6 +84,13 @@ export default function RootLayout({
             >
               GitHub
             </a>
+            <a
+              href="https://www.linkedin.com/in/alkhast-vatsaev/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
             <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
           </div>
         </footer>

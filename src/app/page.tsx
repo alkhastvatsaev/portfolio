@@ -112,6 +112,14 @@ export default function Home() {
           >
             github.com/alkhastvatsaev <span aria-hidden="true">↗</span>
           </a>
+          <a
+            href="https://www.linkedin.com/in/alkhast-vatsaev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            linkedin.com/in/alkhast-vatsaev{" "}
+            <span aria-hidden="true">↗</span>
+          </a>
           <Link href="/resume">
             One-page resume <span aria-hidden="true">→</span>
           </Link>

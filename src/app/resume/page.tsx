@@ -37,6 +37,10 @@ export default function ResumePage() {
             <a href="https://github.com/alkhastvatsaev">
               github.com/alkhastvatsaev
             </a>
+            <br />
+            <a href="https://www.linkedin.com/in/alkhast-vatsaev/">
+              linkedin.com/in/alkhast-vatsaev
+            </a>
           </address>
         </header>
 
