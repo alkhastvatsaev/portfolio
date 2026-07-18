@@ -5,9 +5,10 @@ alwaysApply: true
 
 # Testing
 
-- Prefer Vitest contract/unit tests for `src/data` and `src/lib`.
+- Prefer Vitest contract/unit/component tests for `src/data`, `src/lib`, and critical components.
 - When changing projects/articles data, update co-located `*.test.ts`.
 - When adding pure helpers, add tests in the same PR.
+- After public route/layout changes, run `npm run build && npm run test:e2e`.
 - Run `npm test` after data, routing, or schema changes.
 - Do not add large page snapshots; keep tests high-signal for solo + agent maintenance.
 - See `AGENTS.md` for the full pyramid and roadmap.
