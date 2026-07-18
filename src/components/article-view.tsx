@@ -35,7 +35,7 @@ export function ArticleView({ article, path, related }: Props) {
       </nav>
 
       <article>
-        <header className="hero">
+        <header className="hero article-hero">
           <p className="eyebrow">
             {article.date} · {article.tags.slice(0, 3).join(" · ")}
           </p>
@@ -43,24 +43,22 @@ export function ArticleView({ article, path, related }: Props) {
           <p className="seo-lead">{article.description}</p>
         </header>
 
-        {article.body.map((section, index) => (
-          <section
-            className="profile-section"
-            key={section.heading ?? `section-${index}`}
-            aria-labelledby={section.heading ? `section-${index}` : undefined}
-          >
-            {section.heading ? (
-              <div className="section-heading">
+        <div className="article-body">
+          {article.body.map((section, index) => (
+            <section
+              className="article-section"
+              key={section.heading ?? `section-${index}`}
+              aria-labelledby={section.heading ? `section-${index}` : undefined}
+            >
+              {section.heading ? (
                 <h2 id={`section-${index}`}>{section.heading}</h2>
-              </div>
-            ) : null}
-            <div className="profile-copy single-col">
+              ) : null}
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 48)}>{paragraph}</p>
               ))}
-            </div>
-          </section>
-        ))}
+            </section>
+          ))}
+        </div>
       </article>
 
       <section className="contact-section" aria-labelledby="related-title">
