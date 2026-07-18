@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: "2026-07-17",
+      lastModified: "2026-07-18",
       changeFrequency: "monthly",
       priority: 1,
       alternates: {
@@ -20,8 +20,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: `${baseUrl}/fr`,
+      lastModified: "2026-07-18",
+      changeFrequency: "monthly",
+      priority: 0.95,
+      alternates: {
+        languages: {
+          en: baseUrl,
+          fr: `${baseUrl}/fr`,
+          "x-default": baseUrl,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/fr/developpeur-full-stack`,
+      lastModified: "2026-07-18",
+      changeFrequency: "monthly",
+      priority: 0.95,
+      alternates: {
+        languages: {
+          fr: `${baseUrl}/fr/developpeur-full-stack`,
+          en: baseUrl,
+          "x-default": baseUrl,
+        },
+      },
+    },
+    {
       url: `${baseUrl}/resume`,
-      lastModified: "2026-07-17",
+      lastModified: "2026-07-18",
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: {
@@ -33,21 +59,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: `${baseUrl}/fr`,
-      lastModified: "2026-07-17",
-      changeFrequency: "monthly",
-      priority: 0.9,
-      alternates: {
-        languages: {
-          en: baseUrl,
-          fr: `${baseUrl}/fr`,
-          "x-default": baseUrl,
-        },
-      },
-    },
-    {
       url: `${baseUrl}/fr/resume`,
-      lastModified: "2026-07-17",
+      lastModified: "2026-07-18",
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {

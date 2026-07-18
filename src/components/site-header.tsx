@@ -7,11 +7,16 @@ export function SiteHeader() {
   const pathname = usePathname();
   const isFrench = pathname === "/fr" || pathname.startsWith("/fr/");
   const isResume = pathname === "/resume" || pathname.endsWith("/resume");
+  const isSeoLanding = pathname === "/fr/developpeur-full-stack";
 
   const homeHref = isFrench ? "/fr" : "/";
   const resumeHref = isFrench ? "/fr/resume" : "/resume";
   const englishHref = isResume ? "/resume" : "/";
-  const frenchHref = isResume ? "/fr/resume" : "/fr";
+  const frenchHref = isResume
+    ? "/fr/resume"
+    : isSeoLanding
+      ? "/fr/developpeur-full-stack"
+      : "/fr";
 
   return (
     <header className="site-header">

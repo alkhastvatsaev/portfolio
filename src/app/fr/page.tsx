@@ -7,7 +7,7 @@ import { projectsFr, provenStack } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Développeur Fullstack JavaScript/TypeScript junior",
   description:
-    "Portfolio d’Alkhast Vatsaev, développeur Fullstack JavaScript et TypeScript junior basé à Paris.",
+    "Portfolio d’Alkhast Vatsaev, développeur Full Stack JavaScript et TypeScript junior en France — Paris, hybride ou remote.",
   alternates: {
     canonical: "/fr",
     languages: {
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Alkhast Vatsaev — Développeur Full Stack junior à Paris",
+    title: "Alkhast Vatsaev — Développeur Full Stack junior en France",
     description:
-      "Portfolio de développeur Full Stack JavaScript/TypeScript junior : React, Next.js, Firebase, tests et projets déployés.",
+      "Portfolio de développeur Full Stack JavaScript/TypeScript junior : React, Next.js, Firebase, tests et projets déployés. Paris, hybride ou remote.",
     url: "/fr",
     siteName: "Alkhast Vatsaev",
     locale: "fr_FR",
@@ -30,15 +30,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript junior à Paris",
+        alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript junior en France",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alkhast Vatsaev — Développeur Full Stack junior à Paris",
+    title: "Alkhast Vatsaev — Développeur Full Stack junior en France",
     description:
-      "Projets React, Next.js, TypeScript et Firebase testés et déployés.",
+      "Projets React, Next.js, TypeScript et Firebase testés et déployés. Disponible en France.",
     images: ["/og-image.png"],
   },
 };
@@ -49,7 +49,7 @@ export default function FrenchHome() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="eyebrow-row">
           <p className="eyebrow">
-            Paris · Développeur Fullstack JavaScript / TypeScript junior
+            France · Paris · Développeur Fullstack JavaScript / TypeScript junior
           </p>
           <p className="availability">
             <span aria-hidden="true" />
@@ -96,10 +96,10 @@ export default function FrenchHome() {
       >
         <div className="section-heading">
           <p className="section-index">
-            Profil / Développeur Full Stack à Paris
+            Profil / Développeur Full Stack en France
           </p>
           <h2 id="profile-title">
-            Développeur Full Stack JavaScript et TypeScript junior à Paris.
+            Développeur Full Stack JavaScript et TypeScript junior en France.
           </h2>
         </div>
         <div className="profile-copy">
@@ -117,7 +117,11 @@ export default function FrenchHome() {
             principal comprend une documentation en anglais, une démonstration
             en ligne et des contrôles qualité automatisés. Je recherche un poste
             de développeur Full Stack junior, JavaScript, TypeScript, React ou
-            Next.js à Paris, en hybride ou à distance.
+            Next.js en France — à Paris, en hybride ou à distance.{" "}
+            <Link href="/fr/developpeur-full-stack">
+              En savoir plus sur mon profil Full Stack
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -187,11 +191,12 @@ export default function FrenchHome() {
       <section className="contact-section" aria-labelledby="contact-title">
         <p className="section-index">03 / Contact</p>
         <h2 id="contact-title">
-          Vous recherchez un développeur junior à Paris ?
+          Vous recherchez un développeur Full Stack junior en France ?
         </h2>
         <p>
           Je suis disponible pour échanger sur un poste Fullstack JavaScript et
-          TypeScript, une équipe produit ou un projet web concret.
+          TypeScript, une équipe produit ou un projet web concret — Paris,
+          hybride ou remote.
         </p>
         <div className="contact-links">
           <a href="mailto:alkhastvatsaev@icloud.com">
@@ -212,6 +217,9 @@ export default function FrenchHome() {
             linkedin.com/in/alkhast-vatsaev{" "}
             <span aria-hidden="true">↗</span>
           </a>
+          <Link href="/fr/developpeur-full-stack">
+            Page développeur Full Stack <span aria-hidden="true">→</span>
+          </Link>
           <Link href="/fr/resume">
             CV en une page <span aria-hidden="true">→</span>
           </Link>

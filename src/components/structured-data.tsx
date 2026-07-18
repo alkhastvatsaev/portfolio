@@ -9,12 +9,16 @@ const structuredData = {
       name: "Alkhast Vatsaev",
       url: siteUrl,
       image: `${siteUrl}/profile.png`,
-      jobTitle: "Junior Fullstack JavaScript/TypeScript Developer",
+      jobTitle: [
+        "Junior Fullstack JavaScript/TypeScript Developer",
+        "Développeur Full Stack junior",
+      ],
       description:
-        "Paris-based junior fullstack developer building web applications with React, Next.js, TypeScript, Firebase and Node.js.",
+        "Développeur Full Stack junior basé à Paris, disponible en France (hybride ou remote). Applications web avec React, Next.js, TypeScript, Firebase et Node.js.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Paris",
+        addressRegion: "Île-de-France",
         addressCountry: "FR",
       },
       email: "mailto:alkhastvatsaev@icloud.com",
@@ -22,6 +26,7 @@ const structuredData = {
         "https://github.com/alkhastvatsaev",
         "https://www.linkedin.com/in/alkhast-vatsaev/",
       ],
+      knowsLanguage: ["fr", "en", "ru"],
       knowsAbout: [
         "JavaScript",
         "TypeScript",
@@ -33,15 +38,53 @@ const structuredData = {
         "Three.js",
         "Vitest",
         "Playwright",
+        "Full Stack Development",
+        "Développement web",
       ],
+      workLocation: {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Paris",
+          addressCountry: "FR",
+        },
+      },
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": `${siteUrl}/#service`,
+      name: "Développement Full Stack junior — Alkhast Vatsaev",
+      description:
+        "Développement d’applications web Full Stack (React, Next.js, TypeScript, Node.js, Firebase) pour des équipes en France.",
+      provider: {
+        "@id": `${siteUrl}/#person`,
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "France",
+      },
+      serviceType: [
+        "Full Stack development",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+      ],
+      url: `${siteUrl}/fr/developpeur-full-stack`,
     },
     {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       url: siteUrl,
-      name: "Alkhast Vatsaev — Fullstack Developer",
+      name: "Alkhast Vatsaev — Développeur Full Stack",
+      alternateName: "Alkhast Vatsaev — Fullstack Developer",
+      description:
+        "Portfolio d’Alkhast Vatsaev, développeur Full Stack junior JavaScript/TypeScript en France.",
       inLanguage: ["en", "fr"],
       author: {
+        "@id": `${siteUrl}/#person`,
+      },
+      publisher: {
         "@id": `${siteUrl}/#person`,
       },
     },
@@ -49,14 +92,15 @@ const structuredData = {
       "@type": "ProfilePage",
       "@id": `${siteUrl}/#profile`,
       url: siteUrl,
-      name: "Alkhast Vatsaev — Junior Fullstack Developer in Paris",
+      name: "Alkhast Vatsaev — Junior Fullstack Developer in France",
       isPartOf: {
         "@id": `${siteUrl}/#website`,
       },
       mainEntity: {
         "@id": `${siteUrl}/#person`,
       },
-      dateModified: "2026-07-17",
+      dateModified: "2026-07-18",
+      inLanguage: ["en", "fr"],
     },
   ],
 };
