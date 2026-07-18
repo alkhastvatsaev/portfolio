@@ -91,7 +91,9 @@ export default function Home() {
               </div>
               <div className="project-copy">
                 <p className="project-label">{project.label}</p>
-                <h3>{project.name}</h3>
+                <h3>
+                  <Link href={`/projects/${project.slug}`}>{project.name}</Link>
+                </h3>
                 <p className="project-summary">{project.summary}</p>
                 <p className="project-detail">{project.detail}</p>
                 <ul className="project-stack" aria-label={`${project.name} stack`}>
@@ -101,6 +103,9 @@ export default function Home() {
                 </ul>
               </div>
               <div className="project-links">
+                <Link href={`/projects/${project.slug}`}>
+                  Case study <span aria-hidden="true">→</span>
+                </Link>
                 <a href={project.live} target="_blank" rel="noreferrer">
                   Live project <span aria-hidden="true">↗</span>
                 </a>
@@ -136,29 +141,30 @@ export default function Home() {
 
       <section className="contact-section" aria-labelledby="contact-title">
         <p className="section-index">03 / Contact</p>
-        <h2 id="contact-title">Looking for a junior developer in Paris?</h2>
+        <h2 id="contact-title">Looking for a junior fullstack developer in France?</h2>
         <p>
           I’m available to discuss fullstack JavaScript and TypeScript roles,
-          product teams and practical web projects.
+          product teams and practical web projects — Paris, hybrid or remote.
         </p>
         <div className="contact-links">
           <a href="mailto:alkhastvatsaev@icloud.com">
             alkhastvatsaev@icloud.com <span aria-hidden="true">↗</span>
           </a>
+          <Link href="/for-recruiters">
+            For recruiters <span aria-hidden="true">→</span>
+          </Link>
+          <Link href="/projects">
+            Case studies <span aria-hidden="true">→</span>
+          </Link>
+          <Link href="/articles">
+            Articles <span aria-hidden="true">→</span>
+          </Link>
           <a
             href="https://github.com/alkhastvatsaev"
             target="_blank"
-            rel="noreferrer"
+            rel="me noreferrer"
           >
             github.com/alkhastvatsaev <span aria-hidden="true">↗</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alkhast-vatsaev/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            linkedin.com/in/alkhast-vatsaev{" "}
-            <span aria-hidden="true">↗</span>
           </a>
           <Link href="/resume">
             One-page resume <span aria-hidden="true">→</span>

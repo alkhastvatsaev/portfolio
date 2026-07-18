@@ -44,6 +44,9 @@ export const metadata: Metadata = {
       fr: "/fr",
       "x-default": "/",
     },
+    types: {
+      "application/rss+xml": "https://alkhastvatsaev.dev/rss.xml",
+    },
   },
   openGraph: {
     title:
@@ -75,6 +78,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    "msapplication-TileColor": "#f3f0e8",
+  },
 };
 
 export const viewport: Viewport = {
@@ -98,17 +104,19 @@ export default function RootLayout({
         <footer className="site-footer">
           <p>Alkhast Vatsaev · Paris, France</p>
           <div>
+            <a href="/fr/pour-recruteurs">Recruteurs</a>
+            <a href="/rss.xml">RSS</a>
             <a
               href="https://github.com/alkhastvatsaev"
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
             >
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/alkhast-vatsaev/"
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
             >
               LinkedIn
             </a>

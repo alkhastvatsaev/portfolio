@@ -141,7 +141,9 @@ export default function FrenchHome() {
               </div>
               <div className="project-copy">
                 <p className="project-label">{project.label}</p>
-                <h3>{project.name}</h3>
+                <h3>
+                  <Link href={`/fr/projets/${project.slug}`}>{project.name}</Link>
+                </h3>
                 <p className="project-summary">{project.summary}</p>
                 <p className="project-detail">{project.detail}</p>
                 <ul
@@ -154,6 +156,9 @@ export default function FrenchHome() {
                 </ul>
               </div>
               <div className="project-links">
+                <Link href={`/fr/projets/${project.slug}`}>
+                  Étude de cas <span aria-hidden="true">→</span>
+                </Link>
                 <a href={project.live} target="_blank" rel="noreferrer">
                   Voir le projet <span aria-hidden="true">↗</span>
                 </a>
@@ -202,24 +207,25 @@ export default function FrenchHome() {
           <a href="mailto:alkhastvatsaev@icloud.com">
             alkhastvatsaev@icloud.com <span aria-hidden="true">↗</span>
           </a>
-          <a
-            href="https://github.com/alkhastvatsaev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            github.com/alkhastvatsaev <span aria-hidden="true">↗</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alkhast-vatsaev/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            linkedin.com/in/alkhast-vatsaev{" "}
-            <span aria-hidden="true">↗</span>
-          </a>
+          <Link href="/fr/pour-recruteurs">
+            Page pour recruteurs <span aria-hidden="true">→</span>
+          </Link>
           <Link href="/fr/developpeur-full-stack">
             Page développeur Full Stack <span aria-hidden="true">→</span>
           </Link>
+          <Link href="/fr/articles">
+            Articles <span aria-hidden="true">→</span>
+          </Link>
+          <Link href="/fr/projets">
+            Études de cas <span aria-hidden="true">→</span>
+          </Link>
+          <a
+            href="https://github.com/alkhastvatsaev"
+            target="_blank"
+            rel="me noreferrer"
+          >
+            github.com/alkhastvatsaev <span aria-hidden="true">↗</span>
+          </a>
           <Link href="/fr/resume">
             CV en une page <span aria-hidden="true">→</span>
           </Link>

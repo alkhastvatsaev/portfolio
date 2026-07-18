@@ -5,6 +5,13 @@
 - Portfolio: https://alkhastvatsaev.dev
 - French portfolio: https://alkhastvatsaev.dev/fr
 - Full Stack profile (FR): https://alkhastvatsaev.dev/fr/developpeur-full-stack
+- For recruiters (FR): https://alkhastvatsaev.dev/fr/pour-recruteurs
+- For recruiters (EN): https://alkhastvatsaev.dev/for-recruiters
+- Case studies (FR): https://alkhastvatsaev.dev/fr/projets
+- Articles (FR): https://alkhastvatsaev.dev/fr/articles
+- Profiles hub: https://alkhastvatsaev.dev/fr/profils
+- Full AI brief: https://alkhastvatsaev.dev/llms-full.txt
+- RSS: https://alkhastvatsaev.dev/rss.xml
 - Resume (EN): https://alkhastvatsaev.dev/resume
 - Resume (FR): https://alkhastvatsaev.dev/fr/resume
 - GitHub: https://github.com/alkhastvatsaev

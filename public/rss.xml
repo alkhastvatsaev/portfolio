@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alkhast Vatsaev — Full Stack junior</title>
+    <link>https://alkhastvatsaev.dev</link>
+    <description>Articles et études de cas d’Alkhast Vatsaev, développeur Full Stack junior JavaScript/TypeScript en France.</description>
+    <language>fr</language>
+    <lastBuildDate>Fri, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://alkhastvatsaev.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Développeur Full Stack junior en France : ce que je montre vraiment</title>
+      <link>https://alkhastvatsaev.dev/fr/articles/developpeur-full-stack-junior-france</link>
+      <guid>https://alkhastvatsaev.dev/fr/articles/developpeur-full-stack-junior-france</guid>
+      <pubDate>Fri, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Comment un développeur Full Stack junior peut se démarquer en France avec des preuves vérifiables.</description>
+    </item>
+    <item>
+      <title>Comment vérifier le travail d’un développeur junior (checklist recruteur)</title>
+      <link>https://alkhastvatsaev.dev/fr/articles/comment-verifier-le-travail-dun-developpeur-junior</link>
+      <guid>https://alkhastvatsaev.dev/fr/articles/comment-verifier-le-travail-dun-developpeur-junior</guid>
+      <pubDate>Fri, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Checklist concrète pour évaluer un portfolio de développeur junior.</description>
+    </item>
+    <item>
+      <title>Construire un projet Full Stack avec Next.js et Firebase</title>
+      <link>https://alkhastvatsaev.dev/fr/articles/projet-nextjs-firebase-fullstack</link>
+      <guid>https://alkhastvatsaev.dev/fr/articles/projet-nextjs-firebase-fullstack</guid>
+      <pubDate>Fri, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Retour d’expérience junior sur Next.js + Firebase.</description>
+    </item>
+    <item>
+      <title>What a junior fullstack developer portfolio should prove</title>
+      <link>https://alkhastvatsaev.dev/articles/junior-fullstack-developer-portfolio</link>
+      <guid>https://alkhastvatsaev.dev/articles/junior-fullstack-developer-portfolio</guid>
+      <pubDate>Fri, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>How a junior fullstack portfolio should prove delivery with demos and repos.</description>
+    </item>
+    <item>
+      <title>Recruiter checklist: verifying a junior developer’s work</title>
+      <link>https://alkhastvatsaev.dev/articles/recruiter-checklist-junior-developer</link>
+      <guid>https://alkhastvatsaev.dev/articles/recruiter-checklist-junior-developer</guid>
+      <pubDate>Fri, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Practical checklist for evaluating junior developer portfolios.</description>
+    </item>
+  </channel>
+</rss>

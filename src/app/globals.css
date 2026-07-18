@@ -511,6 +511,42 @@ main > section {
   max-width: 52rem;
 }
 
+.profile-copy.single-col {
+  grid-template-columns: 1fr;
+  max-width: 52rem;
+}
+
+.recruiter-proof-list {
+  display: grid;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 2rem 0 0;
+  margin-left: calc(25% + 1rem);
+  padding: 0;
+}
+
+.recruiter-proof-list a {
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.recruiter-proof-list a:hover {
+  color: var(--accent);
+}
+
+.recruiter-proof-list p {
+  color: var(--muted);
+  margin: 0.4rem 0 0;
+  max-width: 40rem;
+}
+
+.article-page .section-heading h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  letter-spacing: -0.04em;
+  max-width: 28ch;
+}
+
 .site-footer {
   align-items: center;
   display: flex;
@@ -678,7 +714,8 @@ main > section {
     gap: 1rem;
   }
 
-  .site-header nav a:nth-child(2) {
+  .site-header nav a:nth-child(2),
+  .site-header nav a:nth-child(3) {
     display: none;
   }
 
@@ -731,6 +768,10 @@ main > section {
     margin-left: 0;
   }
 
+  .recruiter-proof-list {
+    margin-left: 0;
+  }
+
   .resume-section {
     gap: 1rem;
     grid-template-columns: 1fr;
@@ -760,7 +801,7 @@ main > section {
     padding: 0.48rem 0.5rem;
   }
 
-  .site-header nav a:nth-child(1) {
+  .site-header nav a:nth-child(4) {
     display: none;
   }
 

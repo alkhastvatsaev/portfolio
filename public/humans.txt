@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Alkhast Vatsaev
+Site: https://alkhastvatsaev.dev
+Location: Paris, France
+Contact: alkhastvatsaev@icloud.com
+GitHub: https://github.com/alkhastvatsaev
+LinkedIn: https://www.linkedin.com/in/alkhast-vatsaev/
+
+/* SITE */
+Standards: HTML5, CSS3
+Software: Next.js, React, TypeScript
+Language: French, English
+Doctype: HTML5
+IDE: Cursor

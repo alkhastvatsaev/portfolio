@@ -264,20 +264,23 @@ export default function DeveloppeurFullStackPage() {
         <div className="profile-copy">
           <p>
             Sur la{" "}
-            <Link href="/fr#work">page d’accueil du portfolio</Link>, vous
-            trouverez des produits concrets : opérations et serrurerie,
-            workflows logistiques, marketplace de livraison locale, configurateur
-            3D. Chaque projet principal expose une démo, le code source et une
+            <Link href="/fr#work">page d’accueil du portfolio</Link> et les{" "}
+            <Link href="/fr/projets">études de cas</Link>, vous trouverez des
+            produits concrets : opérations et serrurerie, workflows
+            logistiques, marketplace de livraison locale, configurateur 3D.
+            Chaque projet principal expose une démo, le code source et une
             stack lisible pour un recruteur technique.
           </p>
           <p>
             Le{" "}
-            <Link href="/fr/resume">CV en une page</Link> résume le parcours et
-            la stack. GitHub :{" "}
+            <Link href="/fr/resume">CV en une page</Link>, la{" "}
+            <Link href="/fr/pour-recruteurs">page pour recruteurs</Link> et les{" "}
+            <Link href="/fr/articles">articles</Link> complètent le dossier.
+            GitHub :{" "}
             <a
               href="https://github.com/alkhastvatsaev"
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
             >
               github.com/alkhastvatsaev
             </a>
@@ -285,7 +288,7 @@ export default function DeveloppeurFullStackPage() {
             <a
               href="https://www.linkedin.com/in/alkhast-vatsaev/"
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
             >
               linkedin.com/in/alkhast-vatsaev
             </a>

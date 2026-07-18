@@ -1,0 +1,4 @@
+Contact: mailto:alkhastvatsaev@icloud.com
+Preferred-Languages: fr, en
+Canonical: https://alkhastvatsaev.dev
+Expires: 2027-07-18T00:00:00.000Z
