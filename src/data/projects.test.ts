@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { projects, projectsFr, provenStack } from "./projects";
+import { projects, projectsFr, provenStack, getProjectBySlug } from "./projects";
 
 describe("portfolio data", () => {
   it("contains four verifiable case studies", () => {
@@ -26,5 +26,10 @@ describe("portfolio data", () => {
     expect(
       projectsFr.map(({ slug, source, live }) => ({ slug, source, live })),
     ).toEqual(projects.map(({ slug, source, live }) => ({ slug, source, live })));
+  });
+
+  it("resolves projects by slug", () => {
+    expect(getProjectBySlug("hopla", "fr")?.name).toBe("Hopla");
+    expect(getProjectBySlug("missing", "en")).toBeUndefined();
   });
 });

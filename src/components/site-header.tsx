@@ -3,51 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-function twinPath(pathname: string, toFrench: boolean): string {
-  const pairs: Array<[string, string]> = [
-    ["/", "/fr"],
-    ["/resume", "/fr/resume"],
-    ["/projects", "/fr/projets"],
-    ["/articles", "/fr/articles"],
-    ["/for-recruiters", "/fr/pour-recruteurs"],
-    ["/profiles", "/fr/profils"],
-  ];
-
-  for (const [en, fr] of pairs) {
-    if (pathname === en || pathname === fr) {
-      return toFrench ? fr : en;
-    }
-  }
-
-  const projectMatch = pathname.match(/^\/(projects|fr\/projets)\/([^/]+)$/);
-  if (projectMatch) {
-    return toFrench
-      ? `/fr/projets/${projectMatch[2]}`
-      : `/projects/${projectMatch[2]}`;
-  }
-
-  const articleFr = pathname.match(/^\/fr\/articles\/([^/]+)$/);
-  if (articleFr) {
-    return toFrench ? pathname : "/articles";
-  }
-  const articleEn = pathname.match(/^\/articles\/([^/]+)$/);
-  if (articleEn) {
-    return toFrench ? "/fr/articles" : pathname;
-  }
-
-  if (pathname === "/fr/developpeur-full-stack") {
-    return toFrench ? pathname : "/";
-  }
-
-  if (pathname.startsWith("/fr")) {
-    return toFrench ? pathname : "/";
-  }
-  return toFrench ? "/fr" : pathname || "/";
-}
+import { isFrenchPath, twinPath } from "@/lib/locale-path";
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const isFrench = pathname === "/fr" || pathname.startsWith("/fr/");
+  const isFrench = isFrenchPath(pathname);
 
   const homeHref = isFrench ? "/fr" : "/";
   const projectsHref = isFrench ? "/fr/projets" : "/projects";
