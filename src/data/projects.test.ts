@@ -3,8 +3,8 @@ import { describe, expect, it } from "vitest";
 import { projects, projectsFr, provenStack, getProjectBySlug } from "./projects";
 
 describe("portfolio data", () => {
-  it("contains four verifiable case studies", () => {
-    expect(projects).toHaveLength(4);
+  it("contains five verifiable case studies", () => {
+    expect(projects).toHaveLength(5);
 
     for (const project of projects) {
       expect(project.slug).toMatch(/^[a-z0-9-]+$/);
@@ -28,8 +28,9 @@ describe("portfolio data", () => {
     ).toEqual(projects.map(({ slug, source, live }) => ({ slug, source, live })));
   });
 
-  it("orders flagship projects as Serrurerie → Aurelia → LOGIS → Hopla", () => {
+  it("orders flagship projects as CRM Slot → Serrurerie → Aurelia → LOGIS → Hopla", () => {
     expect(projects.map((p) => p.slug)).toEqual([
+      "crmslot",
       "serrurerie-pro",
       "atelier-aurelia",
       "logis-2030",

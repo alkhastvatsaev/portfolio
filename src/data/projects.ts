@@ -17,6 +17,40 @@ export type Project = {
 
 export const projects: readonly Project[] = [
   {
+    slug: "crmslot",
+    name: "CRM Slot",
+    label: "Field-service CRM & ops PWA",
+    summary:
+      "The flagship product: a full operations CRM for locksmith / field teams — dispatch, map, technicians, clients, billing and mobile (admin + terrain).",
+    detail:
+      "Next.js App Router product with Firebase Auth/Firestore, Mapbox, offline PWA paths, Stripe subscriptions, multilanguage UI (FR/NL/EN/RU), Jest + Playwright coverage and GitHub Actions CI.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase",
+      "Mapbox",
+      "Stripe",
+      "Playwright",
+    ],
+    source: "https://github.com/alkhastvatsaev/crmslot",
+    live: "https://crmslot.vercel.app",
+    story:
+      "This is the most complete product I have shipped: not a landing page, but an operations platform used as a real CRM/slots workspace for field interventions — desktop admin shell, technician flows, client follow-up and subscriptions.",
+    problem:
+      "Field-service businesses juggle maps, WhatsApp threads, spreadsheets and invoices — with no single source of truth for jobs, technicians and clients.",
+    approach:
+      "I built a modular Next.js + Firebase CRM: role-aware dashboards, Mapbox interventions, dispatch/performance, offline-aware mobile shells, billing hubs, communications and automated tests so the depth is verifiable.",
+    outcome:
+      "A live production deploy (crmslot.vercel.app), a public GitHub repository, pricing surface, and the deepest proof of fullstack + product ownership in this portfolio.",
+    highlights: [
+      "Admin + technician + client operational paths",
+      "Mapbox dispatch and intervention workflows",
+      "PWA / mobile shells with offline considerations",
+      "Stripe subscriptions + multilanguage product UI",
+      "Jest, Playwright and CI on GitHub Actions",
+    ],
+  },
+  {
     slug: "serrurerie-pro",
     name: "Serrurerie Pro",
     label: "Field operations platform",
@@ -52,7 +86,7 @@ export const projects: readonly Project[] = [
     source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
     live: "https://atelier-aurelia-ring.vercel.app",
     story:
-      "Before writing code, I spent three years drawing high jewelry for Cartier, Van Cleef & Arpels and JAR at Place Vendôme. Atelier Aurelia brings both worlds together: a ring configurator built by someone who has designed real rings for real maisons — procedural 3D, faithful materials, and the level of finish this industry expects.",
+      "Before writing code, I spent years drawing high jewelry for Cartier and Van Cleef & Arpels at Place Vendôme. Atelier Aurelia brings both worlds together: a ring configurator built by someone who has designed real rings — procedural 3D, faithful materials, and the finish this industry expects.",
     problem:
       "Product customization is hard to trust when buyers cannot see options update in real time.",
     approach:
@@ -118,6 +152,40 @@ export const projects: readonly Project[] = [
 
 export const projectsFr: readonly Project[] = [
   {
+    slug: "crmslot",
+    name: "CRM Slot",
+    label: "CRM terrain & PWA d’opérations",
+    summary:
+      "Le produit phare : un CRM d’opérations pour équipes de serrurerie / terrain — dispatch, carte, techniciens, clients, facturation et apps mobile (admin + terrain).",
+    detail:
+      "Produit Next.js App Router avec Firebase Auth/Firestore, Mapbox, parcours PWA offline, abonnements Stripe, UI multilingue (FR/NL/EN/RU), couverture Jest + Playwright et CI GitHub Actions.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase",
+      "Mapbox",
+      "Stripe",
+      "Playwright",
+    ],
+    source: "https://github.com/alkhastvatsaev/crmslot",
+    live: "https://crmslot.vercel.app",
+    story:
+      "C’est le produit le plus abouti que j’ai livré : pas une landing, une plateforme d’exploitation utilisée comme CRM / slots pour les interventions terrain — shell admin desktop, parcours technicien, suivi client et abonnements.",
+    problem:
+      "Les entreprises de service terrain jonglent entre cartes, fils WhatsApp, tableurs et factures — sans source unique de vérité pour les chantiers, techniciens et clients.",
+    approach:
+      "J’ai construit un CRM Next.js + Firebase modulaire : dashboards par rôle, interventions Mapbox, dispatch/performance, shells mobile offline-aware, hubs de facturation, communications et tests automatisés pour rendre la profondeur vérifiable.",
+    outcome:
+      "Un déploiement live (crmslot.vercel.app), un dépôt GitHub public, une page pricing, et la preuve fullstack + produit la plus profonde de ce portfolio.",
+    highlights: [
+      "Parcours admin + technicien + client",
+      "Dispatch Mapbox et workflows d’intervention",
+      "Shells PWA / mobile avec contraintes offline",
+      "Abonnements Stripe + UI produit multilingue",
+      "Jest, Playwright et CI GitHub Actions",
+    ],
+  },
+  {
     slug: "serrurerie-pro",
     name: "Serrurerie Pro",
     label: "Plateforme d’opérations terrain",
@@ -153,7 +221,7 @@ export const projectsFr: readonly Project[] = [
     source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
     live: "https://atelier-aurelia-ring.vercel.app",
     story:
-      "Avant d'écrire du code, j'ai passé trois ans à dessiner de la haute joaillerie pour Cartier, Van Cleef & Arpels et JAR, place Vendôme. Atelier Aurelia réunit ces deux mondes : un configurateur de bague conçu par quelqu'un qui a dessiné de vraies bagues pour de vraies maisons — 3D procédurale, matériaux fidèles, et le niveau de finition que ce secteur exige.",
+      "Avant d'écrire du code, j'ai dessiné de la haute joaillerie pour Cartier et Van Cleef & Arpels, place Vendôme. Atelier Aurelia réunit ces deux mondes : un configurateur de bague conçu par quelqu'un qui a dessiné de vraies bagues — 3D procédurale, matériaux fidèles, et le niveau de finition que ce secteur exige.",
     problem:
       "La personnalisation produit manque de confiance quand l’acheteur ne voit pas les options se mettre à jour en temps réel.",
     approach:
@@ -232,7 +300,8 @@ export const provenStack = [
   "Node.js",
   "Firebase",
   "Stripe",
+  "Mapbox",
   "Three.js",
   "Vitest",
   "Playwright",
-] as const;
+];

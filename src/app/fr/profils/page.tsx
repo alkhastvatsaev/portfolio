@@ -39,6 +39,16 @@ const links = [
     me: true,
   },
   { name: "Email", href: "mailto:alkhastvatsaev@icloud.com", me: false },
+  {
+    name: "CRM Slot (produit phare)",
+    href: "https://crmslot.vercel.app",
+    me: false,
+  },
+  {
+    name: "CRM Slot — pricing",
+    href: "https://crmslot.vercel.app/pricing",
+    me: false,
+  },
   { name: "Serrurerie Pro (démo)", href: "https://serrure.vercel.app", me: false },
   {
     name: "LOGIS. 2030 (démo)",
