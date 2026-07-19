@@ -5,9 +5,19 @@ import Link from "next/link";
 import { projectsFr, provenStack } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Développeur Fullstack JavaScript/TypeScript junior",
+  title: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript",
   description:
-    "Portfolio d’Alkhast Vatsaev, développeur Full Stack JavaScript et TypeScript junior en France — Paris, hybride ou remote.",
+    "Développeur full stack JavaScript et TypeScript à Paris (hybride, remote). Projets React, Next.js, Firebase et Node.js prêts pour la production — ouvert aux postes full stack junior et début de carrière.",
+  keywords: [
+    "Alkhast Vatsaev",
+    "développeur full stack",
+    "développeur fullstack junior",
+    "Développeur Full Stack France",
+    "Développeur Full Stack Paris",
+    "développeur React Next.js",
+    "Développeur JavaScript France",
+    "Développeur TypeScript",
+  ],
   alternates: {
     canonical: "/fr",
     languages: {
@@ -17,9 +27,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Alkhast Vatsaev — Développeur Full Stack junior en France",
+    title: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript",
     description:
-      "Portfolio de développeur Full Stack JavaScript/TypeScript junior : React, Next.js, Firebase, tests et projets déployés. Paris, hybride ou remote.",
+      "Portfolio orienté projets d’un développeur full stack JavaScript/TypeScript à Paris — React, Next.js, Firebase.",
     url: "/fr",
     siteName: "Alkhast Vatsaev",
     locale: "fr_FR",
@@ -27,19 +37,19 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/fr/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript junior en France",
+        alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript à Paris",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alkhast Vatsaev — Développeur Full Stack junior en France",
+    title: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript",
     description:
-      "Projets React, Next.js, TypeScript et Firebase testés et déployés. Disponible en France.",
-    images: ["/og-image.png"],
+      "Portfolio orienté projets d’un développeur full stack JavaScript/TypeScript à Paris — React, Next.js, Firebase.",
+    images: ["/fr/twitter-image"],
   },
 };
 
@@ -49,11 +59,11 @@ export default function FrenchHome() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="eyebrow-row">
           <p className="eyebrow">
-            France · Paris · Développeur Fullstack JavaScript / TypeScript junior
+            Paris · Développeur Full Stack JavaScript / TypeScript
           </p>
           <p className="availability">
             <span aria-hidden="true" />
-            Disponible pour un poste junior
+            Ouvert aux opportunités — CDI ou freelance
           </p>
         </div>
         <h1 id="hero-title">
@@ -70,9 +80,11 @@ export default function FrenchHome() {
               priority
             />
             <p className="hero-intro">
-              Je suis Alkhast Vatsaev, développeur fullstack junior spécialisé
-              en React, Next.js et TypeScript. Mon portfolio présente des
-              projets livrés et vérifiables.
+              Je suis Alkhast Vatsaev, développeur full stack (React, Next.js,
+              TypeScript). Avant le code, je dessinais de la haute joaillerie
+              pour Cartier et Van Cleef &amp; Arpels — l&apos;obsession du détail
+              est restée. Ce portfolio repose sur des projets shippés, pas sur
+              des titres gonflés.
             </p>
           </div>
           <div className="hero-actions">
@@ -99,7 +111,7 @@ export default function FrenchHome() {
             Profil / Développeur Full Stack en France
           </p>
           <h2 id="profile-title">
-            Développeur Full Stack JavaScript et TypeScript junior en France.
+            Développeur full stack JavaScript et TypeScript à Paris.
           </h2>
         </div>
         <div className="profile-copy">
@@ -115,9 +127,10 @@ export default function FrenchHome() {
             opérationnels, des workflows logistiques, une application de
             livraison locale et une expérience produit 3D. Chaque dépôt
             principal comprend une documentation en anglais, une démonstration
-            en ligne et des contrôles qualité automatisés. Je recherche un poste
-            de développeur Full Stack junior, JavaScript, TypeScript, React ou
-            Next.js en France — à Paris, en hybride ou à distance.{" "}
+            en ligne et des contrôles qualité automatisés. Disponible pour des
+            postes full stack, JavaScript, TypeScript, React ou Next.js à
+            Paris, en hybride ou en full remote — y compris en début de
+            carrière.{" "}
             <Link href="/fr/developpeur-full-stack">
               En savoir plus sur mon profil Full Stack
             </Link>
@@ -196,7 +209,7 @@ export default function FrenchHome() {
       <section className="contact-section" aria-labelledby="contact-title">
         <p className="section-index">03 / Contact</p>
         <h2 id="contact-title">
-          Vous recherchez un développeur Full Stack junior en France ?
+          Vous cherchez un développeur full stack qui ship ?
         </h2>
         <p>
           Je suis disponible pour échanger sur un poste Fullstack JavaScript et

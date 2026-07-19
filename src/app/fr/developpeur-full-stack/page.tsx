@@ -5,18 +5,17 @@ const siteUrl = "https://alkhastvatsaev.dev";
 const pagePath = "/fr/developpeur-full-stack";
 
 export const metadata: Metadata = {
-  title: "Développeur Full Stack junior en France | JavaScript & TypeScript",
+  title: "Développeur Full Stack en France | JavaScript & TypeScript",
   description:
-    "Alkhast Vatsaev — développeur Full Stack junior JavaScript/TypeScript disponible en France (Paris, remote, hybride). React, Next.js, Node.js, Firebase. Portfolio et projets en production.",
+    "Alkhast Vatsaev — développeur Full Stack JavaScript/TypeScript disponible en France (Paris, remote, hybride). React, Next.js, Node.js, Firebase. Portfolio et projets en production.",
   keywords: [
     "développeur full stack",
-    "développeur fullstack junior",
     "développeur full stack France",
     "développeur JavaScript France",
     "développeur TypeScript",
     "développeur React Next.js",
     "développeur fullstack Paris",
-    "développeur web junior remote France",
+    "développeur web remote France",
     "Alkhast Vatsaev",
   ],
   alternates: {
@@ -28,28 +27,28 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Développeur Full Stack junior en France — Alkhast Vatsaev",
+    title: "Développeur Full Stack en France — Alkhast Vatsaev",
     description:
-      "Portfolio d’un développeur Full Stack junior : React, Next.js, TypeScript, Node.js et Firebase. Disponible à Paris, en hybride ou à distance en France.",
+      "Portfolio d’un développeur Full Stack : React, Next.js, TypeScript, Node.js et Firebase. Disponible à Paris, en hybride ou à distance en France.",
     url: pagePath,
     siteName: "Alkhast Vatsaev",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/fr/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Alkhast Vatsaev — Développeur Full Stack junior en France",
+        alt: "Alkhast Vatsaev — Développeur Full Stack en France",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Développeur Full Stack junior en France — Alkhast Vatsaev",
+    title: "Développeur Full Stack en France — Alkhast Vatsaev",
     description:
       "React, Next.js, TypeScript et Firebase. Disponible en France : Paris, hybride ou remote.",
-    images: ["/og-image.png"],
+    images: ["/fr/twitter-image"],
   },
 };
 
@@ -57,7 +56,7 @@ const faqs = [
   {
     question: "Quel type de poste recherchez-vous ?",
     answer:
-      "Un poste de développeur Full Stack junior (ou frontend / React / Next.js junior) en JavaScript et TypeScript, en CDI, CDD ou stage longue durée, en France.",
+      "Un poste de développeur Full Stack (ou frontend / React / Next.js) en JavaScript et TypeScript, en CDI, CDD ou stage longue durée, en France.",
   },
   {
     question: "Travaillez-vous uniquement à Paris ?",
@@ -88,13 +87,13 @@ const pageStructuredData = {
       "@type": "WebPage",
       "@id": `${siteUrl}${pagePath}#webpage`,
       url: `${siteUrl}${pagePath}`,
-      name: "Développeur Full Stack junior en France — Alkhast Vatsaev",
+      name: "Développeur Full Stack en France — Alkhast Vatsaev",
       description:
-        "Page de présentation d’Alkhast Vatsaev, développeur Full Stack junior JavaScript/TypeScript disponible en France.",
+        "Page de présentation d’Alkhast Vatsaev, développeur Full Stack JavaScript/TypeScript disponible en France.",
       inLanguage: "fr-FR",
       isPartOf: { "@id": `${siteUrl}/#website` },
       about: { "@id": `${siteUrl}/#person` },
-      primaryImageOfPage: `${siteUrl}/og-image.png`,
+      primaryImageOfPage: `${siteUrl}/fr/opengraph-image`,
     },
     {
       "@type": "FAQPage",
@@ -149,18 +148,18 @@ export default function DeveloppeurFullStackPage() {
           <p className="eyebrow">France · Paris · Remote · Hybride</p>
           <p className="availability">
             <span aria-hidden="true" />
-            Ouvert aux opportunités junior
+            Ouvert aux opportunités — CDI ou freelance
           </p>
         </div>
         <h1 id="seo-title">
-          Développeur Full Stack junior en France — JavaScript & TypeScript
+          Développeur Full Stack en France — JavaScript & TypeScript
         </h1>
         <p className="seo-lead">
-          Je suis Alkhast Vatsaev, développeur Full Stack junior. Je construis
-          des applications web de bout en bout avec React, Next.js, TypeScript,
+          Je suis Alkhast Vatsaev, développeur Full Stack. Je construis des
+          applications web de bout en bout avec React, Next.js, TypeScript,
           Node.js et Firebase. Ce site regroupe mon portfolio, mon CV et des
           projets déployés — pour les recruteurs qui cherchent un profil
-          Fullstack junior en France.
+          Fullstack en France.
         </p>
         <div className="hero-actions">
           <Link className="button button-primary" href="/fr#work">
@@ -183,18 +182,18 @@ export default function DeveloppeurFullStackPage() {
         <div className="section-heading">
           <p className="section-index">Profil / Full Stack</p>
           <h2 id="who-title">
-            Un développeur Full Stack junior orienté produit et preuves.
+            Un développeur Full Stack orienté produit et preuves.
           </h2>
         </div>
         <div className="profile-copy">
           <p>
             Quand on cherche un{" "}
             <strong>développeur full stack</strong>, un{" "}
-            <strong>développeur fullstack junior</strong> ou un{" "}
-            <strong>développeur JavaScript / TypeScript</strong> en France, le
-            critère utile n’est pas seulement la liste de technologies : c’est
-            la capacité à livrer une interface, une API, des données, des tests
-            et un déploiement. C’est ce que je montre ici.
+            <strong>développeur JavaScript / TypeScript</strong> ou un{" "}
+            <strong>développeur React / Next.js</strong> en France, le critère
+            utile n’est pas seulement la liste de technologies : c’est la
+            capacité à livrer une interface, une API, des données, des tests et
+            un déploiement. C’est ce que je montre ici.
           </p>
           <p>
             Stack principale : React, Next.js, TypeScript, Node.js, Firebase,
@@ -219,9 +218,9 @@ export default function DeveloppeurFullStackPage() {
           <p>
             Basé à Paris, je candidate sur des postes partout en France. Les
             recherches du type « développeur full stack Paris », « développeur
-            React Lyon », « développeur Next.js remote France » ou « junior
-            TypeScript Marseille » peuvent toutes aboutir ici : un seul profil,
-            un seul site, des preuves vérifiables.
+            React Lyon », « développeur Next.js remote France » ou « TypeScript
+            Marseille » peuvent toutes aboutir ici : un seul profil, un seul
+            site, des preuves vérifiables.
           </p>
           <p>
             Zones concernées notamment : Paris et Île-de-France, Lyon,
@@ -315,11 +314,11 @@ export default function DeveloppeurFullStackPage() {
       <section className="contact-section" aria-labelledby="seo-contact-title">
         <p className="section-index">Contact</p>
         <h2 id="seo-contact-title">
-          Vous recrutez un développeur Full Stack junior en France ?
+          Vous recrutez un développeur Full Stack en France ?
         </h2>
         <p>
           Écrivons-nous. Je suis disponible pour un échange sur un poste
-          JavaScript, TypeScript, React, Next.js ou Full Stack junior.
+          JavaScript, TypeScript, React, Next.js ou Full Stack.
         </p>
         <div className="contact-links">
           <a href="mailto:alkhastvatsaev@icloud.com">

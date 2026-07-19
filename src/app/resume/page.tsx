@@ -8,7 +8,7 @@ import { projects, provenStack } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "Project-focused resume for Alkhast Vatsaev, junior fullstack JavaScript and TypeScript developer in Paris.",
+    "Project-focused resume for Alkhast Vatsaev, fullstack JavaScript and TypeScript developer in Paris.",
   alternates: {
     canonical: "/resume",
     languages: {
@@ -39,7 +39,7 @@ export default function ResumePage() {
             />
             <div>
               <p className="resume-kicker">
-                Junior Fullstack JavaScript / TypeScript Developer
+                Fullstack JavaScript/TypeScript Developer
               </p>
               <h1 id="resume-name">Alkhast Vatsaev</h1>
             </div>
@@ -64,10 +64,10 @@ export default function ResumePage() {
         <section className="resume-section" aria-labelledby="resume-profile">
           <h2 id="resume-profile">Profile</h2>
           <p>
-            Junior fullstack developer building practical web applications
-            across user interfaces, backend services and third-party
-            integrations. Project experience includes operations tools,
-            logistics, local delivery and interactive 3D product configuration.
+            Fullstack developer building practical web applications across user
+            interfaces, backend services and third-party integrations. Project
+            experience includes operations tools, logistics, local delivery and
+            interactive 3D product configuration.
           </p>
         </section>
 

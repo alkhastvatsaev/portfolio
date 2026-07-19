@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pour recruteurs — Développeur Full Stack junior en 60 secondes",
+  title:
+    "Recruter un développeur full stack JavaScript/TypeScript à Paris — Profil junior | Alkhast Vatsaev",
   description:
-    "Page recruteur : preuves, stack, démos, GitHub, CV et contact d’Alkhast Vatsaev, développeur Full Stack junior JavaScript/TypeScript en France.",
+    "Profil junior full stack JavaScript/TypeScript à Paris : démos, repos, stack et contact — évaluez Alkhast Vatsaev en moins de trois minutes.",
   alternates: {
     canonical: "/fr/pour-recruteurs",
     languages: {
@@ -14,56 +15,41 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Pour recruteurs — Alkhast Vatsaev",
+    title:
+      "Recruter un développeur full stack JavaScript/TypeScript à Paris — Profil junior",
     description:
-      "Scan 60 secondes : preuves fullstack junior, stack, liens et contact.",
+      "Profil junior full stack à Paris : preuves, démos, GitHub, CV et contact en moins de trois minutes.",
     url: "/fr/pour-recruteurs",
     locale: "fr_FR",
-    images: ["/og-image.png"],
+    images: [
+      {
+        url: "/fr/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript à Paris",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/fr/twitter-image"],
   },
 };
-
-const proofs = [
-  {
-    title: "Portfolio + études de cas",
-    href: "/fr/projets",
-    text: "Problème, approche, stack, démo et repo pour chaque projet flagship.",
-  },
-  {
-    title: "CV une page",
-    href: "/fr/resume",
-    text: "Parcours et stack condensés, imprimables.",
-  },
-  {
-    title: "GitHub",
-    href: "https://github.com/alkhastvatsaev",
-    text: "Dépôts publics documentés, CI sur les projets principaux.",
-  },
-  {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/alkhast-vatsaev/",
-    text: "Profil public aligné sur le même positionnement.",
-  },
-];
 
 export default function PourRecruteursPage() {
   return (
     <main id="main-content" lang="fr" className="seo-page">
       <section className="hero" aria-labelledby="recruiter-title">
         <div className="eyebrow-row">
-          <p className="eyebrow">Recruteurs · 60 secondes</p>
+          <p className="eyebrow">Pour les recruteurs</p>
           <p className="availability">
             <span aria-hidden="true" />
-            Junior · France · Remote OK
+            Profil junior · Paris · Remote OK
           </p>
         </div>
-        <h1 id="recruiter-title">
-          Alkhast Vatsaev — développeur Full Stack junior, preuves d’abord.
-        </h1>
+        <h1 id="recruiter-title">Pour les recruteurs</h1>
         <p className="seo-lead">
-          JavaScript / TypeScript · React · Next.js · Node.js · Firebase.
-          Disponible à Paris, en hybride ou 100&nbsp;% remote en France. Cette
-          page concentre tout ce qu’il faut pour décider d’un premier échange.
+          Tout ce qu&apos;il faut pour évaluer ce profil en moins de trois minutes.
         </p>
         <div className="hero-actions">
           <a
@@ -73,59 +59,130 @@ export default function PourRecruteursPage() {
             Écrire un email
           </a>
           <Link className="button button-secondary" href="/fr/projets">
-            Voir les études de cas
+            Études de cas
           </Link>
         </div>
       </section>
 
-      <section className="profile-section" aria-labelledby="proof-title">
+      <section className="profile-section" aria-labelledby="short-title">
         <div className="section-heading">
-          <p className="section-index">Preuves</p>
-          <h2 id="proof-title">Quatre liens pour valider le profil.</h2>
+          <p className="section-index">L&apos;essentiel</p>
+          <h2 id="short-title">Niveau, stack, disponibilité.</h2>
         </div>
-        <ul className="recruiter-proof-list">
-          {proofs.map((item) => (
-            <li key={item.href}>
-              <a href={item.href} rel={item.href.startsWith("http") ? "noreferrer me" : undefined}>
-                {item.title}
-              </a>
-              <p>{item.text}</p>
+        <div className="profile-copy single-col">
+          <ul className="seo-city-list">
+            <li>
+              <strong>Poste :</strong> développeur full stack
+              JavaScript/TypeScript — React, Next.js, Node.js, Firebase.
             </li>
-          ))}
-        </ul>
+            <li>
+              <strong>Niveau :</strong> début de carrière, et je l&apos;assume —
+              je vise des postes junior, avec le niveau de production listé
+              ci-dessous.
+            </li>
+            <li>
+              <strong>Expérience :</strong> 15 mois de freelance, une quinzaine
+              de produits shippés de bout en bout. Avant : trois ans à dessiner
+              de la haute joaillerie pour Cartier, Van Cleef &amp; Arpels et JAR.
+            </li>
+            <li>
+              <strong>Localisation :</strong> Paris — sur site, hybride ou full
+              remote.
+            </li>
+            <li>
+              <strong>Contrat :</strong> CDI de préférence, ouvert au freelance.
+            </li>
+            <li>
+              <strong>Disponibilité :</strong> immédiate.
+            </li>
+            <li>
+              <strong>Rémunération :</strong> 40–45 k€ selon périmètre et
+              remote.
+            </li>
+            <li>
+              <strong>Délai de réponse :</strong> moins de 24 h.
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section className="stack-section" aria-labelledby="stack-title">
+      <section className="profile-section" aria-labelledby="verify-title">
         <div className="section-heading">
-          <p className="section-index">Stack</p>
-          <h2 id="stack-title">Ce que je livre réellement.</h2>
+          <p className="section-index">Preuves</p>
+          <h2 id="verify-title">Vérifiez, ne croyez pas sur parole</h2>
         </div>
         <div className="profile-copy single-col">
           <p>
-            Interfaces React/Next.js, logique backend, auth, données Firebase,
-            paiements Stripe, tests (Vitest/Playwright) et déploiement Vercel.
-            Les projets ne sont pas des landings : ce sont des parcours produit
-            utilisables en démo.
+            Quatre case studies documentées, chacune avec démo live et code
+            source complet. Tests automatisés (Vitest, Playwright) et
+            documentation en anglais sur chaque repo phare.
+          </p>
+        </div>
+        <div className="contact-links">
+          <Link href="/fr/projets">
+            Case studies <span aria-hidden="true">→</span>
+          </Link>
+          <a
+            href="https://github.com/alkhastvatsaev"
+            target="_blank"
+            rel="me noreferrer"
+          >
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <Link href="/fr/resume">
+            CV une page <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <section className="profile-section" aria-labelledby="why-title">
+        <div className="section-heading">
+          <p className="section-index">Angle</p>
+          <h2 id="why-title">
+            Pourquoi un profil début de carrière venu de la place Vendôme
+          </h2>
+        </div>
+        <div className="profile-copy single-col">
+          <p>
+            La plupart des candidatures junior vous demandent de parier sur un
+            potentiel. Celle-ci vous demande d&apos;auditer du travail livré :
+            authentification, paiements Stripe, cartographie, chat temps réel,
+            génération de PDF, tests automatisés, déploiement — déjà construits,
+            déjà en ligne. L&apos;obsession du détail vient de trois ans passés
+            à dessiner pour les maisons les plus exigeantes du monde. Elle a
+            survécu au changement de matière.
           </p>
         </div>
       </section>
 
-      <section className="contact-section" aria-labelledby="next-title">
-        <p className="section-index">Suite</p>
-        <h2 id="next-title">Checklist d’évaluation</h2>
+      <section className="contact-section" aria-labelledby="process-title">
+        <p className="section-index">Déroulé</p>
+        <h2 id="process-title">Comment m&apos;évaluer</h2>
         <p>
-          Une méthode courte pour vérifier n’importe quel junior — y compris
-          moi.
+          Choisissez le format qui vous convient : code review en live sur
+          n&apos;importe lequel de mes repos, exercice technique à distance, ou
+          session de pairing. Être évalué sur du travail réel me va très bien.
         </p>
         <div className="contact-links">
-          <Link href="/fr/articles/comment-verifier-le-travail-dun-developpeur-junior">
-            Checklist recruteur <span aria-hidden="true">→</span>
-          </Link>
-          <Link href="/fr/developpeur-full-stack">
-            Page Full Stack France <span aria-hidden="true">→</span>
-          </Link>
-          <Link href="/fr/profils">
-            Tous les profils publics <span aria-hidden="true">→</span>
+          <a href="mailto:alkhastvatsaev@icloud.com">
+            Email <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alkhast-vatsaev/"
+            target="_blank"
+            rel="me noreferrer"
+          >
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            href="https://github.com/alkhastvatsaev"
+            target="_blank"
+            rel="me noreferrer"
+          >
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <Link href="/fr/resume">
+            CV <span aria-hidden="true">→</span>
           </Link>
         </div>
       </section>

@@ -28,6 +28,15 @@ describe("portfolio data", () => {
     ).toEqual(projects.map(({ slug, source, live }) => ({ slug, source, live })));
   });
 
+  it("orders flagship projects as Serrurerie → Aurelia → LOGIS → Hopla", () => {
+    expect(projects.map((p) => p.slug)).toEqual([
+      "serrurerie-pro",
+      "atelier-aurelia",
+      "logis-2030",
+      "hopla",
+    ]);
+  });
+
   it("resolves projects by slug", () => {
     expect(getProjectBySlug("hopla", "fr")?.name).toBe("Hopla");
     expect(getProjectBySlug("missing", "en")).toBeUndefined();

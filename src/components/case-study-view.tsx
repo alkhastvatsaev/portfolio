@@ -32,6 +32,11 @@ export function CaseStudyView({ project, locale, path, allProjects }: Props) {
         <p className="eyebrow">{project.label}</p>
         <h1 id="case-title">{project.name}</h1>
         <p className="seo-lead">{project.summary}</p>
+        {project.story ? (
+          <div className="profile-copy single-col">
+            <p>{project.story}</p>
+          </div>
+        ) : null}
         <ul className="project-stack" aria-label={isFr ? "Stack" : "Stack"}>
           {project.stack.map((tech) => (
             <li key={tech}>{tech}</li>

@@ -1,6 +1,6 @@
 # Alkhast Vatsaev
 
-> Junior Fullstack JavaScript/TypeScript developer based in Paris, available across France (hybrid or remote).
+> Fullstack JavaScript/TypeScript developer based in Paris, available across France (hybrid or remote).
 
 - Portfolio: https://alkhastvatsaev.dev
 - French portfolio: https://alkhastvatsaev.dev/fr
@@ -24,4 +24,4 @@ React, Next.js, TypeScript, Node.js, Firebase, Stripe, Vitest, Playwright, Verce
 
 ## Seeking
 
-Junior Full Stack, JavaScript, TypeScript, React or Next.js roles in France.
+Full Stack, JavaScript, TypeScript, React or Next.js roles in France. See recruiter pages for early-career positioning.

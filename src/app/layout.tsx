@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:
-      "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
+      "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer",
     template: "%s | Alkhast Vatsaev",
   },
   description:
-    "Junior Fullstack JavaScript and TypeScript developer in France (Paris, hybrid, remote). Explore production-ready React, Next.js, Firebase and Node.js projects.",
+    "Fullstack JavaScript and TypeScript developer in Paris (hybrid, remote). Production-ready React, Next.js, Firebase and Node.js projects — open to junior and early-career fullstack roles.",
   keywords: [
     "Alkhast Vatsaev",
     "développeur full stack",
@@ -49,10 +49,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
+    title: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer",
     description:
-      "Project-focused portfolio of a junior Fullstack JavaScript/TypeScript developer based in Paris.",
+      "Project-focused portfolio of a fullstack JavaScript/TypeScript developer in Paris — React, Next.js, Firebase.",
     url: siteUrl,
     siteName: "Alkhast Vatsaev",
     locale: "en_US",
@@ -60,19 +59,19 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer in Paris",
+        alt: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer in Paris",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alkhast Vatsaev — Junior Fullstack JavaScript/TypeScript Developer",
+    title: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer",
     description:
-      "React, Next.js, TypeScript and Firebase projects from a junior fullstack developer in Paris.",
-    images: ["/og-image.png"],
+      "Project-focused portfolio of a fullstack JavaScript/TypeScript developer in Paris — React, Next.js, Firebase.",
+    images: ["/twitter-image"],
   },
   robots: {
     index: true,

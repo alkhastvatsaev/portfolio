@@ -1,6 +1,6 @@
 # Alkhast Vatsaev — Portfolio
 
-Recruiter-focused portfolio for Alkhast Vatsaev, a junior fullstack JavaScript
+Recruiter-focused portfolio for Alkhast Vatsaev, a fullstack JavaScript
 and TypeScript developer based in Paris.
 
 **Live site:** [alkhastvatsaev.dev](https://alkhastvatsaev.dev)

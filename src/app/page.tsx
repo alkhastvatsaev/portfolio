@@ -9,11 +9,11 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="eyebrow-row">
           <p className="eyebrow">
-            Paris · Junior Fullstack JavaScript / TypeScript Developer
+            Paris · Fullstack JavaScript / TypeScript Developer
           </p>
           <p className="availability">
             <span aria-hidden="true" />
-            Open to junior opportunities
+            Open to opportunities — full-time or freelance
           </p>
         </div>
         <h1 id="hero-title">
@@ -30,9 +30,11 @@ export default function Home() {
               priority
             />
             <p className="hero-intro">
-              I’m Alkhast Vatsaev, a junior fullstack developer working with
-              React, Next.js and TypeScript. My portfolio is built around
-              shipped projects, not inflated titles.
+              I&apos;m Alkhast Vatsaev, a fullstack developer working with React,
+              Next.js and TypeScript. Before code, I designed high jewelry for
+              Cartier and Van Cleef &amp; Arpels — the obsession with detail
+              stayed. My portfolio is built around shipped projects, not
+              inflated titles.
             </p>
           </div>
           <div className="hero-actions">
@@ -57,7 +59,7 @@ export default function Home() {
         <div className="section-heading">
           <p className="section-index">Profile / Fullstack developer in Paris</p>
           <h2 id="profile-title">
-            Junior Fullstack JavaScript and TypeScript developer in Paris.
+            Fullstack JavaScript and TypeScript developer in Paris.
           </h2>
         </div>
         <div className="profile-copy">
@@ -71,9 +73,9 @@ export default function Home() {
             The projects below demonstrate operational dashboards, logistics
             workflows, local delivery and interactive 3D product experiences.
             Each flagship repository includes English documentation, a live
-            demo and automated quality checks. I am available for junior
-            Fullstack, JavaScript, TypeScript, React or Next.js roles in Paris,
-            hybrid or remote.
+            demo and automated quality checks. I am available for fullstack,
+            JavaScript, TypeScript, React or Next.js roles in Paris, hybrid or
+            remote — including early-career positions.
           </p>
         </div>
       </section>
@@ -141,9 +143,9 @@ export default function Home() {
 
       <section className="contact-section" aria-labelledby="contact-title">
         <p className="section-index">03 / Contact</p>
-        <h2 id="contact-title">Looking for a junior fullstack developer in France?</h2>
+        <h2 id="contact-title">Looking for a fullstack developer who ships?</h2>
         <p>
-          I’m available to discuss fullstack JavaScript and TypeScript roles,
+          I&apos;m available to discuss fullstack JavaScript and TypeScript roles,
           product teams and practical web projects — Paris, hybrid or remote.
         </p>
         <div className="contact-links">

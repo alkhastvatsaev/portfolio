@@ -30,7 +30,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: project.summary,
       url: `/fr/projets/${project.slug}`,
       locale: "fr_FR",
-      images: ["/og-image.png"],
+      images: [
+        {
+          url: "/fr/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript à Paris",
+        },
+      ],
     },
   };
 }

@@ -27,7 +27,7 @@ export const articlesFr: readonly Article[] = [
       {
         paragraphs: [
           "Les recherches « développeur full stack », « développeur fullstack junior » ou « développeur JavaScript France » renvoient surtout vers des job boards. Un site personnel ne gagne pas cette bataille en copiant des mots-clés : il gagne en devenant la meilleure preuve pour un profil précis.",
-          "Je suis Alkhast Vatsaev, développeur Full Stack junior basé à Paris, disponible en France (hybride ou remote). Ce texte explique ce que je livre concrètement, et pourquoi mon portfolio est conçu pour les recruteurs techniques.",
+          "Je suis Alkhast Vatsaev, développeur Full Stack basé à Paris, disponible en France (hybride ou remote). Ce texte explique ce que je livre concrètement, et pourquoi mon portfolio est conçu pour les recruteurs techniques.",
         ],
       },
       {
@@ -48,7 +48,7 @@ export const articlesFr: readonly Article[] = [
         heading: "Disponible en France, pas seulement à Paris",
         paragraphs: [
           "Je candidate sur des postes à Paris, en Île-de-France, et en remote/hybride partout en France. Une seule page identité vaut mieux que des dizaines de pages villes artificielles.",
-          "Si vous recrutez un développeur Full Stack junior JavaScript/TypeScript, commencez par le portfolio, le CV, GitHub et LinkedIn — tous pointent vers le même profil.",
+          "Si vous recrutez un développeur Full Stack JavaScript/TypeScript, commencez par le portfolio, le CV, GitHub et LinkedIn — tous pointent vers le même profil.",
         ],
       },
     ],
@@ -108,14 +108,14 @@ export const articlesFr: readonly Article[] = [
     slug: "projet-nextjs-firebase-fullstack",
     title: "Construire un projet Full Stack avec Next.js et Firebase",
     description:
-      "Retour d’expérience junior sur des apps Next.js + Firebase : auth, données, démo recruteur et limites assumées.",
+      "Retour d’expérience sur des apps Next.js + Firebase : auth, données, démo recruteur et limites assumées.",
     date: "2026-07-18",
     locale: "fr",
     tags: ["Next.js", "Firebase", "TypeScript", "full stack"],
     body: [
       {
         paragraphs: [
-          "Next.js et Firebase forment une combinaison fréquente pour un développeur Full Stack junior : rendu web moderne, auth, base de données et hébergement rapide. Voici comment je l’utilise dans mes projets portfolio.",
+          "Next.js et Firebase forment une combinaison fréquente pour un développeur Full Stack : rendu web moderne, auth, base de données et hébergement rapide. Voici comment je l’utilise dans mes projets portfolio.",
         ],
       },
       {
@@ -134,7 +134,7 @@ export const articlesFr: readonly Article[] = [
       {
         heading: "Pour aller plus loin",
         paragraphs: [
-          "Parcourez les études de cas, lancez les démos, lisez les README GitHub, puis écrivez-moi si vous cherchez un développeur Full Stack junior en France.",
+          "Parcourez les études de cas, lancez les démos, lisez les README GitHub, puis écrivez-moi si vous cherchez un développeur Full Stack en France.",
         ],
       },
     ],
@@ -146,7 +146,7 @@ export const articlesEn: readonly Article[] = [
     slug: "junior-fullstack-developer-portfolio",
     title: "What a junior fullstack developer portfolio should prove",
     description:
-      "How I structure a junior fullstack JavaScript/TypeScript portfolio around demos, repos, tests and recruiter-ready proof.",
+      "How I structure a fullstack JavaScript/TypeScript portfolio around demos, repos, tests and recruiter-ready proof.",
     date: "2026-07-18",
     locale: "en",
     tags: ["junior fullstack", "portfolio", "React", "Next.js"],
@@ -154,7 +154,7 @@ export const articlesEn: readonly Article[] = [
       {
         paragraphs: [
           "A personal site will not outrank major job boards for generic “fullstack developer” queries overnight. It can become the best evidence package for one candidate: demos, repositories, stack clarity and a direct contact path.",
-          "I’m Alkhast Vatsaev, a junior fullstack developer based in Paris and open to roles across France (hybrid or remote). This article explains what my portfolio is designed to prove.",
+          "I’m Alkhast Vatsaev, a fullstack developer based in Paris and open to roles across France (hybrid or remote). This article explains what my portfolio is designed to prove.",
         ],
       },
       {

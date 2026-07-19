@@ -7,6 +7,8 @@ export type Project = {
   stack: readonly string[];
   source: string;
   live: string;
+  /** Optional paragraph shown after the case-study intro. */
+  story?: string;
   problem: string;
   approach: string;
   outcome: string;
@@ -36,6 +38,32 @@ export const projects: readonly Project[] = [
       "Maps, pricing and PDF exports",
       "Stripe + communications integrations",
       "Automated unit and component tests",
+    ],
+  },
+  {
+    slug: "atelier-aurelia",
+    name: "Atelier Aurelia",
+    label: "Interactive 3D configurator",
+    summary:
+      "An open-source ring configurator with procedural 3D rendering — designed by a former Place Vendôme high-jewelry designer.",
+    detail:
+      "Users can choose materials, stones, sizes and engraving, then save or share a configuration and export the result as an image.",
+    stack: ["React", "TypeScript", "Three.js", "React Three Fiber", "Vite"],
+    source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
+    live: "https://atelier-aurelia-ring.vercel.app",
+    story:
+      "Before writing code, I spent three years drawing high jewelry for Cartier, Van Cleef & Arpels and JAR at Place Vendôme. Atelier Aurelia brings both worlds together: a ring configurator built by someone who has designed real rings for real maisons — procedural 3D, faithful materials, and the level of finish this industry expects.",
+    problem:
+      "Product customization is hard to trust when buyers cannot see options update in real time.",
+    approach:
+      "I built a browser-based 3D configurator with React Three Fiber so material, stone, size and engraving choices update immediately, with shareable state and image export.",
+    outcome:
+      "An open-source demo that proves frontend craft, 3D literacy and product UX without a heavy backend.",
+    highlights: [
+      "Procedural Three.js rendering",
+      "Live configuration feedback",
+      "Shareable configuration state",
+      "MIT-licensed public demo",
     ],
   },
   {
@@ -86,30 +114,6 @@ export const projects: readonly Project[] = [
       "Proof of delivery and support",
     ],
   },
-  {
-    slug: "atelier-aurelia",
-    name: "Atelier Aurelia",
-    label: "Interactive 3D configurator",
-    summary:
-      "An open-source ring configurator with procedural 3D rendering and immediate visual feedback.",
-    detail:
-      "Users can choose materials, stones, sizes and engraving, then save or share a configuration and export the result as an image.",
-    stack: ["React", "TypeScript", "Three.js", "React Three Fiber", "Vite"],
-    source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
-    live: "https://atelier-aurelia-ring.vercel.app",
-    problem:
-      "Product customization is hard to trust when buyers cannot see options update in real time.",
-    approach:
-      "I built a browser-based 3D configurator with React Three Fiber so material, stone, size and engraving choices update immediately, with shareable state and image export.",
-    outcome:
-      "An open-source demo that proves frontend craft, 3D literacy and product UX without a heavy backend.",
-    highlights: [
-      "Procedural Three.js rendering",
-      "Live configuration feedback",
-      "Shareable configuration state",
-      "MIT-licensed public demo",
-    ],
-  },
 ];
 
 export const projectsFr: readonly Project[] = [
@@ -135,6 +139,32 @@ export const projectsFr: readonly Project[] = [
       "Cartes, tarification et exports PDF",
       "Stripe et intégrations de communication",
       "Tests unitaires et composants",
+    ],
+  },
+  {
+    slug: "atelier-aurelia",
+    name: "Atelier Aurelia",
+    label: "Configurateur 3D interactif",
+    summary:
+      "Un configurateur de bague open source avec rendu 3D procédural — conçu par un ancien designer de haute joaillerie de la place Vendôme.",
+    detail:
+      "Les utilisateurs choisissent les matériaux, pierres, tailles et gravures, puis enregistrent ou partagent leur configuration et exportent le résultat.",
+    stack: ["React", "TypeScript", "Three.js", "React Three Fiber", "Vite"],
+    source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
+    live: "https://atelier-aurelia-ring.vercel.app",
+    story:
+      "Avant d'écrire du code, j'ai passé trois ans à dessiner de la haute joaillerie pour Cartier, Van Cleef & Arpels et JAR, place Vendôme. Atelier Aurelia réunit ces deux mondes : un configurateur de bague conçu par quelqu'un qui a dessiné de vraies bagues pour de vraies maisons — 3D procédurale, matériaux fidèles, et le niveau de finition que ce secteur exige.",
+    problem:
+      "La personnalisation produit manque de confiance quand l’acheteur ne voit pas les options se mettre à jour en temps réel.",
+    approach:
+      "J’ai construit un configurateur 3D navigateur avec React Three Fiber : matériaux, pierres, tailles et gravure se mettent à jour immédiatement, avec état partageable et export image.",
+    outcome:
+      "Une démo open source qui prouve le craft frontend, la 3D et l’UX produit sans backend lourd.",
+    highlights: [
+      "Rendu Three.js procédural",
+      "Retour visuel immédiat",
+      "Configuration partageable",
+      "Démo publique sous licence MIT",
     ],
   },
   {
@@ -183,30 +213,6 @@ export const projectsFr: readonly Project[] = [
       "Cartes, chat et suivi",
       "Parcours checkout Stripe",
       "Preuve de livraison et support",
-    ],
-  },
-  {
-    slug: "atelier-aurelia",
-    name: "Atelier Aurelia",
-    label: "Configurateur 3D interactif",
-    summary:
-      "Un configurateur de bague open source avec rendu 3D procédural et retour visuel immédiat.",
-    detail:
-      "Les utilisateurs choisissent les matériaux, pierres, tailles et gravures, puis enregistrent ou partagent leur configuration et exportent le résultat.",
-    stack: ["React", "TypeScript", "Three.js", "React Three Fiber", "Vite"],
-    source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
-    live: "https://atelier-aurelia-ring.vercel.app",
-    problem:
-      "La personnalisation produit manque de confiance quand l’acheteur ne voit pas les options se mettre à jour en temps réel.",
-    approach:
-      "J’ai construit un configurateur 3D navigateur avec React Three Fiber : matériaux, pierres, tailles et gravure se mettent à jour immédiatement, avec état partageable et export image.",
-    outcome:
-      "Une démo open source qui prouve le craft frontend, la 3D et l’UX produit sans backend lourd.",
-    highlights: [
-      "Rendu Three.js procédural",
-      "Retour visuel immédiat",
-      "Configuration partageable",
-      "Démo publique sous licence MIT",
     ],
   },
 ];

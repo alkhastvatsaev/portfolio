@@ -4,7 +4,7 @@ import Link from "next/link";
 import { projectsFr } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Études de cas — Développeur Full Stack junior",
+  title: "Études de cas — Développeur Full Stack",
   description:
     "Études de cas d’Alkhast Vatsaev : projets Next.js, TypeScript, Firebase avec démos en ligne pour recruteurs.",
   alternates: {
@@ -25,7 +25,7 @@ export default function ProjetsIndex() {
         <h1 id="projects-title">Projets Full Stack détaillés</h1>
         <p className="seo-lead">
           Chaque page documente le problème, l’approche, la stack et la preuve
-          live — pour évaluer un développeur Full Stack junior JavaScript /
+          live — pour évaluer un développeur Full Stack JavaScript /
           TypeScript.
         </p>
       </section>

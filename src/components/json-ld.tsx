@@ -53,7 +53,7 @@ export function articleSchema(
       url: siteUrl,
     },
     mainEntityOfPage: `${siteUrl}${path}`,
-    image: `${siteUrl}/og-image.png`,
+    image: `${siteUrl}${locale === "fr" ? "/fr" : ""}/opengraph-image`,
   };
 }
 

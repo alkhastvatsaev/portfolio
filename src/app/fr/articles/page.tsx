@@ -4,9 +4,9 @@ import Link from "next/link";
 import { articlesFr } from "@/data/articles";
 
 export const metadata: Metadata = {
-  title: "Articles — Développeur Full Stack junior",
+  title: "Articles — Développeur Full Stack",
   description:
-    "Articles d’Alkhast Vatsaev sur le métier de développeur Full Stack junior en France, l’évaluation de portfolios et Next.js/Firebase.",
+    "Articles d’Alkhast Vatsaev sur le métier de développeur Full Stack en France, l’évaluation de portfolios et Next.js/Firebase.",
   alternates: {
     canonical: "/fr/articles",
     languages: {
@@ -22,10 +22,10 @@ export default function ArticlesFrIndex() {
     <main id="main-content" lang="fr" className="seo-page">
       <section className="hero" aria-labelledby="articles-title">
         <p className="eyebrow">Contenu / SEO long-tail</p>
-        <h1 id="articles-title">Articles pour recruteurs et candidats juniors</h1>
+        <h1 id="articles-title">Articles pour recruteurs et candidats</h1>
         <p className="seo-lead">
-          Textes utiles autour du Full Stack junior en France, de la vérification
-          de portfolios et de la stack Next.js / Firebase.
+          Textes utiles autour du Full Stack en France, de la vérification de
+          portfolios et de la stack Next.js / Firebase.
         </p>
       </section>
       <section className="work-section">

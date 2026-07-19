@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Alkhast Vatsaev — Fullstack Developer",
     short_name: "Alkhast Vatsaev",
     description:
-      "Portfolio of a junior Fullstack JavaScript/TypeScript developer in Paris.",
+      "Portfolio of a Fullstack JavaScript/TypeScript developer in Paris.",
     start_url: "/",
     display: "standalone",
     background_color: "#f3f0e8",

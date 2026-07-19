@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alkhast Vatsaev — Full Stack junior</title>
+    <title>Alkhast Vatsaev — Full Stack</title>
     <link>https://alkhastvatsaev.dev</link>
-    <description>Articles et études de cas d’Alkhast Vatsaev, développeur Full Stack junior JavaScript/TypeScript en France.</description>
+    <description>Articles et études de cas d’Alkhast Vatsaev, développeur Full Stack JavaScript/TypeScript en France.</description>
     <language>fr</language>
     <lastBuildDate>Fri, 18 Jul 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://alkhastvatsaev.dev/rss.xml" rel="self" type="application/rss+xml"/>
@@ -26,7 +26,7 @@
       <link>https://alkhastvatsaev.dev/fr/articles/projet-nextjs-firebase-fullstack</link>
       <guid>https://alkhastvatsaev.dev/fr/articles/projet-nextjs-firebase-fullstack</guid>
       <pubDate>Fri, 18 Jul 2026 00:00:00 GMT</pubDate>
-      <description>Retour d’expérience junior sur Next.js + Firebase.</description>
+      <description>Retour d’expérience sur Next.js + Firebase.</description>
     </item>
     <item>
       <title>What a junior fullstack developer portfolio should prove</title>

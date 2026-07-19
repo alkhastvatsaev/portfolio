@@ -8,7 +8,7 @@ import { projectsFr, provenStack } from "@/data/projects";
 export const metadata: Metadata = {
   title: "CV",
   description:
-    "CV d’Alkhast Vatsaev, développeur Fullstack JavaScript et TypeScript junior à Paris.",
+    "CV d’Alkhast Vatsaev, développeur Fullstack JavaScript et TypeScript à Paris.",
   alternates: {
     canonical: "/fr/resume",
     languages: {
@@ -39,7 +39,7 @@ export default function FrenchResumePage() {
             />
             <div>
               <p className="resume-kicker">
-                Développeur Fullstack JavaScript / TypeScript junior
+                Développeur Fullstack JavaScript / TypeScript
               </p>
               <h1 id="resume-name">Alkhast Vatsaev</h1>
             </div>
@@ -64,8 +64,8 @@ export default function FrenchResumePage() {
         <section className="resume-section" aria-labelledby="resume-profile">
           <h2 id="resume-profile">Profil</h2>
           <p>
-            Développeur fullstack junior créant des applications web concrètes,
-            des interfaces utilisateur aux services backend et intégrations
+            Développeur fullstack créant des applications web concrètes, des
+            interfaces utilisateur aux services backend et intégrations
             tierces. Mes projets couvrent les outils opérationnels, la
             logistique, la livraison locale et la configuration 3D.
           </p>

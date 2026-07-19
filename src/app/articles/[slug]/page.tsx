@@ -29,7 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.description,
       url: `/articles/${article.slug}`,
       type: "article",
-      images: ["/og-image.png"],
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer in Paris",
+        },
+      ],
     },
   };
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Project case studies — Junior Fullstack developer",
+  title: "Project case studies — Fullstack developer",
   description:
     "Detailed case studies from Alkhast Vatsaev: Next.js, TypeScript, Firebase and fullstack product work with live demos.",
   alternates: {
@@ -25,8 +25,7 @@ export default function ProjectsIndex() {
         <h1 id="projects-title">Project case studies</h1>
         <p className="seo-lead">
           Each page documents the problem, approach, stack and live proof for
-          recruiters evaluating a junior fullstack JavaScript/TypeScript
-          developer.
+          recruiters evaluating a fullstack JavaScript/TypeScript developer.
         </p>
       </section>
       <section className="work-section">

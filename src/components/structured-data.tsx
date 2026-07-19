@@ -9,12 +9,9 @@ const structuredData = {
       name: "Alkhast Vatsaev",
       url: siteUrl,
       image: `${siteUrl}/profile.png`,
-      jobTitle: [
-        "Junior Fullstack JavaScript/TypeScript Developer",
-        "Développeur Full Stack junior",
-      ],
+      jobTitle: ["Fullstack Developer", "Développeur Full Stack"],
       description:
-        "Développeur Full Stack junior basé à Paris, disponible en France (hybride ou remote). Applications web avec React, Next.js, TypeScript, Firebase et Node.js.",
+        "Développeur Full Stack basé à Paris, disponible en France (hybride ou remote). Applications web avec React, Next.js, TypeScript, Firebase et Node.js.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Paris",
@@ -53,7 +50,7 @@ const structuredData = {
     {
       "@type": "ProfessionalService",
       "@id": `${siteUrl}/#service`,
-      name: "Développement Full Stack junior — Alkhast Vatsaev",
+      name: "Développement Full Stack — Alkhast Vatsaev",
       description:
         "Développement d’applications web Full Stack (React, Next.js, TypeScript, Node.js, Firebase) pour des équipes en France.",
       provider: {
@@ -79,7 +76,7 @@ const structuredData = {
       name: "Alkhast Vatsaev — Développeur Full Stack",
       alternateName: "Alkhast Vatsaev — Fullstack Developer",
       description:
-        "Portfolio d’Alkhast Vatsaev, développeur Full Stack junior JavaScript/TypeScript en France.",
+        "Portfolio d’Alkhast Vatsaev, développeur Full Stack JavaScript/TypeScript en France.",
       inLanguage: ["en", "fr"],
       author: {
         "@id": `${siteUrl}/#person`,
@@ -92,14 +89,14 @@ const structuredData = {
       "@type": "ProfilePage",
       "@id": `${siteUrl}/#profile`,
       url: siteUrl,
-      name: "Alkhast Vatsaev — Junior Fullstack Developer in France",
+      name: "Alkhast Vatsaev — Fullstack Developer in France",
       isPartOf: {
         "@id": `${siteUrl}/#website`,
       },
       mainEntity: {
         "@id": `${siteUrl}/#person`,
       },
-      dateModified: "2026-07-18",
+      dateModified: "2026-07-19",
       inLanguage: ["en", "fr"],
     },
   ],
