@@ -119,9 +119,10 @@ export default function PourRecruteursPage() {
         </div>
         <div className="profile-copy single-col">
           <p>
-            Quatre case studies documentées, chacune avec démo live et code
-            source complet. Tests automatisés (Vitest, Playwright) et
-            documentation en anglais sur chaque repo phare.
+            Cinq case studies documentées — produit phare{" "}
+            <Link href="/fr/projets/crmslot">CRM Slot</Link> — chacune avec
+            démo live et code source. Tests automatisés (Vitest, Playwright) et
+            documentation sur chaque repo phare.
           </p>
         </div>
         <div className="contact-links">

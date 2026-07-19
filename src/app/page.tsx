@@ -83,7 +83,7 @@ export default function Home() {
       <section className="work-section" id="work" aria-labelledby="work-title">
         <div className="section-heading">
           <p className="section-index">01 / Selected work</p>
-          <h2 id="work-title">Four products, each solving a concrete problem.</h2>
+          <h2 id="work-title">Five products, each solving a concrete problem.</h2>
         </div>
         <div className="project-list">
           {projects.map((project, index) => (

@@ -143,7 +143,7 @@ export default function FrenchHome() {
         <div className="section-heading">
           <p className="section-index">01 / Projets sélectionnés</p>
           <h2 id="work-title">
-            Quatre produits qui répondent chacun à un problème concret.
+            Cinq produits qui répondent chacun à un problème concret.
           </h2>
         </div>
         <div className="project-list">

@@ -127,7 +127,7 @@ export const articlesFr: readonly Article[] = [
       {
         heading: "Ce que je montre concrètement",
         paragraphs: [
-          "Sur Serrurerie Pro, LOGIS. 2030 et Hopla : parcours métier, intégrations (Stripe, cartes, messaging), et documentation. Les études de cas sur ce site détaillent problème → approche → résultat.",
+          "Sur CRM Slot, Serrurerie Pro, LOGIS. 2030 et Hopla : parcours métier, intégrations (Stripe, cartes, messaging), et documentation. Les études de cas sur ce site détaillent problème → approche → résultat.",
           "Je documente aussi les limites (règles de sécurité, modes démo, dettes techniques). Un junior crédible assume ce qui n’est pas encore production-grade.",
         ],
       },
@@ -166,7 +166,7 @@ export const articlesEn: readonly Article[] = [
       {
         heading: "End-to-end delivery",
         paragraphs: [
-          "Junior fullstack means shipping UI, data, auth or payments, tests and deployment — not claiming mastery of every layer. My case studies cover field operations, logistics, local delivery and a 3D configurator.",
+          "Junior fullstack means shipping UI, data, auth or payments, tests and deployment — not claiming mastery of every layer. My case studies cover CRM Slot (field-service ops), logistics, local delivery and a 3D configurator.",
         ],
       },
     ],
