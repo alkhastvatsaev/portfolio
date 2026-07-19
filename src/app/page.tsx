@@ -31,10 +31,10 @@ export default function Home() {
             />
             <p className="hero-intro">
               I&apos;m Alkhast Vatsaev, a fullstack developer working with React,
-              Next.js and TypeScript. Before code, I designed high jewelry for
-              Cartier and Van Cleef &amp; Arpels — the obsession with detail
-              stayed. My portfolio is built around shipped projects, not
-              inflated titles.
+              Next.js and TypeScript. Before code: atelier production (software
+              tools) at Atelier de l&apos;Objet — including work for Cartier and
+              Van Cleef &amp; Arpels. The obsession with detail stayed. My
+              portfolio is built around shipped projects, not inflated titles.
             </p>
           </div>
           <div className="hero-actions">

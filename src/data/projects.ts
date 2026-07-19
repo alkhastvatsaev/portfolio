@@ -79,14 +79,14 @@ export const projects: readonly Project[] = [
     name: "Atelier Aurelia",
     label: "Interactive 3D configurator",
     summary:
-      "An open-source ring configurator with procedural 3D rendering — designed by a former Place Vendôme high-jewelry designer.",
+      "An open-source ring configurator with procedural 3D rendering — built with atelier product craft from Place Vendôme production work.",
     detail:
       "Users can choose materials, stones, sizes and engraving, then save or share a configuration and export the result as an image.",
     stack: ["React", "TypeScript", "Three.js", "React Three Fiber", "Vite"],
     source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
     live: "https://atelier-aurelia-ring.vercel.app",
     story:
-      "Before writing code, I spent years drawing high jewelry for Cartier and Van Cleef & Arpels at Place Vendôme. Atelier Aurelia brings both worlds together: a ring configurator built by someone who has designed real rings — procedural 3D, faithful materials, and the finish this industry expects.",
+      "Before writing code, I worked in atelier production (software tools) at Atelier de l'Objet — including Cartier and Van Cleef & Arpels. Atelier Aurelia brings both worlds together: a ring configurator built by someone who knows real product finish — procedural 3D, faithful materials, and the craft this industry expects.",
     problem:
       "Product customization is hard to trust when buyers cannot see options update in real time.",
     approach:
@@ -214,14 +214,14 @@ export const projectsFr: readonly Project[] = [
     name: "Atelier Aurelia",
     label: "Configurateur 3D interactif",
     summary:
-      "Un configurateur de bague open source avec rendu 3D procédural — conçu par un ancien designer de haute joaillerie de la place Vendôme.",
+      "Un configurateur de bague open source avec rendu 3D procédural — nourri d’une culture produit atelier venue de la production Place Vendôme.",
     detail:
       "Les utilisateurs choisissent les matériaux, pierres, tailles et gravures, puis enregistrent ou partagent leur configuration et exportent le résultat.",
     stack: ["React", "TypeScript", "Three.js", "React Three Fiber", "Vite"],
     source: "https://github.com/alkhastvatsaev/atelier-aurelia-ring",
     live: "https://atelier-aurelia-ring.vercel.app",
     story:
-      "Avant d'écrire du code, j'ai dessiné de la haute joaillerie pour Cartier et Van Cleef & Arpels, place Vendôme. Atelier Aurelia réunit ces deux mondes : un configurateur de bague conçu par quelqu'un qui a dessiné de vraies bagues — 3D procédurale, matériaux fidèles, et le niveau de finition que ce secteur exige.",
+      "Avant d'écrire du code, j’ai travaillé en production atelier (logiciels métier) à l’Atelier de l’Objet — maisons dont Cartier et Van Cleef & Arpels. Atelier Aurelia réunit ces deux mondes : un configurateur de bague pensé avec l’exigence de finition du secteur — 3D procédurale, matériaux fidèles, craft produit.",
     problem:
       "La personnalisation produit manque de confiance quand l’acheteur ne voit pas les options se mettre à jour en temps réel.",
     approach:

@@ -81,10 +81,10 @@ export default function FrenchHome() {
             />
             <p className="hero-intro">
               Je suis Alkhast Vatsaev, développeur full stack (React, Next.js,
-              TypeScript). Avant le code, je dessinais de la haute joaillerie
-              pour Cartier et Van Cleef &amp; Arpels — l&apos;obsession du détail
-              est restée. Ce portfolio repose sur des projets shippés, pas sur
-              des titres gonflés.
+              TypeScript). Avant le code : production atelier (logiciels métier)
+              à l&apos;Atelier de l&apos;Objet — maisons dont Cartier et Van Cleef
+              &amp; Arpels. L&apos;exigence du détail est restée. Ce portfolio
+              repose sur des projets shippés, pas sur des titres gonflés.
             </p>
           </div>
           <div className="hero-actions">

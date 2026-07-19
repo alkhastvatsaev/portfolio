@@ -88,8 +88,14 @@ export default function PourRecruteursPage() {
             </li>
             <li>
               <strong>Expérience :</strong> projets portfolio documentés (démo +
-              repo + tests). Avant le code : conception 3D haute joaillerie
-              (Cartier, Van Cleef &amp; Arpels) via l&apos;Atelier de l&apos;Objet.
+              repo + tests). Avant le code : production atelier — logiciels
+              métier à l&apos;Atelier de l&apos;Objet (maisons dont Cartier, Van
+              Cleef &amp; Arpels).
+            </li>
+            <li>
+              <strong>Formation :</strong> diplôme d&apos;études supérieures —
+              production &amp; logiciels métier (Haute École de Joaillerie,
+              Paris) · autoformation fullstack (projets déployés).
             </li>
             <li>
               <strong>Localisation :</strong> Paris — sur site, hybride ou full
@@ -146,7 +152,7 @@ export default function PourRecruteursPage() {
         <div className="section-heading">
           <p className="section-index">Angle</p>
           <h2 id="why-title">
-            Pourquoi un profil début de carrière venu de la place Vendôme
+            Pourquoi un profil début de carrière avec une culture produit atelier
           </h2>
         </div>
         <div className="profile-copy single-col">
@@ -155,8 +161,9 @@ export default function PourRecruteursPage() {
             un potentiel. Celle-ci demande d&apos;auditer du travail livré :
             authentification, paiements Stripe, cartographie, chat temps réel,
             génération de PDF, tests automatisés, déploiement — déjà construits,
-            déjà en ligne. L&apos;obsession du détail vient de la joaillerie place
-            Vendôme. Elle a survécu au changement de matière.
+            déjà en ligne. L&apos;exigence du détail vient d&apos;un parcours
+            atelier (production &amp; logiciels métier). Elle a survécu au
+            changement de matière.
           </p>
         </div>
       </section>

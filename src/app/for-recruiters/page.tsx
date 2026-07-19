@@ -86,8 +86,14 @@ export default function ForRecruitersPage() {
             </li>
             <li>
               <strong>Experience:</strong> documented portfolio projects (demo +
-              repo + tests). Before code: high-jewelry 3D design (Cartier, Van
-              Cleef &amp; Arpels) via Atelier de l&apos;Objet.
+              repo + tests). Before code: atelier production — software tools at
+              Atelier de l&apos;Objet (including Cartier, Van Cleef &amp;
+              Arpels).
+            </li>
+            <li>
+              <strong>Education:</strong> higher education diploma — production
+              &amp; software tools (Haute École de Joaillerie, Paris) ·
+              self-taught fullstack (shipped projects).
             </li>
             <li>
               <strong>Location:</strong> Paris — on-site, hybrid or full remote.
@@ -143,7 +149,7 @@ export default function ForRecruitersPage() {
         <div className="section-heading">
           <p className="section-index">Angle</p>
           <h2 id="why-title">
-            Why an early-career profile from Place Vendôme
+            Why an early-career profile with an atelier product craft
           </h2>
         </div>
         <div className="profile-copy single-col">
@@ -152,7 +158,7 @@ export default function ForRecruitersPage() {
             asks you to review shipped work: authentication, Stripe payments,
             maps, real-time chat, PDF generation, automated tests, deployment —
             already built, already live. The obsession with detail comes from
-            Place Vendôme jewelry. It transferred.
+            atelier production &amp; software tools. It transferred.
           </p>
         </div>
       </section>
