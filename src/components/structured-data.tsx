@@ -22,6 +22,8 @@ const structuredData = {
       sameAs: [
         "https://github.com/alkhastvatsaev",
         "https://www.linkedin.com/in/alkhast-vatsaev/",
+        "https://dev.to/alkhastvatsaev",
+        "https://www.malt.fr/profile/alkhastvatsaev",
       ],
       knowsLanguage: ["fr", "en", "ru"],
       knowsAbout: [

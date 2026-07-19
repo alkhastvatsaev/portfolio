@@ -32,6 +32,12 @@ const links = [
     href: "https://www.linkedin.com/in/alkhast-vatsaev/",
     me: true,
   },
+  { name: "Dev.to", href: "https://dev.to/alkhastvatsaev", me: true },
+  {
+    name: "Malt",
+    href: "https://www.malt.fr/profile/alkhastvatsaev",
+    me: true,
+  },
   { name: "Email", href: "mailto:alkhastvatsaev@icloud.com", me: false },
   { name: "Serrurerie Pro (démo)", href: "https://serrure.vercel.app", me: false },
   {
