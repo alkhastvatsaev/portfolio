@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/copy-og-pngs.js && node scripts/fix-og-html.js",
+    "build": "next build && node scripts/copy-og-pngs.mjs && node scripts/fix-og-html.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",

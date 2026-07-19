@@ -4,8 +4,11 @@
  * application/octet-stream on Vercel — LinkedIn/Post Inspector reject that.
  * Duplicate as *.png so crawlers get a proper image URL + Content-Type.
  */
-const fs = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const pairs = [
   ["out/opengraph-image", "out/opengraph-image.png"],

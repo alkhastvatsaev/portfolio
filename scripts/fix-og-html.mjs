@@ -3,8 +3,11 @@
  * Next file-based OG metadata injects /opengraph-image?<hash> which Vercel
  * serves as application/octet-stream. Rewrite built HTML to the *.png copies.
  */
-const fs = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function walk(dir, out = []) {
   if (!fs.existsSync(dir)) return out;
@@ -28,22 +31,21 @@ for (const file of files) {
     .replaceAll("/opengraph-image?", "/opengraph-image.png?")
     .replaceAll("/twitter-image?", "/twitter-image.png?")
     .replaceAll(
-      "content=\"https://alkhastvatsaev.dev/opengraph-image\"",
-      "content=\"https://alkhastvatsaev.dev/opengraph-image.png\"",
+      'content="https://alkhastvatsaev.dev/opengraph-image"',
+      'content="https://alkhastvatsaev.dev/opengraph-image.png"',
     )
     .replaceAll(
-      "content=\"https://alkhastvatsaev.dev/twitter-image\"",
-      "content=\"https://alkhastvatsaev.dev/twitter-image.png\"",
+      'content="https://alkhastvatsaev.dev/twitter-image"',
+      'content="https://alkhastvatsaev.dev/twitter-image.png"',
     )
     .replaceAll(
-      "content=\"https://alkhastvatsaev.dev/fr/opengraph-image\"",
-      "content=\"https://alkhastvatsaev.dev/fr/opengraph-image.png\"",
+      'content="https://alkhastvatsaev.dev/fr/opengraph-image"',
+      'content="https://alkhastvatsaev.dev/fr/opengraph-image.png"',
     )
     .replaceAll(
-      "content=\"https://alkhastvatsaev.dev/fr/twitter-image\"",
-      "content=\"https://alkhastvatsaev.dev/fr/twitter-image.png\"",
+      'content="https://alkhastvatsaev.dev/fr/twitter-image"',
+      'content="https://alkhastvatsaev.dev/fr/twitter-image.png"',
     )
-    // relative / absolute without query
     .replaceAll('content="/opengraph-image"', 'content="/opengraph-image.png"')
     .replaceAll('content="/twitter-image"', 'content="/twitter-image.png"')
     .replaceAll(
@@ -55,7 +57,6 @@ for (const file of files) {
       'content="/fr/twitter-image.png"',
     );
 
-  // strip pointless query hashes after we rewrote to .png?... keep file clean
   after = after.replace(
     /(opengraph-image|twitter-image)\.png\?[a-f0-9]+/g,
     "$1.png",
