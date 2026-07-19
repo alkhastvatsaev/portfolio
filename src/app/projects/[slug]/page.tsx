@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `/projects/${project.slug}`,
       images: [
         {
-          url: "/opengraph-image",
+          url: "/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer in Paris",

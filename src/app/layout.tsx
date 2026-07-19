@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer in Paris",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: "Alkhast Vatsaev — Fullstack JavaScript/TypeScript Developer",
     description:
       "Project-focused portfolio of a fullstack JavaScript/TypeScript developer in Paris — React, Next.js, Firebase.",
-    images: ["/twitter-image"],
+    images: ["/twitter-image.png"],
   },
   robots: {
     index: true,

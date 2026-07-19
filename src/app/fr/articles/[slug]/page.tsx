@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: "fr_FR",
       images: [
         {
-          url: "/fr/opengraph-image",
+          url: "/fr/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript à Paris",

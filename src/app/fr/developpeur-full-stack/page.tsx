@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/fr/opengraph-image",
+        url: "/fr/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Alkhast Vatsaev — Développeur Full Stack en France",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Développeur Full Stack en France — Alkhast Vatsaev",
     description:
       "React, Next.js, TypeScript et Firebase. Disponible en France : Paris, hybride ou remote.",
-    images: ["/fr/twitter-image"],
+    images: ["/fr/twitter-image.png"],
   },
 };
 
@@ -93,7 +93,7 @@ const pageStructuredData = {
       inLanguage: "fr-FR",
       isPartOf: { "@id": `${siteUrl}/#website` },
       about: { "@id": `${siteUrl}/#person` },
-      primaryImageOfPage: `${siteUrl}/fr/opengraph-image`,
+      primaryImageOfPage: `${siteUrl}/fr/opengraph-image.png`,
     },
     {
       "@type": "FAQPage",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     images: [
       {
-        url: "/fr/opengraph-image",
+        url: "/fr/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript à Paris",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/fr/twitter-image"],
+    images: ["/fr/twitter-image.png"],
   },
 };
 
