@@ -47,7 +47,7 @@ export const articlesFr: readonly Article[] = [
       {
         heading: "Disponible en France, pas seulement à Paris",
         paragraphs: [
-          "Je candidate sur des postes à Paris, en Île-de-France, et en remote/hybride partout en France. Une seule page identité vaut mieux que des dizaines de pages villes artificielles.",
+          "Je candidate sur des postes à Paris, en Île-de-France, et en remote/hybride partout en France. Une page identité France + des landings métropoles ciblées (pas une page par commune) : preuves d’abord, SEO ensuite.",
           "Si vous recrutez un développeur Full Stack JavaScript/TypeScript, commencez par le portfolio, le CV, GitHub et LinkedIn — tous pointent vers le même profil.",
         ],
       },

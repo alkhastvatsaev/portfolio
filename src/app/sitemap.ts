@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
 
 import { articlesEn, articlesFr } from "@/data/articles";
+import { franceCities, franceCityPath } from "@/data/france-cities";
 import { projects } from "@/data/projects";
 
 const baseUrl = "https://alkhastvatsaev.dev";
-const lastModified = "2026-07-18";
+const lastModified = "2026-07-19";
 
 export const dynamic = "force-static";
 
@@ -117,5 +118,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articlesEn.map((article) => entry(`/articles/${article.slug}`, 0.8)),
   ];
 
-  return [...staticEntries, ...projectEntries, ...articleEntries];
+  const cityEntries = franceCities.map((city) =>
+    entry(franceCityPath(city.slug), 0.84, {
+      fr: `${baseUrl}${franceCityPath(city.slug)}`,
+      en: baseUrl,
+      "x-default": `${baseUrl}/fr/developpeur-full-stack`,
+    }),
+  );
+
+  return [
+    ...staticEntries,
+    ...projectEntries,
+    ...articleEntries,
+    ...cityEntries,
+  ];
 }

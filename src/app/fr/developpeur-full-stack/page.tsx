@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { franceCities, franceCityPath } from "@/data/france-cities";
+
 const siteUrl = "https://alkhastvatsaev.dev";
 const pagePath = "/fr/developpeur-full-stack";
 
@@ -223,29 +225,20 @@ export default function DeveloppeurFullStackPage() {
             site, des preuves vérifiables.
           </p>
           <p>
-            Zones concernées notamment : Paris et Île-de-France, Lyon,
-            Marseille, Lille, Toulouse, Nantes, Bordeaux, Strasbourg, Rennes,
-            Montpellier, Nice, Grenoble, et toute équipe en télétravail en
-            France.
+            Pages dédiées aux grandes métropoles (indexables) ci-dessous — plus
+            remote / hybride partout en France. Objectif : un dossier candidat
+            trouvé aussi bien depuis Paris que depuis Lyon, Strasbourg ou Nantes.
           </p>
         </div>
         <ul className="seo-city-list" aria-label="Villes et modes de travail">
-          {[
-            "Paris",
-            "Lyon",
-            "Marseille",
-            "Lille",
-            "Toulouse",
-            "Nantes",
-            "Bordeaux",
-            "Strasbourg",
-            "Rennes",
-            "Montpellier",
-            "Nice",
-            "Remote France",
-          ].map((city) => (
-            <li key={city}>{city}</li>
+          {franceCities.map((city) => (
+            <li key={city.slug}>
+              <Link href={franceCityPath(city.slug)}>
+                Développeur Full Stack {city.name}
+              </Link>
+            </li>
           ))}
+          <li>Remote France</li>
         </ul>
       </section>
 
