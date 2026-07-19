@@ -3,9 +3,15 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Hire a Fullstack JavaScript/TypeScript Developer in Paris — Junior-friendly | Alkhast Vatsaev",
+    "Hire a Fullstack JavaScript/TypeScript Developer in Paris | Alkhast Vatsaev",
   description:
-    "Junior-friendly fullstack JavaScript/TypeScript profile in Paris: demos, repos, stack and contact — evaluate Alkhast Vatsaev in under three minutes.",
+    "Fullstack JavaScript/TypeScript profile in Paris: live demos, GitHub repos, stack and contact — evaluate Alkhast Vatsaev in under three minutes.",
+  keywords: [
+    "fullstack developer Paris",
+    "hire junior fullstack",
+    "React Next.js TypeScript",
+    "Alkhast Vatsaev",
+  ],
   alternates: {
     canonical: "/for-recruiters",
     languages: {
@@ -16,9 +22,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Hire a Fullstack JavaScript/TypeScript Developer in Paris — Junior-friendly",
+      "Hire a Fullstack JavaScript/TypeScript Developer in Paris — Alkhast Vatsaev",
     description:
-      "Junior-friendly fullstack JavaScript/TypeScript profile in Paris: demos, repos, stack and contact.",
+      "Proof in 3 minutes: demos, GitHub, resume and contact. Fullstack React / Next.js / TypeScript in Paris.",
     url: "/for-recruiters",
     images: [
       {
@@ -43,7 +49,7 @@ export default function ForRecruitersPage() {
           <p className="eyebrow">For recruiters</p>
           <p className="availability">
             <span aria-hidden="true" />
-            Junior-friendly · Paris · Remote OK
+            Paris · CDI / hybrid / remote · Available now
           </p>
         </div>
         <h1 id="recruiter-title">For recruiters</h1>
@@ -75,13 +81,13 @@ export default function ForRecruitersPage() {
               Next.js, Node.js, Firebase.
             </li>
             <li>
-              <strong>Level:</strong> early-career, and explicit about it — I&apos;m
-              targeting junior positions, with the output listed below.
+              <strong>Level:</strong> early-career, production-focused — judge
+              the shipped work below rather than a title.
             </li>
             <li>
-              <strong>Experience:</strong> 15 months of freelance, about fifteen
-              products shipped end to end. Before that, three years designing
-              high jewelry for Cartier, Van Cleef &amp; Arpels and JAR.
+              <strong>Experience:</strong> documented portfolio projects (demo +
+              repo + tests). Before code: high-jewelry 3D design (Cartier, Van
+              Cleef &amp; Arpels) via Atelier de l&apos;Objet.
             </li>
             <li>
               <strong>Location:</strong> Paris — on-site, hybrid or full remote.
@@ -141,12 +147,11 @@ export default function ForRecruitersPage() {
         </div>
         <div className="profile-copy single-col">
           <p>
-            Most junior applications ask you to bet on potential. This one asks
-            you to review shipped work: authentication, Stripe payments, maps,
-            real-time chat, PDF generation, automated tests, deployment —
+            Many early-career applications ask you to bet on potential. This one
+            asks you to review shipped work: authentication, Stripe payments,
+            maps, real-time chat, PDF generation, automated tests, deployment —
             already built, already live. The obsession with detail comes from
-            three years drawing for the most demanding houses in the world. It
-            transferred.
+            Place Vendôme jewelry. It transferred.
           </p>
         </div>
       </section>

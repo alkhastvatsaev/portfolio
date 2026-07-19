@@ -3,9 +3,16 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Recruter un développeur full stack JavaScript/TypeScript à Paris — Profil junior | Alkhast Vatsaev",
+    "Recruter un développeur Fullstack JavaScript/TypeScript à Paris | Alkhast Vatsaev",
   description:
-    "Profil junior full stack JavaScript/TypeScript à Paris : démos, repos, stack et contact — évaluez Alkhast Vatsaev en moins de trois minutes.",
+    "Profil Fullstack JavaScript/TypeScript à Paris : démos live, repos GitHub, stack et contact — évaluez Alkhast Vatsaev en moins de trois minutes.",
+  keywords: [
+    "développeur full stack",
+    "développeur fullstack Paris",
+    "React Next.js TypeScript",
+    "recruter développeur junior",
+    "Alkhast Vatsaev",
+  ],
   alternates: {
     canonical: "/fr/pour-recruteurs",
     languages: {
@@ -16,9 +23,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Recruter un développeur full stack JavaScript/TypeScript à Paris — Profil junior",
+      "Recruter un développeur Fullstack JavaScript/TypeScript à Paris — Alkhast Vatsaev",
     description:
-      "Profil junior full stack à Paris : preuves, démos, GitHub, CV et contact en moins de trois minutes.",
+      "Preuves en 3 minutes : démos, GitHub, CV et contact. Fullstack React / Next.js / TypeScript à Paris.",
     url: "/fr/pour-recruteurs",
     locale: "fr_FR",
     images: [
@@ -44,7 +51,7 @@ export default function PourRecruteursPage() {
           <p className="eyebrow">Pour les recruteurs</p>
           <p className="availability">
             <span aria-hidden="true" />
-            Profil junior · Paris · Remote OK
+            Paris · CDI / hybride / remote · Dispo immédiate
           </p>
         </div>
         <h1 id="recruiter-title">Pour les recruteurs</h1>
@@ -72,18 +79,17 @@ export default function PourRecruteursPage() {
         <div className="profile-copy single-col">
           <ul className="seo-city-list">
             <li>
-              <strong>Poste :</strong> développeur full stack
+              <strong>Poste :</strong> développeur Fullstack
               JavaScript/TypeScript — React, Next.js, Node.js, Firebase.
             </li>
             <li>
-              <strong>Niveau :</strong> début de carrière, et je l&apos;assume —
-              je vise des postes junior, avec le niveau de production listé
-              ci-dessous.
+              <strong>Niveau :</strong> début de carrière, orienté production —
+              évaluez le travail livré ci-dessous plutôt qu&apos;un titre.
             </li>
             <li>
-              <strong>Expérience :</strong> 15 mois de freelance, une quinzaine
-              de produits shippés de bout en bout. Avant : trois ans à dessiner
-              de la haute joaillerie pour Cartier, Van Cleef &amp; Arpels et JAR.
+              <strong>Expérience :</strong> projets portfolio documentés (démo +
+              repo + tests). Avant le code : conception 3D haute joaillerie
+              (Cartier, Van Cleef &amp; Arpels) via l&apos;Atelier de l&apos;Objet.
             </li>
             <li>
               <strong>Localisation :</strong> Paris — sur site, hybride ou full
@@ -144,13 +150,12 @@ export default function PourRecruteursPage() {
         </div>
         <div className="profile-copy single-col">
           <p>
-            La plupart des candidatures junior vous demandent de parier sur un
-            potentiel. Celle-ci vous demande d&apos;auditer du travail livré :
+            Beaucoup de candidatures début de carrière demandent de parier sur
+            un potentiel. Celle-ci demande d&apos;auditer du travail livré :
             authentification, paiements Stripe, cartographie, chat temps réel,
             génération de PDF, tests automatisés, déploiement — déjà construits,
-            déjà en ligne. L&apos;obsession du détail vient de trois ans passés
-            à dessiner pour les maisons les plus exigeantes du monde. Elle a
-            survécu au changement de matière.
+            déjà en ligne. L&apos;obsession du détail vient de la joaillerie place
+            Vendôme. Elle a survécu au changement de matière.
           </p>
         </div>
       </section>
