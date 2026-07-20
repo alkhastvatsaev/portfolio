@@ -127,6 +127,25 @@ export default function ForRecruitersPage() {
             demo and source. Automated tests (Vitest, Playwright) and docs on
             every flagship repository.
           </p>
+          <p>
+            <strong>42Lab proof — SaaS IA validator:</strong>{" "}
+            <a
+              href="https://validateur-saas-42lab.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              validateur-saas-42lab.vercel.app
+            </a>{" "}
+            (demo) ·{" "}
+            <a
+              href="https://github.com/alkhastvatsaev/validateur-saas-42lab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              source code
+            </a>{" "}
+            — voice pitch, 42-day fit diagnostic, Calendly CTA.
+          </p>
         </div>
         <div className="contact-links">
           <Link href="/projects">
