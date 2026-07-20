@@ -43,6 +43,10 @@ describe("SiteHeader", () => {
     expect(
       screen.getByRole("navigation", { name: "Navigation principale" }),
     ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "News" })).toHaveAttribute(
+      "href",
+      "/fr/news",
+    );
     expect(screen.getByRole("link", { name: "Projets" })).toHaveAttribute(
       "href",
       "/fr/projets",
@@ -64,6 +68,10 @@ describe("SiteHeader", () => {
     expect(
       screen.getByRole("navigation", { name: "Primary navigation" }),
     ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "News" })).toHaveAttribute(
+      "href",
+      "/news",
+    );
     expect(screen.getByRole("link", { name: "Work" })).toHaveAttribute(
       "href",
       "/projects",

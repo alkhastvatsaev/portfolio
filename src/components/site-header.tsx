@@ -10,6 +10,7 @@ export function SiteHeader() {
   const isFrench = isFrenchPath(pathname);
 
   const homeHref = isFrench ? "/fr" : "/";
+  const newsHref = isFrench ? "/fr/news" : "/news";
   const projectsHref = isFrench ? "/fr/projets" : "/projects";
   const articlesHref = isFrench ? "/fr/articles" : "/articles";
   const recruitersHref = isFrench ? "/fr/pour-recruteurs" : "/for-recruiters";
@@ -28,6 +29,7 @@ export function SiteHeader() {
       </Link>
       <div className="header-actions">
         <nav aria-label={isFrench ? "Navigation principale" : "Primary navigation"}>
+          <Link href={newsHref}>News</Link>
           <Link href={projectsHref}>{isFrench ? "Projets" : "Work"}</Link>
           <Link href={articlesHref}>{isFrench ? "Articles" : "Articles"}</Link>
           <Link href={recruitersHref}>

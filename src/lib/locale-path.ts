@@ -1,6 +1,7 @@
 const localePairs: ReadonlyArray<readonly [string, string]> = [
   ["/", "/fr"],
   ["/resume", "/fr/resume"],
+  ["/news", "/fr/news"],
   ["/projects", "/fr/projets"],
   ["/articles", "/fr/articles"],
   ["/for-recruiters", "/fr/pour-recruteurs"],
@@ -20,6 +21,12 @@ export function twinPath(pathname: string, toFrench: boolean): string {
     return toFrench
       ? `/fr/projets/${projectMatch[2]}`
       : `/projects/${projectMatch[2]}`;
+  }
+
+  const newsMatch = pathname.match(/^\/(news|fr\/news)\/([^/]+)$/);
+  if (newsMatch) {
+    const slug = newsMatch[2];
+    return toFrench ? `/fr/news/${slug}` : `/news/${slug}`;
   }
 
   const articleFr = pathname.match(/^\/fr\/articles\/([^/]+)$/);

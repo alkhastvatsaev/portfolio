@@ -20,6 +20,15 @@ describe("twinPath", () => {
     expect(twinPath("/articles/foo", true)).toBe("/fr/articles");
   });
 
+  it("keeps the same news slug across locales", () => {
+    expect(twinPath("/news/preuve-42lab-validateur-saas-ia", true)).toBe(
+      "/fr/news/preuve-42lab-validateur-saas-ia",
+    );
+    expect(twinPath("/fr/news/preuve-42lab-validateur-saas-ia", false)).toBe(
+      "/news/preuve-42lab-validateur-saas-ia",
+    );
+  });
+
   it("handles the French SEO landing", () => {
     expect(twinPath("/fr/developpeur-full-stack", false)).toBe("/");
     expect(twinPath("/fr/developpeur-full-stack", true)).toBe(

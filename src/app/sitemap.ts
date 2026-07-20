@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { articlesEn, articlesFr } from "@/data/articles";
+import { newsEn, newsFr } from "@/data/news";
 import { franceCities, franceCityPath } from "@/data/france-cities";
 import { projects } from "@/data/projects";
 
@@ -66,6 +67,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       fr: `${baseUrl}/fr/projets`,
       "x-default": `${baseUrl}/projects`,
     }),
+    entry("/news", 0.92, {
+      en: `${baseUrl}/news`,
+      fr: `${baseUrl}/fr/news`,
+      "x-default": `${baseUrl}/news`,
+    }),
+    entry("/fr/news", 0.92, {
+      en: `${baseUrl}/news`,
+      fr: `${baseUrl}/fr/news`,
+      "x-default": `${baseUrl}/fr/news`,
+    }),
     entry("/articles", 0.85, {
       en: `${baseUrl}/articles`,
       fr: `${baseUrl}/fr/articles`,
@@ -111,6 +122,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   ]);
 
+  const newsEntries = [
+    ...newsFr.map((item) =>
+      entry(`/fr/news/${item.slug}`, 0.9, {
+        fr: `${baseUrl}/fr/news/${item.slug}`,
+        en: `${baseUrl}/news/${item.slug}`,
+        "x-default": `${baseUrl}/fr/news/${item.slug}`,
+      }),
+    ),
+    ...newsEn.map((item) =>
+      entry(`/news/${item.slug}`, 0.9, {
+        en: `${baseUrl}/news/${item.slug}`,
+        fr: `${baseUrl}/fr/news/${item.slug}`,
+        "x-default": `${baseUrl}/news/${item.slug}`,
+      }),
+    ),
+  ];
+
   const articleEntries = [
     ...articlesFr.map((article) =>
       entry(`/fr/articles/${article.slug}`, 0.82),
@@ -129,6 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticEntries,
     ...projectEntries,
+    ...newsEntries,
     ...articleEntries,
     ...cityEntries,
   ];
