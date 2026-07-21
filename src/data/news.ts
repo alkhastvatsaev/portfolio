@@ -16,6 +16,41 @@ export type NewsItem = {
 
 export const newsFr: readonly NewsItem[] = [
   {
+    slug: "moon-screen-recorder-v1",
+    title: "Moon — screen recorder macOS shippé en une journée",
+    description:
+      "Outil perso type Loom, local-first : Electron + React + TypeScript, capture écran/fenêtre, bulle webcam, micro, .webm.",
+    date: "2026-07-21",
+    locale: "fr",
+    tags: ["Moon", "Electron", "macOS"],
+    links: [
+      {
+        label: "Article détaillé",
+        href: "/fr/articles/moon-screen-recorder-macos-electron",
+      },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Problème : je voulais un enregistreur d’écran macOS sans cloud ni UI imposée — fichiers locaux, contrôle total.",
+          "Ce que j’ai shippé : Moon v1, app barre de menu. Capture plein écran ou fenêtre, bulle webcam live, micro, countdown 0/3/5s, sauvegarde .webm, contrôles type Dynamic Island (timer, pause, stop).",
+        ],
+      },
+      {
+        heading: "Stack",
+        paragraphs: [
+          "Electron · React · TypeScript · electron-vite · desktopCapturer · MediaRecorder · DMG (electron-builder).",
+        ],
+      },
+      {
+        heading: "Suite",
+        paragraphs: [
+          "v1 utilisable en local. Pas de SaaS, pas d’App Store. Suite possible : ⌘⇧R, MP4, historique. Détail dans l’article.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "preuve-42lab-validateur-saas-ia",
     title: "Preuve #1 — validateur fit 42Lab (48h)",
     description:
@@ -72,6 +107,41 @@ export const newsFr: readonly NewsItem[] = [
 ];
 
 export const newsEn: readonly NewsItem[] = [
+  {
+    slug: "moon-screen-recorder-v1",
+    title: "Moon — macOS screen recorder shipped in a day",
+    description:
+      "Personal Loom-like tool, local-first: Electron + React + TypeScript, screen/window capture, webcam bubble, mic, .webm.",
+    date: "2026-07-21",
+    locale: "en",
+    tags: ["Moon", "Electron", "macOS"],
+    links: [
+      {
+        label: "Full article",
+        href: "/articles/moon-macos-screen-recorder-electron",
+      },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Problem: I wanted a macOS screen recorder without cloud lock-in or someone else’s UI — local files, full control.",
+          "What I shipped: Moon v1, menu-bar app. Full screen or window capture, live webcam bubble, mic, countdown 0/3/5s, .webm save, Dynamic Island-style controls (timer, pause, stop).",
+        ],
+      },
+      {
+        heading: "Stack",
+        paragraphs: [
+          "Electron · React · TypeScript · electron-vite · desktopCapturer · MediaRecorder · DMG (electron-builder).",
+        ],
+      },
+      {
+        heading: "Next",
+        paragraphs: [
+          "v1 usable locally. Not a SaaS, not on the App Store. Possible next: ⌘⇧R, MP4, history. Details in the article.",
+        ],
+      },
+    ],
+  },
   {
     slug: "preuve-42lab-validateur-saas-ia",
     title: "Proof #1 — 42Lab fit validator (48h)",
