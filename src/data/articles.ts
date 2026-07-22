@@ -10,6 +10,61 @@ export type Article = {
 
 export const articlesFr: readonly Article[] = [
   {
+    slug: "moon-mises-a-jour-open-source",
+    title: "Moon v2 : open source, bulle webcam déplaçable et contrôles premium",
+    description:
+      "Mises à jour de Moon, mon screen recorder macOS open source : flou MediaPipe, Dynamic Island avec validation/suppression, bulle déplaçable, export MP4 auto — code sur GitHub.",
+    date: "2026-07-22",
+    locale: "fr",
+    tags: [
+      "Moon",
+      "open source",
+      "Electron",
+      "React",
+      "macOS",
+      "screen recorder",
+      "TypeScript",
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Après le v1 shippé en une journée, j’ai passé Moon en mode « outil que j’utilise vraiment » : polish UI, flux plus sûr, export MP4, et publication open source sur GitHub.",
+          "Moon reste un enregistreur d’écran macOS local-first — pas de cloud, pas de SaaS. Tu installes l’app, tu enregistres, tu récupères un fichier dans Téléchargements. C’est mon alternative perso à Loom, avec une bulle webcam que je contrôle entièrement.",
+        ],
+      },
+      {
+        heading: "Ce qui a changé depuis le v1",
+        paragraphs: [
+          "Dynamic Island repensée : pause, bouton vert ✓ pour valider et sauvegarder, bouton rouge ✕ pour supprimer (avec confirmation), et un toggle flou d’arrière-plan sur la webcam.",
+          "Bulle webcam visible dès le compte à rebours (3, 2, 1), pas seulement pendant l’enregistrement — tu te positionnes avant que ça tourne. La bulle est déplaçable à la souris pendant la session.",
+          "Segmentation MediaPipe (selfie segmenter) : personne nette, fond flou réglable, sans contour blanc autour de la tête. Animations discrètes sur le countdown, l’îlot et la bulle.",
+          "Export MP4 automatique dans Téléchargements (ffmpeg-static), icône Moon dans la barre de menu, et le clic sur l’icône ouvre le menu sans lancer l’enregistrement directement — il faut choisir « Enregistrer ».",
+        ],
+      },
+      {
+        heading: "Stack technique",
+        paragraphs: [
+          "Electron 34 + React 19 + TypeScript, electron-vite, MediaPipe tasks-vision pour le flou, MediaRecorder + canvas pour la capture écran, ffmpeg-static pour la conversion WebM → MP4.",
+          "Architecture multi-fenêtres : process main (tray, overlays, IPC, protocole moon:// pour charger MediaPipe en prod), preload bridge, renderer React pour countdown, Dynamic Island, bulle webcam et moteur d’enregistrement caché.",
+          "Packaging DMG arm64 (~140 Mo). Permissions macOS caméra / micro / enregistrement d’écran obligatoires.",
+        ],
+      },
+      {
+        heading: "Open source",
+        paragraphs: [
+          "Le code est public sur GitHub : https://github.com/alkhastvatsaev/moon — MIT, contributions bienvenues. Clone, npm install, npm run dev pour lancer en local, npm run package:app pour builder le .app.",
+          "Ce n’est toujours pas un produit App Store ni un service hébergé : c’est un outil perso que je partage parce que le problème (enregistrer son écran + sa tête, localement, sans abonnement) est universel.",
+        ],
+      },
+      {
+        heading: "Prochaines étapes",
+        paragraphs: [
+          "Raccourci clavier global, historique des captures, réglages de qualité, peut-être un mode fenêtre. Si tu testes Moon ou tu recrutes un Full Stack junior qui shippe aussi du desktop (Electron, permissions native, packaging), le portfolio et le contact sont ici : https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
+        ],
+      },
+    ],
+  },
+  {
     slug: "moon-screen-recorder-macos-electron",
     title: "Moon : un screen recorder macOS shippé en une journée",
     description:
@@ -195,6 +250,61 @@ export const articlesFr: readonly Article[] = [
 ];
 
 export const articlesEn: readonly Article[] = [
+  {
+    slug: "moon-updates-open-source",
+    title: "Moon v2: open source, draggable webcam bubble and premium controls",
+    description:
+      "Updates to Moon, my open-source macOS screen recorder: MediaPipe blur, Dynamic Island with save/discard, draggable bubble, auto MP4 export — code on GitHub.",
+    date: "2026-07-22",
+    locale: "en",
+    tags: [
+      "Moon",
+      "open source",
+      "Electron",
+      "React",
+      "macOS",
+      "screen recorder",
+      "TypeScript",
+    ],
+    body: [
+      {
+        paragraphs: [
+          "After shipping v1 in a day, I pushed Moon toward a tool I actually use daily: UI polish, safer flows, MP4 export, and an open-source release on GitHub.",
+          "Moon stays a local-first macOS screen recorder — no cloud, no SaaS. Install the app, record, get a file in Downloads. It’s my personal Loom alternative with a webcam bubble I fully control.",
+        ],
+      },
+      {
+        heading: "What changed since v1",
+        paragraphs: [
+          "Redesigned Dynamic Island: pause, green ✓ to save, red ✕ to discard (with confirmation), and a background-blur toggle for the webcam.",
+          "Webcam bubble visible during the 3-second countdown — not only once recording starts — so you can position yourself first. The bubble is draggable during the session.",
+          "MediaPipe selfie segmentation: sharp subject, adjustable background blur, no white halo around your head. Subtle motion on countdown, island and bubble.",
+          "Auto MP4 export to Downloads (ffmpeg-static), Moon logo in the menu bar, and clicking the tray icon opens the menu instead of instantly recording — you must choose “Record”.",
+        ],
+      },
+      {
+        heading: "Technical stack",
+        paragraphs: [
+          "Electron 34 + React 19 + TypeScript, electron-vite, MediaPipe tasks-vision for blur, MediaRecorder + canvas for screen capture, ffmpeg-static for WebM → MP4.",
+          "Multi-window architecture: main process (tray, overlays, IPC, moon:// protocol for MediaPipe in production), preload bridge, React renderer for countdown, Dynamic Island, webcam bubble and hidden recording engine.",
+          "arm64 DMG packaging (~140 MB). macOS camera / mic / screen-recording permissions required.",
+        ],
+      },
+      {
+        heading: "Open source",
+        paragraphs: [
+          "Code is public on GitHub: https://github.com/alkhastvatsaev/moon — MIT license, contributions welcome. Clone, npm install, npm run dev to run locally, npm run package:app to build the .app.",
+          "Still not an App Store product or hosted service: a personal tool I’m sharing because the problem (record screen + face locally, no subscription) is universal.",
+        ],
+      },
+      {
+        heading: "Next steps",
+        paragraphs: [
+          "Global shortcut, capture history, quality settings, maybe window-only mode. If you try Moon or you’re hiring a junior fullstack who also ships desktop (Electron, native permissions, packaging), portfolio and contact: https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
+        ],
+      },
+    ],
+  },
   {
     slug: "moon-macos-screen-recorder-electron",
     title: "Moon: a macOS screen recorder shipped in one day",

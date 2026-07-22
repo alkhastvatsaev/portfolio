@@ -16,6 +16,39 @@ export type NewsItem = {
 
 export const newsFr: readonly NewsItem[] = [
   {
+    slug: "moon-v2-open-source",
+    title: "Moon v2 — open source avec bulle webcam et contrôles Dynamic Island",
+    description:
+      "Mon screen recorder macOS perso passe en open source : flou MediaPipe, bulle déplaçable, export MP4, contrôles premium. Code sur GitHub.",
+    date: "2026-07-22",
+    locale: "fr",
+    tags: ["Moon", "open source", "Electron", "macOS"],
+    links: [
+      {
+        label: "Article détaillé",
+        href: "/fr/articles/moon-mises-a-jour-open-source",
+      },
+      {
+        label: "Code GitHub",
+        href: "https://github.com/alkhastvatsaev/moon",
+      },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Moon, mon alternative perso à Loom pour macOS, vient de passer en v2 open source.",
+          "Nouveautés : bulle webcam avec flou d’arrière-plan (MediaPipe), Dynamic Island avec pause / valider / supprimer / toggle flou, bulle visible dès le countdown et déplaçable, export MP4 auto, logo Moon dans la barre de menu.",
+        ],
+      },
+      {
+        heading: "Liens",
+        paragraphs: [
+          "GitHub : https://github.com/alkhastvatsaev/moon — article complet : /fr/articles/moon-mises-a-jour-open-source",
+        ],
+      },
+    ],
+  },
+  {
     slug: "moon-screen-recorder-v1",
     title: "Moon — screen recorder macOS shippé en une journée",
     description:
@@ -107,6 +140,39 @@ export const newsFr: readonly NewsItem[] = [
 ];
 
 export const newsEn: readonly NewsItem[] = [
+  {
+    slug: "moon-v2-open-source",
+    title: "Moon v2 — open source with webcam bubble and Dynamic Island controls",
+    description:
+      "My personal macOS screen recorder goes open source: MediaPipe blur, draggable bubble, MP4 export, premium controls. Code on GitHub.",
+    date: "2026-07-22",
+    locale: "en",
+    tags: ["Moon", "open source", "Electron", "macOS"],
+    links: [
+      {
+        label: "Full article",
+        href: "/articles/moon-updates-open-source",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/alkhastvatsaev/moon",
+      },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Moon, my personal Loom alternative for macOS, just hit v2 as open source.",
+          "New: webcam bubble with background blur (MediaPipe), Dynamic Island with pause / save / discard / blur toggle, bubble visible from countdown and draggable, auto MP4 export, Moon logo in the menu bar.",
+        ],
+      },
+      {
+        heading: "Links",
+        paragraphs: [
+          "GitHub: https://github.com/alkhastvatsaev/moon — full article: /articles/moon-updates-open-source",
+        ],
+      },
+    ],
+  },
   {
     slug: "moon-screen-recorder-v1",
     title: "Moon — macOS screen recorder shipped in a day",
