@@ -16,6 +16,48 @@ export type NewsItem = {
 
 export const newsFr: readonly NewsItem[] = [
   {
+    slug: "moon-teleprompteur-mots-cles",
+    title: "Moon — téléprompteur à mots-clés avec détection vocale locale",
+    description:
+      "Overlay de 8 mots-clés pendant l’enregistrement : tu les dis, ils passent au vert. Vosk + Whisper tiny, 100 % local, sans cloud.",
+    date: "2026-07-23",
+    locale: "fr",
+    tags: ["Moon", "Electron", "ASR", "macOS"],
+    links: [
+      {
+        label: "Code GitHub",
+        href: "https://github.com/alkhastvatsaev/moon",
+      },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "Pendant une démo écran, je voulais cocher des points clés sans lire un script complet — juste les mots qui comptent.",
+          "Ship : bouton Aa sur la Dynamic Island → jusqu’à 8 mots-clés → overlay gauche/droite pendant l’enregistrement. Tu les prononces, ils passent au vert.",
+        ],
+      },
+      {
+        heading: "Comment ça marche",
+        paragraphs: [
+          "Un contexte est généré localement à partir des mots-clés. Vosk spotte en temps réel ; Whisper tiny (local) confirme avant le vert — double validation pour éviter les faux positifs.",
+          "Pas d’API OpenAI payante, pas de cloud : l’audio reste sur la machine.",
+        ],
+      },
+      {
+        heading: "Stack",
+        paragraphs: [
+          "Electron · React · TypeScript · Vosk (FR/EN) · Whisper tiny via transformers.js · matching strict anti-verts aléatoires.",
+        ],
+      },
+      {
+        heading: "Liens",
+        paragraphs: [
+          "GitHub : https://github.com/alkhastvatsaev/moon",
+        ],
+      },
+    ],
+  },
+  {
     slug: "moon-v2-open-source",
     title: "Moon v2 — open source avec bulle webcam et contrôles Dynamic Island",
     description:
@@ -140,6 +182,48 @@ export const newsFr: readonly NewsItem[] = [
 ];
 
 export const newsEn: readonly NewsItem[] = [
+  {
+    slug: "moon-teleprompteur-mots-cles",
+    title: "Moon — keyword teleprompter with on-device speech spotting",
+    description:
+      "Up to 8 keywords overlay while recording: say them, they turn green. Vosk + Whisper tiny, fully local, no cloud.",
+    date: "2026-07-23",
+    locale: "en",
+    tags: ["Moon", "Electron", "ASR", "macOS"],
+    links: [
+      {
+        label: "GitHub repo",
+        href: "https://github.com/alkhastvatsaev/moon",
+      },
+    ],
+    body: [
+      {
+        paragraphs: [
+          "During a screen demo I wanted to check off key points without reading a full script — just the words that matter.",
+          "Shipped: Aa on the Dynamic Island → up to 8 keywords → left/right overlay while recording. Say them, they turn green.",
+        ],
+      },
+      {
+        heading: "How it works",
+        paragraphs: [
+          "A local context string is built from the keywords. Vosk spots in real time; on-device Whisper tiny confirms before green — dual gate to kill random false positives.",
+          "No paid OpenAI API, no cloud: audio stays on the machine.",
+        ],
+      },
+      {
+        heading: "Stack",
+        paragraphs: [
+          "Electron · React · TypeScript · Vosk (FR/EN) · Whisper tiny via transformers.js · strict matching against random greens.",
+        ],
+      },
+      {
+        heading: "Links",
+        paragraphs: [
+          "GitHub: https://github.com/alkhastvatsaev/moon",
+        ],
+      },
+    ],
+  },
   {
     slug: "moon-v2-open-source",
     title: "Moon v2 — open source with webcam bubble and Dynamic Island controls",
