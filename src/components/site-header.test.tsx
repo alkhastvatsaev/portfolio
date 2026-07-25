@@ -59,6 +59,10 @@ describe("SiteHeader", () => {
       "aria-current",
       "page",
     );
+    expect(screen.getByRole("link", { name: "Français" })).toHaveAttribute(
+      "href",
+      "/fr",
+    );
   });
 
   it("renders English navigation on / routes", () => {

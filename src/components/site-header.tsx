@@ -27,38 +27,48 @@ export function SiteHeader() {
       >
         ALKHAST VATSAEV
       </Link>
-      <div className="header-actions">
-        <nav aria-label={isFrench ? "Navigation principale" : "Primary navigation"}>
-          <Link href={newsHref}>News</Link>
-          <Link href={projectsHref}>{isFrench ? "Projets" : "Work"}</Link>
-          <Link href={articlesHref}>{isFrench ? "Articles" : "Articles"}</Link>
-          <Link href={recruitersHref}>
-            {isFrench ? "Recruteurs" : "Recruiters"}
-          </Link>
-          <Link href={resumeHref}>{isFrench ? "CV" : "Resume"}</Link>
-          <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
-        </nav>
-        <div
-          className="language-switch"
-          aria-label={isFrench ? "Choisir la langue" : "Choose language"}
+      <nav aria-label={isFrench ? "Navigation principale" : "Primary navigation"}>
+        <Link href={newsHref}>News</Link>
+        <Link href={projectsHref}>{isFrench ? "Projets" : "Work"}</Link>
+        <Link href={articlesHref}>{isFrench ? "Articles" : "Articles"}</Link>
+        <Link href={recruitersHref}>
+          {isFrench ? "Recruteurs" : "Recruiters"}
+        </Link>
+        <Link href={resumeHref}>{isFrench ? "CV" : "Resume"}</Link>
+        <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
+      </nav>
+      <div
+        className="language-switch"
+        aria-label={isFrench ? "Choisir la langue" : "Choose language"}
+      >
+        <Link
+          className={isFrench ? "active" : undefined}
+          href={frenchHref}
+          hrefLang="fr"
+          lang="fr"
+          aria-label="Français"
+          aria-current={isFrench ? "page" : undefined}
+          title="Français"
         >
-          <Link
-            className={isFrench ? "active" : undefined}
-            href={frenchHref}
-            hrefLang="fr"
-            aria-current={isFrench ? "page" : undefined}
-          >
-            Français
-          </Link>
-          <Link
-            className={!isFrench ? "active" : undefined}
-            href={englishHref}
-            hrefLang="en"
-            aria-current={!isFrench ? "page" : undefined}
-          >
-            English
-          </Link>
-        </div>
+          <span className="lang-full">Français</span>
+          <span className="lang-short" aria-hidden="true">
+            FR
+          </span>
+        </Link>
+        <Link
+          className={!isFrench ? "active" : undefined}
+          href={englishHref}
+          hrefLang="en"
+          lang="en"
+          aria-label="English"
+          aria-current={!isFrench ? "page" : undefined}
+          title="English"
+        >
+          <span className="lang-full">English</span>
+          <span className="lang-short" aria-hidden="true">
+            EN
+          </span>
+        </Link>
       </div>
     </header>
   );
