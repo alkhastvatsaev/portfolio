@@ -70,27 +70,30 @@ main > section {
   align-items: center;
   border-bottom: 1px solid var(--ink);
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
   min-height: 82px;
+  padding-block: 0.35rem;
 }
 
 .wordmark {
+  flex: 0 1 auto;
   font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.045em;
+  margin-right: auto;
+  min-width: 0;
   text-decoration: none;
-}
-
-.header-actions {
-  align-items: center;
-  display: flex;
-  gap: clamp(1rem, 2.5vw, 2rem);
 }
 
 .site-header nav {
   align-items: center;
   display: flex;
-  gap: clamp(1rem, 3vw, 2.5rem);
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  gap: clamp(0.85rem, 2.5vw, 2.5rem);
+  justify-content: flex-end;
+  min-width: 0;
 }
 
 .site-header nav a,
@@ -170,13 +173,13 @@ main > section {
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 8.6vw, 8.1rem);
+  font-size: clamp(2.15rem, 7.2vw, 8.1rem);
   font-weight: 700;
-  letter-spacing: -0.075em;
-  line-height: 1.02;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
   margin: clamp(2.5rem, 9vw, 8rem) 0 clamp(2.5rem, 8vw, 7rem);
-  max-width: 14ch;
-  overflow-wrap: break-word;
+  max-width: min(100%, 14ch);
+  overflow-wrap: anywhere;
 }
 
 .hero-footer {
@@ -827,36 +830,21 @@ main > section {
   }
 
   .site-header {
-    align-items: center;
-    display: grid;
-    gap: 0.85rem 1rem;
-    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.75rem 0.85rem;
     min-height: auto;
-    padding: 0.95rem 0 1.1rem;
+    padding: 0.85rem 0 1rem;
   }
 
   .wordmark {
-    font-size: 1.05rem;
-    grid-column: 1;
-    grid-row: 1;
-    min-width: 0;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    margin-right: 0;
+    max-width: calc(100% - 5.5rem);
   }
 
-  .header-actions {
-    display: contents;
-  }
-
-  .site-header nav {
-    flex-wrap: wrap;
-    gap: 0.65rem 1.1rem;
-    grid-column: 1 / -1;
-    grid-row: 2;
-    min-width: 0;
-  }
-
-  .site-header nav a:nth-child(2),
-  .site-header nav a:nth-child(3) {
-    display: none;
+  .language-switch {
+    flex: 0 0 auto;
+    margin-left: auto;
   }
 
   .lang-full {
@@ -867,15 +855,23 @@ main > section {
     display: inline;
   }
 
-  .language-switch {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
   .language-switch a {
     min-width: 2.4rem;
     padding: 0.5rem 0.55rem;
     text-align: center;
+  }
+
+  .site-header nav {
+    flex: 1 1 100%;
+    gap: 0.75rem 1.15rem;
+    justify-content: flex-start;
+    order: 3;
+    width: 100%;
+  }
+
+  .site-header nav a:nth-child(2),
+  .site-header nav a:nth-child(3) {
+    display: none;
   }
 
   .eyebrow-row,
@@ -908,10 +904,10 @@ main > section {
   }
 
   .hero h1 {
-    font-size: clamp(2.1rem, 9.5vw, 3.2rem);
-    letter-spacing: -0.05em;
-    line-height: 1.12;
-    margin-block: 2.75rem 2.5rem;
+    font-size: clamp(1.85rem, 8.2vw, 2.75rem);
+    letter-spacing: -0.04em;
+    line-height: 1.18;
+    margin-block: 2rem 1.75rem;
     max-width: none;
   }
 
@@ -1069,8 +1065,9 @@ main > section {
   }
 
   .wordmark {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     letter-spacing: -0.03em;
+    max-width: calc(100% - 5rem);
     white-space: normal;
   }
 
@@ -1080,9 +1077,9 @@ main > section {
   }
 
   .hero h1 {
-    font-size: clamp(1.95rem, 9vw, 2.55rem);
-    line-height: 1.14;
-    margin-block: 2.25rem 2rem;
+    font-size: clamp(1.7rem, 7.8vw, 2.25rem);
+    line-height: 1.2;
+    margin-block: 1.75rem 1.5rem;
   }
 
   .hero-actions,
