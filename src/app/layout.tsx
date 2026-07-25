@@ -102,7 +102,7 @@ export default function RootLayout({
         {children}
         <footer className="site-footer">
           <p>Alkhast Vatsaev · Paris, France</p>
-          <div>
+          <nav className="footer-links" aria-label="Footer">
             <a href="/fr/pour-recruteurs">Recruteurs</a>
             <a href="/rss.xml">RSS</a>
             <a
@@ -120,7 +120,7 @@ export default function RootLayout({
               LinkedIn
             </a>
             <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
-          </div>
+          </nav>
         </footer>
       </body>
     </html>

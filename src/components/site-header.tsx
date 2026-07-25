@@ -46,17 +46,29 @@ export function SiteHeader() {
             className={isFrench ? "active" : undefined}
             href={frenchHref}
             hrefLang="fr"
+            lang="fr"
+            aria-label="Français"
             aria-current={isFrench ? "page" : undefined}
+            title="Français"
           >
-            Français
+            <span className="lang-full">Français</span>
+            <span className="lang-short" aria-hidden="true">
+              FR
+            </span>
           </Link>
           <Link
             className={!isFrench ? "active" : undefined}
             href={englishHref}
             hrefLang="en"
+            lang="en"
+            aria-label="English"
             aria-current={!isFrench ? "page" : undefined}
+            title="English"
           >
-            English
+            <span className="lang-full">English</span>
+            <span className="lang-short" aria-hidden="true">
+              EN
+            </span>
           </Link>
         </div>
       </div>
