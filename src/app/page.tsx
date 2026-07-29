@@ -75,7 +75,7 @@ export default function Home() {
             Each flagship repository includes English documentation, a live
             demo and automated quality checks. I am available for fullstack,
             JavaScript, TypeScript, React or Next.js roles in Paris, hybrid or
-            remote — including early-career positions.
+            remote.
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ export default function Home() {
       <section className="work-section" id="work" aria-labelledby="work-title">
         <div className="section-heading">
           <p className="section-index">01 / Selected work</p>
-          <h2 id="work-title">Five products, each solving a concrete problem.</h2>
+          <h2 id="work-title">Six products, each solving a concrete problem.</h2>
         </div>
         <div className="project-list">
           {projects.map((project, index) => (
@@ -111,9 +111,11 @@ export default function Home() {
                 <a href={project.live} target="_blank" rel="noreferrer">
                   Live project <span aria-hidden="true">↗</span>
                 </a>
-                <a href={project.source} target="_blank" rel="noreferrer">
-                  Source code <span aria-hidden="true">↗</span>
-                </a>
+                {project.source ? (
+                  <a href={project.source} target="_blank" rel="noreferrer">
+                    Source code <span aria-hidden="true">↗</span>
+                  </a>
+                ) : null}
               </div>
             </article>
           ))}

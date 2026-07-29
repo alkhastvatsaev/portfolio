@@ -6,7 +6,7 @@ import { franceCities, franceCityPath } from "@/data/france-cities";
 import { projects } from "@/data/projects";
 
 const baseUrl = "https://alkhastvatsaev.dev";
-const lastModified = "2026-07-19";
+const siteLastModified = "2026-07-29";
 
 export const dynamic = "force-static";
 
@@ -14,6 +14,7 @@ function entry(
   path: string,
   priority: number,
   languages?: Record<string, string>,
+  lastModified: string = siteLastModified,
 ): MetadataRoute.Sitemap[number] {
   return {
     url: `${baseUrl}${path}`,
@@ -109,41 +110,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   ];
 
-  const projectEntries = projects.flatMap((project) => [
-    entry(`/projects/${project.slug}`, 0.86, {
-      en: `${baseUrl}/projects/${project.slug}`,
-      fr: `${baseUrl}/fr/projets/${project.slug}`,
-      "x-default": `${baseUrl}/projects/${project.slug}`,
-    }),
-    entry(`/fr/projets/${project.slug}`, 0.86, {
-      en: `${baseUrl}/projects/${project.slug}`,
-      fr: `${baseUrl}/fr/projets/${project.slug}`,
-      "x-default": `${baseUrl}/projects/${project.slug}`,
-    }),
-  ]);
+  const projectEntries = projects.flatMap((project) => {
+    const lastMod =
+      project.slug === "nota-crm" ? siteLastModified : "2026-07-19";
+    return [
+      entry(
+        `/projects/${project.slug}`,
+        project.slug === "nota-crm" ? 0.95 : 0.86,
+        {
+          en: `${baseUrl}/projects/${project.slug}`,
+          fr: `${baseUrl}/fr/projets/${project.slug}`,
+          "x-default": `${baseUrl}/projects/${project.slug}`,
+        },
+        lastMod,
+      ),
+      entry(
+        `/fr/projets/${project.slug}`,
+        project.slug === "nota-crm" ? 0.95 : 0.86,
+        {
+          en: `${baseUrl}/projects/${project.slug}`,
+          fr: `${baseUrl}/fr/projets/${project.slug}`,
+          "x-default": `${baseUrl}/projects/${project.slug}`,
+        },
+        lastMod,
+      ),
+    ];
+  });
 
   const newsEntries = [
     ...newsFr.map((item) =>
-      entry(`/fr/news/${item.slug}`, 0.9, {
-        fr: `${baseUrl}/fr/news/${item.slug}`,
-        en: `${baseUrl}/news/${item.slug}`,
-        "x-default": `${baseUrl}/fr/news/${item.slug}`,
-      }),
+      entry(
+        `/fr/news/${item.slug}`,
+        0.9,
+        {
+          fr: `${baseUrl}/fr/news/${item.slug}`,
+          en: `${baseUrl}/news/${item.slug}`,
+          "x-default": `${baseUrl}/fr/news/${item.slug}`,
+        },
+        item.date,
+      ),
     ),
     ...newsEn.map((item) =>
-      entry(`/news/${item.slug}`, 0.9, {
-        en: `${baseUrl}/news/${item.slug}`,
-        fr: `${baseUrl}/fr/news/${item.slug}`,
-        "x-default": `${baseUrl}/news/${item.slug}`,
-      }),
+      entry(
+        `/news/${item.slug}`,
+        0.9,
+        {
+          en: `${baseUrl}/news/${item.slug}`,
+          fr: `${baseUrl}/fr/news/${item.slug}`,
+          "x-default": `${baseUrl}/news/${item.slug}`,
+        },
+        item.date,
+      ),
     ),
   ];
 
   const articleEntries = [
     ...articlesFr.map((article) =>
-      entry(`/fr/articles/${article.slug}`, 0.82),
+      entry(`/fr/articles/${article.slug}`, 0.82, undefined, article.date),
     ),
-    ...articlesEn.map((article) => entry(`/articles/${article.slug}`, 0.8)),
+    ...articlesEn.map((article) =>
+      entry(`/articles/${article.slug}`, 0.8, undefined, article.date),
+    ),
   ];
 
   const cityEntries = franceCities.map((city) =>

@@ -4,7 +4,7 @@ const htmlRoutes = [
   "/fr",
   "/fr/pour-recruteurs",
   "/fr/projets",
-  "/fr/articles/comment-verifier-le-travail-dun-developpeur-junior",
+  "/fr/articles/checklist-recruteur-portfolio-developpeur",
   "/fr/developpeur-full-stack",
 ] as const;
 

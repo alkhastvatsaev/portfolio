@@ -3,18 +3,26 @@ import { describe, expect, it } from "vitest";
 import { projects, projectsFr, provenStack, getProjectBySlug } from "./projects";
 
 describe("portfolio data", () => {
-  it("contains five verifiable case studies", () => {
-    expect(projects).toHaveLength(5);
+  it("contains six verifiable case studies", () => {
+    expect(projects).toHaveLength(6);
 
     for (const project of projects) {
       expect(project.slug).toMatch(/^[a-z0-9-]+$/);
-      expect(project.source).toMatch(
-        /^https:\/\/github\.com\/alkhastvatsaev\//,
-      );
-      expect(project.live).toMatch(/^https:\/\/.+\.vercel\.app$/);
+      expect(project.live).toMatch(/^https:\/\//);
       expect(project.stack.length).toBeGreaterThanOrEqual(4);
       expect(project.highlights.length).toBeGreaterThanOrEqual(3);
+      if (project.source) {
+        expect(project.source).toMatch(
+          /^https:\/\/github\.com\/alkhastvatsaev\//,
+        );
+      }
     }
+  });
+
+  it("lists Nota CRM first with heynota.app as live URL", () => {
+    expect(projects[0]?.slug).toBe("nota-crm");
+    expect(projects[0]?.live).toBe("https://heynota.app");
+    expect(projects[0]?.source).toBeUndefined();
   });
 
   it("lists only distinct stack entries", () => {
@@ -28,8 +36,9 @@ describe("portfolio data", () => {
     ).toEqual(projects.map(({ slug, source, live }) => ({ slug, source, live })));
   });
 
-  it("orders flagship projects as CRM Slot → Serrurerie → Aurelia → LOGIS → Hopla", () => {
+  it("orders projects as Nota → CRM Slot → Serrurerie → Aurelia → LOGIS → Hopla", () => {
     expect(projects.map((p) => p.slug)).toEqual([
+      "nota-crm",
       "crmslot",
       "serrurerie-pro",
       "atelier-aurelia",
@@ -40,6 +49,7 @@ describe("portfolio data", () => {
 
   it("resolves projects by slug", () => {
     expect(getProjectBySlug("hopla", "fr")?.name).toBe("Hopla");
+    expect(getProjectBySlug("nota-crm", "en")?.name).toBe("Nota CRM");
     expect(getProjectBySlug("missing", "en")).toBeUndefined();
   });
 });

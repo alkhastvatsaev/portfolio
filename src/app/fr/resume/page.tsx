@@ -78,8 +78,12 @@ export default function FrenchResumePage() {
               <article key={project.name}>
                 <div className="resume-project-heading">
                   <h3>{project.name}</h3>
-                  <a href={project.source}>Source</a>
-                  <span aria-hidden="true">·</span>
+                  {project.source ? (
+                    <>
+                      <a href={project.source}>Source</a>
+                      <span aria-hidden="true">·</span>
+                    </>
+                  ) : null}
                   <a href={project.live}>Démo</a>
                 </div>
                 <p>{project.summary}</p>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Fullstack JavaScript/TypeScript profile in Paris: live demos, GitHub repos, stack and contact — evaluate Alkhast Vatsaev in under three minutes.",
   keywords: [
     "fullstack developer Paris",
-    "hire junior fullstack",
+    "hire fullstack developer",
     "React Next.js TypeScript",
     "Alkhast Vatsaev",
   ],
@@ -81,8 +81,8 @@ export default function ForRecruitersPage() {
               Next.js, Node.js, Firebase.
             </li>
             <li>
-              <strong>Level:</strong> early-career, production-focused — judge
-              the shipped work below rather than a title.
+              <strong>Focus:</strong> production-oriented fullstack — judge the
+              shipped work below rather than a title.
             </li>
             <li>
               <strong>Experience:</strong> documented portfolio projects (demo +
@@ -122,10 +122,15 @@ export default function ForRecruitersPage() {
         </div>
         <div className="profile-copy single-col">
           <p>
-            Five documented case studies — flagship{" "}
+            Six documented case studies — flagship{" "}
+            <Link href="/projects/nota-crm">Nota CRM</Link> (
+            <a href="https://heynota.app" rel="noopener noreferrer">
+              heynota.app
+            </a>
+            ) plus{" "}
             <Link href="/projects/crmslot">CRM Slot</Link> — each with a live
-            demo and source. Automated tests (Vitest, Playwright) and docs on
-            every flagship repository.
+            demo; public source where available. Automated tests (Vitest,
+            Playwright) and docs on flagship repositories.
           </p>
           <p>
             <strong>42Lab proof — SaaS IA validator:</strong>{" "}
@@ -168,14 +173,14 @@ export default function ForRecruitersPage() {
         <div className="section-heading">
           <p className="section-index">Angle</p>
           <h2 id="why-title">
-            Why an early-career profile with an atelier product craft
+            Why a fullstack profile with an atelier product craft
           </h2>
         </div>
         <div className="profile-copy single-col">
           <p>
-            Many early-career applications ask you to bet on potential. This one
-            asks you to review shipped work: authentication, Stripe payments,
-            maps, real-time chat, PDF generation, automated tests, deployment —
+            Many applications ask you to bet on potential. This one asks you to
+            review shipped work: authentication, Stripe payments, maps,
+            real-time chat, PDF generation, automated tests, deployment —
             already built, already live. The obsession with detail comes from
             atelier production &amp; software tools. It transferred.
           </p>

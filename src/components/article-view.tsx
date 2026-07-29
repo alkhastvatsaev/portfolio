@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-import { articleSchema, JsonLd } from "@/components/json-ld";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  JsonLd,
+} from "@/components/json-ld";
 import type { Article } from "@/data/articles";
 
 type Props = {
@@ -13,6 +17,11 @@ export function ArticleView({ article, path, related }: Props) {
   const isFr = article.locale === "fr";
   const home = isFr ? "/fr" : "/";
   const index = isFr ? "/fr/articles" : "/articles";
+  const breadcrumbs = [
+    { name: isFr ? "Accueil" : "Home", path: home === "/" ? "/" : home },
+    { name: "Articles", path: index },
+    { name: article.title, path },
+  ];
 
   return (
     <main id="main-content" lang={article.locale} className="article-page">
@@ -25,6 +34,7 @@ export function ArticleView({ article, path, related }: Props) {
           article.locale,
         )}
       />
+      <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
       <div className="article-shell">
         <nav className="article-breadcrumb" aria-label={isFr ? "Fil d’Ariane" : "Breadcrumb"}>
@@ -73,6 +83,12 @@ export function ArticleView({ article, path, related }: Props) {
                 {item.title} <span aria-hidden="true">→</span>
               </Link>
             ))}
+            <Link href={isFr ? "/fr/projets" : "/projects"}>
+              {isFr ? "Projets" : "Projects"} <span aria-hidden="true">→</span>
+            </Link>
+            <Link href={isFr ? "/fr/projets/nota-crm" : "/projects/nota-crm"}>
+              Nota CRM <span aria-hidden="true">→</span>
+            </Link>
             <Link href={isFr ? "/fr/developpeur-full-stack" : "/"}>
               {isFr ? "Profil Full Stack" : "Portfolio home"}
             </Link>

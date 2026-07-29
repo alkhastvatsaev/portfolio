@@ -174,7 +174,7 @@ export const newsFr: readonly NewsItem[] = [
         heading: "Suite",
         paragraphs: [
           "Email envoyé à hello@42lab.co. Prochaine preuve cette semaine (Daisy ou Pixel Systems).",
-          "Si tu recrutes un Fullstack junior qui shippe avant de postuler : alkhastvatsaev@icloud.com",
+          "Si tu recrutes un Fullstack qui shippe avant de postuler : alkhastvatsaev@icloud.com",
         ],
       },
     ],
@@ -341,7 +341,7 @@ export const newsEn: readonly NewsItem[] = [
         heading: "Next",
         paragraphs: [
           "Email sent to hello@42lab.co. Next proof this week (Daisy or Pixel Systems).",
-          "Hiring a junior fullstack who ships before applying? alkhastvatsaev@icloud.com",
+          "Hiring a fullstack developer who ships before applying? alkhastvatsaev@icloud.com",
         ],
       },
     ],

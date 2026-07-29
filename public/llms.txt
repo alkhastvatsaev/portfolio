@@ -24,4 +24,4 @@ React, Next.js, TypeScript, Node.js, Firebase, Stripe, Vitest, Playwright, Verce
 
 ## Seeking
 
-Full Stack, JavaScript, TypeScript, React or Next.js roles in France. See recruiter pages for early-career positioning.
+Full Stack, JavaScript, TypeScript, React or Next.js roles in France. See recruiter pages for positioning and proof.

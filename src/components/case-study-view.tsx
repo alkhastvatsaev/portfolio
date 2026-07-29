@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-import { JsonLd, projectSoftwareSchema } from "@/components/json-ld";
+import {
+  breadcrumbSchema,
+  JsonLd,
+  projectSoftwareSchema,
+} from "@/components/json-ld";
 import type { Project } from "@/data/projects";
 
 type Props = {
@@ -16,9 +20,16 @@ export function CaseStudyView({ project, locale, path, allProjects }: Props) {
   const index = isFr ? "/fr/projets" : "/projects";
   const other = allProjects.filter((p) => p.slug !== project.slug);
 
+  const breadcrumbs = [
+    { name: isFr ? "Accueil" : "Home", path: home === "/" ? "/" : home },
+    { name: isFr ? "Projets" : "Projects", path: index },
+    { name: project.name, path },
+  ];
+
   return (
     <main id="main-content" lang={locale} className="seo-page">
       <JsonLd data={projectSoftwareSchema(project, locale, path)} />
+      <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
       <nav className="seo-breadcrumb" aria-label={isFr ? "Fil d’Ariane" : "Breadcrumb"}>
         <Link href={home}>{isFr ? "Accueil" : "Home"}</Link>
@@ -43,12 +54,34 @@ export function CaseStudyView({ project, locale, path, allProjects }: Props) {
           ))}
         </ul>
         <div className="hero-actions">
-          <a className="button button-primary" href={project.live} target="_blank" rel="noreferrer me">
-            {isFr ? "Voir la démo" : "Open live demo"}
+          <a className="button button-primary" href={project.live} target="_blank" rel="noreferrer">
+            {project.slug === "nota-crm"
+              ? isFr
+                ? "Voir heynota.app"
+                : "Open heynota.app"
+              : isFr
+                ? "Voir la démo"
+                : "Open live demo"}
           </a>
-          <a className="button button-secondary" href={project.source} target="_blank" rel="noreferrer me">
-            {isFr ? "Code source" : "Source code"}
-          </a>
+          {project.source ? (
+            <a
+              className="button button-secondary"
+              href={project.source}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {isFr ? "Code source" : "Source code"}
+            </a>
+          ) : project.slug === "nota-crm" ? (
+            <a
+              className="button button-secondary"
+              href="https://app.heynota.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {isFr ? "Ouvrir l’app" : "Open the app"}
+            </a>
+          ) : null}
         </div>
       </section>
 
@@ -97,6 +130,9 @@ export function CaseStudyView({ project, locale, path, allProjects }: Props) {
               {p.name} <span aria-hidden="true">→</span>
             </Link>
           ))}
+          <Link href={isFr ? "/fr/articles" : "/articles"}>
+            {isFr ? "Articles" : "Articles"} <span aria-hidden="true">→</span>
+          </Link>
           <Link href={isFr ? "/fr/pour-recruteurs" : "/for-recruiters"}>
             {isFr ? "Page pour recruteurs" : "For recruiters"}{" "}
             <span aria-hidden="true">→</span>

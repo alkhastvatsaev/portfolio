@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "développeur full stack",
     "développeur fullstack Paris",
     "React Next.js TypeScript",
-    "recruter développeur junior",
+    "recruter développeur fullstack",
     "Alkhast Vatsaev",
   ],
   alternates: {
@@ -83,8 +83,8 @@ export default function PourRecruteursPage() {
               JavaScript/TypeScript — React, Next.js, Node.js, Firebase.
             </li>
             <li>
-              <strong>Niveau :</strong> début de carrière, orienté production —
-              évaluez le travail livré ci-dessous plutôt qu&apos;un titre.
+              <strong>Focus :</strong> fullstack orienté production — évaluez le
+              travail livré ci-dessous plutôt qu&apos;un titre.
             </li>
             <li>
               <strong>Expérience :</strong> projets portfolio documentés (démo +
@@ -125,10 +125,15 @@ export default function PourRecruteursPage() {
         </div>
         <div className="profile-copy single-col">
           <p>
-            Cinq case studies documentées — produit phare{" "}
+            Six case studies documentées — produit phare{" "}
+            <Link href="/fr/projets/nota-crm">Nota CRM</Link> (
+            <a href="https://heynota.app" rel="noopener noreferrer">
+              heynota.app
+            </a>
+            ) et{" "}
             <Link href="/fr/projets/crmslot">CRM Slot</Link> — chacune avec
-            démo live et code source. Tests automatisés (Vitest, Playwright) et
-            documentation sur chaque repo phare.
+            démo live ; code source public quand disponible. Tests automatisés
+            (Vitest, Playwright) et documentation sur chaque repo phare.
           </p>
           <p>
             <strong>Preuve 42Lab — validateur SaaS IA :</strong>{" "}
@@ -171,18 +176,18 @@ export default function PourRecruteursPage() {
         <div className="section-heading">
           <p className="section-index">Angle</p>
           <h2 id="why-title">
-            Pourquoi un profil début de carrière avec une culture produit atelier
+            Pourquoi un profil fullstack avec une culture produit atelier
           </h2>
         </div>
         <div className="profile-copy single-col">
           <p>
-            Beaucoup de candidatures début de carrière demandent de parier sur
-            un potentiel. Celle-ci demande d&apos;auditer du travail livré :
-            authentification, paiements Stripe, cartographie, chat temps réel,
-            génération de PDF, tests automatisés, déploiement — déjà construits,
-            déjà en ligne. L&apos;exigence du détail vient d&apos;un parcours
-            atelier (production &amp; logiciels métier). Elle a survécu au
-            changement de matière.
+            Beaucoup de candidatures demandent de parier sur un potentiel.
+            Celle-ci demande d&apos;auditer du travail livré : authentification,
+            paiements Stripe, cartographie, chat temps réel, génération de PDF,
+            tests automatisés, déploiement — déjà construits, déjà en ligne.
+            L&apos;exigence du détail vient d&apos;un parcours atelier
+            (production &amp; logiciels métier). Elle a survécu au changement
+            de matière.
           </p>
         </div>
       </section>

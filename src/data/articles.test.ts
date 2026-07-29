@@ -31,10 +31,10 @@ describe("articles data contracts", () => {
   });
 
   it("resolves articles by slug and locale", () => {
-    expect(getArticle("developpeur-full-stack-junior-france", "fr")?.locale).toBe(
+    expect(getArticle("developpeur-full-stack-france", "fr")?.locale).toBe(
       "fr",
     );
-    expect(getArticle("junior-fullstack-developer-portfolio", "en")?.locale).toBe(
+    expect(getArticle("fullstack-developer-portfolio", "en")?.locale).toBe(
       "en",
     );
     expect(getArticle("missing", "fr")).toBeUndefined();

@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/fr/articles/developpeur-full-stack-junior-france",
+      "destination": "/fr/articles/developpeur-full-stack-france",
+      "permanent": true
+    },
+    {
+      "source": "/fr/articles/comment-verifier-le-travail-dun-developpeur-junior",
+      "destination": "/fr/articles/checklist-recruteur-portfolio-developpeur",
+      "permanent": true
+    },
+    {
+      "source": "/articles/junior-fullstack-developer-portfolio",
+      "destination": "/articles/fullstack-developer-portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/articles/recruiter-checklist-junior-developer",
+      "destination": "/articles/recruiter-checklist-developer",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/opengraph-image",

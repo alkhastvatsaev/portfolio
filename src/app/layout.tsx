@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Link from "next/link";
 
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
@@ -14,14 +15,13 @@ export const metadata: Metadata = {
     template: "%s | Alkhast Vatsaev",
   },
   description:
-    "Fullstack JavaScript and TypeScript developer in Paris (hybrid, remote). Production-ready React, Next.js, Firebase and Node.js projects — open to junior and early-career fullstack roles.",
+    "Fullstack JavaScript and TypeScript developer in Paris (hybrid, remote). Production-ready React, Next.js, Firebase and Node.js projects.",
   keywords: [
     "Alkhast Vatsaev",
     "développeur full stack",
-    "développeur fullstack junior",
     "Développeur Full Stack France",
     "Développeur Full Stack Paris",
-    "Junior Fullstack developer Paris",
+    "Fullstack developer Paris",
     "Fullstack developer France",
     "Développeur JavaScript France",
     "Développeur TypeScript",
@@ -103,7 +103,12 @@ export default function RootLayout({
         <footer className="site-footer">
           <p>Alkhast Vatsaev · Paris, France</p>
           <nav className="footer-links" aria-label="Footer">
-            <a href="/fr/pour-recruteurs">Recruteurs</a>
+            <Link href="/fr">FR</Link>
+            <Link href="/fr/projets">Projets</Link>
+            <Link href="/fr/projets/nota-crm">Nota CRM</Link>
+            <Link href="/fr/articles">Articles</Link>
+            <Link href="/fr/news">News</Link>
+            <Link href="/fr/pour-recruteurs">Recruteurs</Link>
             <a href="/rss.xml">RSS</a>
             <a
               href="https://github.com/alkhastvatsaev"
@@ -118,6 +123,9 @@ export default function RootLayout({
               rel="me noreferrer"
             >
               LinkedIn
+            </a>
+            <a href="https://heynota.app" rel="noopener noreferrer">
+              heynota.app
             </a>
             <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
           </nav>

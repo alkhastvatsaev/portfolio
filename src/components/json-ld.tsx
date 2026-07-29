@@ -1,6 +1,24 @@
 import type { Project } from "@/data/projects";
+import { personId, personName, siteUrl } from "@/lib/site";
 
-const siteUrl = "https://alkhastvatsaev.dev";
+export function personRef() {
+  return { "@id": personId };
+}
+
+export function breadcrumbSchema(
+  items: readonly { name: string; path: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `${siteUrl}${item.path}`,
+    })),
+  };
+}
 
 export function projectSoftwareSchema(
   project: Project,
@@ -14,13 +32,10 @@ export function projectSoftwareSchema(
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     url: project.live,
-    codeRepository: project.source,
+    ...(project.source ? { codeRepository: project.source } : {}),
     description: `${project.summary} ${project.detail}`,
-    author: {
-      "@type": "Person",
-      name: "Alkhast Vatsaev",
-      url: siteUrl,
-    },
+    author: personRef(),
+    creator: personRef(),
     programmingLanguage: project.stack,
     inLanguage: locale === "fr" ? "fr-FR" : "en-US",
     mainEntityOfPage: `${siteUrl}${path}`,
@@ -42,15 +57,10 @@ export function articleSchema(
     datePublished: date,
     dateModified: date,
     inLanguage: locale === "fr" ? "fr-FR" : "en-US",
-    author: {
-      "@type": "Person",
-      name: "Alkhast Vatsaev",
-      url: siteUrl,
-    },
+    author: personRef(),
     publisher: {
-      "@type": "Person",
-      name: "Alkhast Vatsaev",
-      url: siteUrl,
+      "@id": personId,
+      name: personName,
     },
     mainEntityOfPage: `${siteUrl}${path}`,
     image: `${siteUrl}${locale === "fr" ? "/fr" : ""}/opengraph-image.png`,

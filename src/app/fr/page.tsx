@@ -7,11 +7,10 @@ import { projectsFr, provenStack } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Alkhast Vatsaev — Développeur Full Stack JavaScript/TypeScript",
   description:
-    "Développeur full stack JavaScript et TypeScript à Paris (hybride, remote). Projets React, Next.js, Firebase et Node.js prêts pour la production — ouvert aux postes full stack junior et début de carrière.",
+    "Développeur full stack JavaScript et TypeScript à Paris (hybride, remote). Projets React, Next.js, Firebase et Node.js prêts pour la production.",
   keywords: [
     "Alkhast Vatsaev",
     "développeur full stack",
-    "développeur fullstack junior",
     "Développeur Full Stack France",
     "Développeur Full Stack Paris",
     "développeur React Next.js",
@@ -129,8 +128,7 @@ export default function FrenchHome() {
             principal comprend une documentation en anglais, une démonstration
             en ligne et des contrôles qualité automatisés. Disponible pour des
             postes full stack, JavaScript, TypeScript, React ou Next.js à
-            Paris, en hybride ou en full remote — y compris en début de
-            carrière.{" "}
+            Paris, en hybride ou en full remote.{" "}
             <Link href="/fr/developpeur-full-stack">
               En savoir plus sur mon profil Full Stack
             </Link>
@@ -143,7 +141,7 @@ export default function FrenchHome() {
         <div className="section-heading">
           <p className="section-index">01 / Projets sélectionnés</p>
           <h2 id="work-title">
-            Cinq produits qui répondent chacun à un problème concret.
+            Six produits qui répondent chacun à un problème concret.
           </h2>
         </div>
         <div className="project-list">
@@ -175,9 +173,11 @@ export default function FrenchHome() {
                 <a href={project.live} target="_blank" rel="noreferrer">
                   Voir le projet <span aria-hidden="true">↗</span>
                 </a>
-                <a href={project.source} target="_blank" rel="noreferrer">
-                  Code source <span aria-hidden="true">↗</span>
-                </a>
+                {project.source ? (
+                  <a href={project.source} target="_blank" rel="noreferrer">
+                    Code source <span aria-hidden="true">↗</span>
+                  </a>
+                ) : null}
               </div>
             </article>
           ))}

@@ -1,15 +1,21 @@
-const siteUrl = "https://alkhastvatsaev.dev";
+import {
+  personId,
+  personJobTitle,
+  personName,
+  personSameAs,
+  siteUrl,
+} from "@/lib/site";
 
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Person",
-      "@id": `${siteUrl}/#person`,
-      name: "Alkhast Vatsaev",
+      "@id": personId,
+      name: personName,
       url: siteUrl,
       image: `${siteUrl}/profile.png`,
-      jobTitle: ["Fullstack Developer", "Développeur Full Stack"],
+      jobTitle: personJobTitle,
       description:
         "Développeur Full Stack basé à Paris, disponible en France (hybride ou remote). Applications web avec React, Next.js, TypeScript, Firebase et Node.js.",
       address: {
@@ -19,12 +25,7 @@ const structuredData = {
         addressCountry: "FR",
       },
       email: "mailto:alkhastvatsaev@icloud.com",
-      sameAs: [
-        "https://github.com/alkhastvatsaev",
-        "https://www.linkedin.com/in/alkhast-vatsaev/",
-        "https://dev.to/alkhastvatsaev",
-        "https://www.malt.fr/profile/alkhastvatsaev",
-      ],
+      sameAs: [...personSameAs],
       knowsLanguage: ["fr", "en", "ru"],
       knowsAbout: [
         "JavaScript",
@@ -39,6 +40,8 @@ const structuredData = {
         "Playwright",
         "Full Stack Development",
         "Développement web",
+        "CRM",
+        "Field service software",
       ],
       workLocation: {
         "@type": "Place",
@@ -56,7 +59,7 @@ const structuredData = {
       description:
         "Développement d’applications web Full Stack (React, Next.js, TypeScript, Node.js, Firebase) pour des équipes en France.",
       provider: {
-        "@id": `${siteUrl}/#person`,
+        "@id": personId,
       },
       areaServed: {
         "@type": "Country",
@@ -81,10 +84,10 @@ const structuredData = {
         "Portfolio d’Alkhast Vatsaev, développeur Full Stack JavaScript/TypeScript en France.",
       inLanguage: ["en", "fr"],
       author: {
-        "@id": `${siteUrl}/#person`,
+        "@id": personId,
       },
       publisher: {
-        "@id": `${siteUrl}/#person`,
+        "@id": personId,
       },
     },
     {
@@ -96,9 +99,9 @@ const structuredData = {
         "@id": `${siteUrl}/#website`,
       },
       mainEntity: {
-        "@id": `${siteUrl}/#person`,
+        "@id": personId,
       },
-      dateModified: "2026-07-19",
+      dateModified: "2026-07-29",
       inLanguage: ["en", "fr"],
     },
   ],

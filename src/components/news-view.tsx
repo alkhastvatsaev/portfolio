@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-import { articleSchema, JsonLd } from "@/components/json-ld";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  JsonLd,
+} from "@/components/json-ld";
 import type { NewsItem } from "@/data/news";
 
 type Props = {
@@ -13,6 +17,11 @@ export function NewsView({ item, path, related }: Props) {
   const isFr = item.locale === "fr";
   const home = isFr ? "/fr" : "/";
   const index = isFr ? "/fr/news" : "/news";
+  const breadcrumbs = [
+    { name: isFr ? "Accueil" : "Home", path: home === "/" ? "/" : home },
+    { name: "News", path: index },
+    { name: item.title, path },
+  ];
 
   return (
     <main id="main-content" lang={item.locale} className="article-page">
@@ -25,6 +34,7 @@ export function NewsView({ item, path, related }: Props) {
           item.locale,
         )}
       />
+      <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
       <div className="article-shell">
         <nav className="article-breadcrumb" aria-label={isFr ? "Fil d’Ariane" : "Breadcrumb"}>

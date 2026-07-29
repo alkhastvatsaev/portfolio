@@ -59,7 +59,7 @@ export const articlesFr: readonly Article[] = [
       {
         heading: "Prochaines étapes",
         paragraphs: [
-          "Raccourci clavier global, historique des captures, réglages de qualité, peut-être un mode fenêtre. Si tu testes Moon ou tu recrutes un Full Stack junior qui shippe aussi du desktop (Electron, permissions native, packaging), le portfolio et le contact sont ici : https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
+          "Raccourci clavier global, historique des captures, réglages de qualité, peut-être un mode fenêtre. Si tu testes Moon ou tu recrutes un développeur Full Stack qui shippe aussi du desktop (Electron, permissions native, packaging), le portfolio et le contact sont ici : https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
         ],
       },
     ],
@@ -83,7 +83,7 @@ export const articlesFr: readonly Article[] = [
       {
         paragraphs: [
           "Aujourd’hui j’ai shippé Moon, un screen recorder macOS perso — le genre d’outil que Loom rend bien, mais que je voulais contrôler de bout en bout : fichiers locaux, UI que je décide, zéro lock-in cloud.",
-          "Je suis Alkhast Vatsaev, développeur Full Stack junior à Paris. Ce n’est pas un SaaS, pas un produit App Store, pas une startup : c’est un outil local que j’utilise, construit en une journée pour prouver que je peux livrer une app desktop réelle, pas seulement une landing.",
+          "Je suis Alkhast Vatsaev, développeur Full Stack à Paris. Ce n’est pas un SaaS, pas un produit App Store, pas une startup : c’est un outil local que j’utilise, construit en une journée pour prouver que je peux livrer une app desktop réelle, pas seulement une landing.",
         ],
       },
       {
@@ -112,20 +112,20 @@ export const articlesFr: readonly Article[] = [
         heading: "Statut et suite",
         paragraphs: [
           "v1 est utilisable localement chez moi. Pas de cloud, pas d’utilisateurs, pas de revenue — juste un outil qui enregistre et sauvegarde. Suite possible : raccourci ⌘⇧R, export MP4, historique des captures.",
-          "Si vous recrutez un Full Stack junior qui shippe aussi hors du navigateur (Electron, permissions native, packaging), le portfolio et le contact sont ici : https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
+          "Si vous recrutez un développeur Full Stack qui shippe aussi hors du navigateur (Electron, permissions native, packaging), le portfolio et le contact sont ici : https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
         ],
       },
     ],
   },
   {
-    slug: "developpeur-full-stack-junior-france",
-    title: "Développeur Full Stack junior en France : ce que je montre vraiment",
+    slug: "developpeur-full-stack-france",
+    title: "Développeur Full Stack en France : ce que je montre vraiment",
     description:
-      "Comment un développeur Full Stack junior peut se démarquer en France avec des preuves : démos, tests, stack React/Next.js et portfolio vérifiable.",
+      "Comment un développeur Full Stack peut se démarquer en France avec des preuves : démos, tests, stack React/Next.js et portfolio vérifiable.",
     date: "2026-07-18",
     locale: "fr",
     tags: [
-      "développeur full stack junior",
+      "développeur full stack",
       "France",
       "React",
       "Next.js",
@@ -134,7 +134,7 @@ export const articlesFr: readonly Article[] = [
     body: [
       {
         paragraphs: [
-          "Les recherches « développeur full stack », « développeur fullstack junior » ou « développeur JavaScript France » renvoient surtout vers des job boards. Un site personnel ne gagne pas cette bataille en copiant des mots-clés : il gagne en devenant la meilleure preuve pour un profil précis.",
+          "Les recherches « développeur full stack » ou « développeur JavaScript France » renvoient surtout vers des job boards. Un site personnel ne gagne pas cette bataille en copiant des mots-clés : il gagne en devenant la meilleure preuve pour un profil précis.",
           "Je suis Alkhast Vatsaev, développeur Full Stack basé à Paris, disponible en France (hybride ou remote). Ce texte explique ce que je livre concrètement, et pourquoi mon portfolio est conçu pour les recruteurs techniques.",
         ],
       },
@@ -146,9 +146,9 @@ export const articlesFr: readonly Article[] = [
         ],
       },
       {
-        heading: "Full Stack junior : frontend, backend et livraison",
+        heading: "Full Stack : frontend, backend et livraison",
         paragraphs: [
-          "Full Stack ne signifie pas « expert de tout ». Pour un junior, cela signifie pouvoir construire une interface, brancher des données, gérer l’auth, intégrer un paiement ou une API, tester et déployer.",
+          "Full Stack ne signifie pas « expert de tout ». Cela signifie pouvoir construire une interface, brancher des données, gérer l’auth, intégrer un paiement ou une API, tester et déployer.",
           "Mes projets couvrent des opérations terrain, de la logistique, une marketplace de livraison locale et un configurateur 3D. La variété montre la capacité à apprendre un domaine produit, pas seulement à suivre un tutoriel.",
         ],
       },
@@ -162,22 +162,21 @@ export const articlesFr: readonly Article[] = [
     ],
   },
   {
-    slug: "comment-verifier-le-travail-dun-developpeur-junior",
-    title: "Comment vérifier le travail d’un développeur junior (checklist recruteur)",
+    slug: "checklist-recruteur-portfolio-developpeur",
+    title: "Comment vérifier le travail d’un développeur (checklist recruteur)",
     description:
-      "Checklist concrète pour évaluer un portfolio de développeur junior : démo, repo, tests, README, déploiement et signaux d’alerte.",
+      "Checklist concrète pour évaluer un portfolio de développeur : démo, repo, tests, README, déploiement et signaux d’alerte.",
     date: "2026-07-18",
     locale: "fr",
     tags: [
       "recruteur",
       "portfolio développeur",
-      "junior",
       "évaluation technique",
     ],
     body: [
       {
         paragraphs: [
-          "Recruter un junior, c’est réduire le risque. Voici la checklist que j’applique à mon propre portfolio — et que je recommande aux recruteurs qui évaluent des candidats Full Stack JavaScript/TypeScript.",
+          "Recruter, c’est réduire le risque. Voici la checklist que j’applique à mon propre portfolio — et que je recommande aux recruteurs qui évaluent des candidats Full Stack JavaScript/TypeScript.",
         ],
       },
       {
@@ -195,7 +194,7 @@ export const articlesFr: readonly Article[] = [
       {
         heading: "3. Y a-t-il des tests ou une CI ?",
         paragraphs: [
-          "Même une couverture partielle (Vitest, Playwright, GitHub Actions) montre que le candidat sait que le code doit survivre au changement. L’absence totale n’est pas éliminatoire, mais c’est un différenciateur junior fort.",
+          "Même une couverture partielle (Vitest, Playwright, GitHub Actions) montre que le candidat sait que le code doit survivre au changement. L’absence totale n’est pas éliminatoire, mais c’est un différenciateur fort.",
         ],
       },
       {
@@ -236,7 +235,7 @@ export const articlesFr: readonly Article[] = [
         heading: "Ce que je montre concrètement",
         paragraphs: [
           "Sur CRM Slot, Serrurerie Pro, LOGIS. 2030 et Hopla : parcours métier, intégrations (Stripe, cartes, messaging), et documentation. Les études de cas sur ce site détaillent problème → approche → résultat.",
-          "Je documente aussi les limites (règles de sécurité, modes démo, dettes techniques). Un junior crédible assume ce qui n’est pas encore production-grade.",
+          "Je documente aussi les limites (règles de sécurité, modes démo, dettes techniques). Un profil crédible assume ce qui n’est pas encore production-grade.",
         ],
       },
       {
@@ -300,7 +299,7 @@ export const articlesEn: readonly Article[] = [
       {
         heading: "Next steps",
         paragraphs: [
-          "Global shortcut, capture history, quality settings, maybe window-only mode. If you try Moon or you’re hiring a junior fullstack who also ships desktop (Electron, native permissions, packaging), portfolio and contact: https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
+          "Global shortcut, capture history, quality settings, maybe window-only mode. If you try Moon or you’re hiring a fullstack developer who also ships desktop (Electron, native permissions, packaging), portfolio and contact: https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
         ],
       },
     ],
@@ -324,7 +323,7 @@ export const articlesEn: readonly Article[] = [
       {
         paragraphs: [
           "Today I shipped Moon, a personal macOS screen recorder — the kind of tool Loom does well, but that I wanted to own end to end: local files, UI I decide, zero cloud lock-in.",
-          "I’m Alkhast Vatsaev, a junior fullstack developer in Paris. This is not a SaaS, not an App Store product, not a startup: it’s a local tool I use, built in one day to show I can ship a real desktop app — not just a landing page.",
+          "I’m Alkhast Vatsaev, a fullstack developer in Paris. This is not a SaaS, not an App Store product, not a startup: it’s a local tool I use, built in one day to show I can ship a real desktop app — not just a landing page.",
         ],
       },
       {
@@ -353,19 +352,19 @@ export const articlesEn: readonly Article[] = [
         heading: "Status and next steps",
         paragraphs: [
           "v1 is usable locally on my machine. No cloud, no users, no revenue — just a tool that records and saves. Possible next: ⌘⇧R shortcut, MP4 export, capture history.",
-          "If you’re hiring a junior fullstack who also ships outside the browser (Electron, native permissions, packaging), portfolio and contact are here: https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
+          "If you’re hiring a fullstack developer who also ships outside the browser (Electron, native permissions, packaging), portfolio and contact are here: https://alkhastvatsaev.dev — alkhastvatsaev@icloud.com",
         ],
       },
     ],
   },
   {
-    slug: "junior-fullstack-developer-portfolio",
-    title: "What a junior fullstack developer portfolio should prove",
+    slug: "fullstack-developer-portfolio",
+    title: "What a fullstack developer portfolio should prove",
     description:
       "How I structure a fullstack JavaScript/TypeScript portfolio around demos, repos, tests and recruiter-ready proof.",
     date: "2026-07-18",
     locale: "en",
-    tags: ["junior fullstack", "portfolio", "React", "Next.js"],
+    tags: ["fullstack", "portfolio", "React", "Next.js"],
     body: [
       {
         paragraphs: [
@@ -382,23 +381,23 @@ export const articlesEn: readonly Article[] = [
       {
         heading: "End-to-end delivery",
         paragraphs: [
-          "Junior fullstack means shipping UI, data, auth or payments, tests and deployment — not claiming mastery of every layer. My case studies cover CRM Slot (field-service ops), logistics, local delivery and a 3D configurator.",
+          "Fullstack means shipping UI, data, auth or payments, tests and deployment — not claiming mastery of every layer. My case studies cover CRM Slot (field-service ops), logistics, local delivery and a 3D configurator.",
         ],
       },
     ],
   },
   {
-    slug: "recruiter-checklist-junior-developer",
-    title: "Recruiter checklist: verifying a junior developer’s work",
+    slug: "recruiter-checklist-developer",
+    title: "Recruiter checklist: verifying a developer’s work",
     description:
-      "A practical checklist to evaluate junior developer portfolios: live demos, repos, tests, README quality and red flags.",
+      "A practical checklist to evaluate developer portfolios: live demos, repos, tests, README quality and red flags.",
     date: "2026-07-18",
     locale: "en",
-    tags: ["recruiting", "junior developer", "portfolio review"],
+    tags: ["recruiting", "developer", "portfolio review"],
     body: [
       {
         paragraphs: [
-          "Hiring juniors is risk management. Use this checklist on any JavaScript/TypeScript fullstack candidate — including me.",
+          "Hiring is risk management. Use this checklist on any JavaScript/TypeScript fullstack candidate — including me.",
         ],
       },
       {

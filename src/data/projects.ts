@@ -5,7 +5,8 @@ export type Project = {
   summary: string;
   detail: string;
   stack: readonly string[];
-  source: string;
+  /** Public GitHub repo when available. */
+  source?: string;
   live: string;
   /** Optional paragraph shown after the case-study intro. */
   story?: string;
@@ -17,11 +18,44 @@ export type Project = {
 
 export const projects: readonly Project[] = [
   {
+    slug: "nota-crm",
+    name: "Nota CRM",
+    label: "Field-service CRM — heynota.app",
+    summary:
+      "Nota is the product I ship for field teams: live job map, mobile technician hub and billing — marketed at heynota.app, app at app.heynota.app.",
+    detail:
+      "Full-stack CRM for on-site interventions: dispatch on a map, client files, technician PWA with offline sync, invoicing and role-aware admin. Built with Next.js, TypeScript, Firebase, Mapbox and Stripe.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase",
+      "Mapbox",
+      "Stripe",
+      "PWA",
+    ],
+    live: "https://heynota.app",
+    story:
+      "Nota CRM is the commercial product behind my field-service work. The marketing site (heynota.app) explains the offer; the application (app.heynota.app) is where teams run jobs day to day. I own product, engineering and UX end to end.",
+    problem:
+      "Companies that send technicians to customers still run on Excel, WhatsApp and scattered invoices — with no shared map, status or mobile workflow.",
+    approach:
+      "I designed Nota around three pillars: a live intervention map for the office, a mobile hub for technicians in the field, and billing tied to closed jobs — one stack, one source of truth.",
+    outcome:
+      "A public product site at heynota.app linking to the live app, with concrete sections for map, mobile and invoicing — and a portfolio case study that connects my name to the shipped product.",
+    highlights: [
+      "Live job map for dispatch and follow-up",
+      "Technician mobile hub (PWA, offline-aware)",
+      "Billing linked to completed interventions",
+      "Marketing + app surfaces (heynota.app / app.heynota.app)",
+      "Built end-to-end: product, code, UX",
+    ],
+  },
+  {
     slug: "crmslot",
     name: "CRM Slot",
     label: "Field-service CRM & ops PWA",
     summary:
-      "The flagship product: a full operations CRM for locksmith / field teams — dispatch, map, technicians, clients, billing and mobile (admin + terrain).",
+      "A full operations CRM for locksmith / field teams — dispatch, map, technicians, clients, billing and mobile (admin + terrain). Deep technical sister to Nota.",
     detail:
       "Next.js App Router product with Firebase Auth/Firestore, Mapbox, offline PWA paths, Stripe subscriptions, multilanguage UI (FR/NL/EN/RU), Jest + Playwright coverage and GitHub Actions CI.",
     stack: [
@@ -35,13 +69,13 @@ export const projects: readonly Project[] = [
     source: "https://github.com/alkhastvatsaev/crmslot",
     live: "https://crmslot.vercel.app",
     story:
-      "This is the most complete product I have shipped: not a landing page, but an operations platform used as a real CRM/slots workspace for field interventions — desktop admin shell, technician flows, client follow-up and subscriptions.",
+      "CRM Slot is the deepest public codebase for the same field-ops domain as Nota: not a landing page, but an operations platform with admin shell, technician flows, client follow-up and subscriptions.",
     problem:
       "Field-service businesses juggle maps, WhatsApp threads, spreadsheets and invoices — with no single source of truth for jobs, technicians and clients.",
     approach:
       "I built a modular Next.js + Firebase CRM: role-aware dashboards, Mapbox interventions, dispatch/performance, offline-aware mobile shells, billing hubs, communications and automated tests so the depth is verifiable.",
     outcome:
-      "A live production deploy (crmslot.vercel.app), a public GitHub repository, pricing surface, and the deepest proof of fullstack + product ownership in this portfolio.",
+      "A live production deploy (crmslot.vercel.app), a public GitHub repository, pricing surface, and verifiable fullstack + product ownership.",
     highlights: [
       "Admin + technician + client operational paths",
       "Mapbox dispatch and intervention workflows",
@@ -152,11 +186,44 @@ export const projects: readonly Project[] = [
 
 export const projectsFr: readonly Project[] = [
   {
+    slug: "nota-crm",
+    name: "Nota CRM",
+    label: "CRM interventions terrain — heynota.app",
+    summary:
+      "Nota est le produit que je livre pour les équipes terrain : carte des missions, hub technicien mobile et facturation — site heynota.app, app sur app.heynota.app.",
+    detail:
+      "CRM fullstack pour interventions sur site : dispatch sur carte, dossiers clients, PWA technicien avec sync hors-ligne, facturation et admin par rôle. Stack Next.js, TypeScript, Firebase, Mapbox et Stripe.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Firebase",
+      "Mapbox",
+      "Stripe",
+      "PWA",
+    ],
+    live: "https://heynota.app",
+    story:
+      "Nota CRM est le produit commercial de mon travail sur le terrain. Le site marketing (heynota.app) explique l’offre ; l’application (app.heynota.app) sert au quotidien. Je porte produit, code et UX de bout en bout.",
+    problem:
+      "Les entreprises qui envoient des techniciens chez leurs clients tournent encore sur Excel, WhatsApp et factures éparpillées — sans carte partagée, statut ni parcours mobile.",
+    approach:
+      "J’ai conçu Nota autour de trois piliers : une carte des interventions pour le bureau, un hub mobile pour les techniciens, et une facturation liée aux missions closes — une stack, une source de vérité.",
+    outcome:
+      "Un site produit public sur heynota.app qui pointe vers l’app live, avec des sections concrètes carte / mobile / facturation — et une étude de cas portfolio qui relie mon nom au produit shippé.",
+    highlights: [
+      "Carte des missions pour le dispatch et le suivi",
+      "Hub technicien mobile (PWA, hors-ligne)",
+      "Facturation liée aux interventions terminées",
+      "Surfaces marketing + app (heynota.app / app.heynota.app)",
+      "Livré de bout en bout : produit, code, UX",
+    ],
+  },
+  {
     slug: "crmslot",
     name: "CRM Slot",
     label: "CRM terrain & PWA d’opérations",
     summary:
-      "Le produit phare : un CRM d’opérations pour équipes de serrurerie / terrain — dispatch, carte, techniciens, clients, facturation et apps mobile (admin + terrain).",
+      "Un CRM d’opérations pour équipes de serrurerie / terrain — dispatch, carte, techniciens, clients, facturation et apps mobile. Sœur technique approfondie de Nota.",
     detail:
       "Produit Next.js App Router avec Firebase Auth/Firestore, Mapbox, parcours PWA offline, abonnements Stripe, UI multilingue (FR/NL/EN/RU), couverture Jest + Playwright et CI GitHub Actions.",
     stack: [
@@ -170,13 +237,13 @@ export const projectsFr: readonly Project[] = [
     source: "https://github.com/alkhastvatsaev/crmslot",
     live: "https://crmslot.vercel.app",
     story:
-      "C’est le produit le plus abouti que j’ai livré : pas une landing, une plateforme d’exploitation utilisée comme CRM / slots pour les interventions terrain — shell admin desktop, parcours technicien, suivi client et abonnements.",
+      "CRM Slot est le dépôt public le plus profond sur le même domaine que Nota : pas une landing, une plateforme d’exploitation avec shell admin, parcours technicien, suivi client et abonnements.",
     problem:
       "Les entreprises de service terrain jonglent entre cartes, fils WhatsApp, tableurs et factures — sans source unique de vérité pour les chantiers, techniciens et clients.",
     approach:
       "J’ai construit un CRM Next.js + Firebase modulaire : dashboards par rôle, interventions Mapbox, dispatch/performance, shells mobile offline-aware, hubs de facturation, communications et tests automatisés pour rendre la profondeur vérifiable.",
     outcome:
-      "Un déploiement live (crmslot.vercel.app), un dépôt GitHub public, une page pricing, et la preuve fullstack + produit la plus profonde de ce portfolio.",
+      "Un déploiement live (crmslot.vercel.app), un dépôt GitHub public, une page pricing, et une preuve fullstack + produit vérifiable.",
     highlights: [
       "Parcours admin + technicien + client",
       "Dispatch Mapbox et workflows d’intervention",
