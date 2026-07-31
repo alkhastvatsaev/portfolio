@@ -127,6 +127,12 @@ export default function RootLayout({
             <a href="https://heynota.app" rel="noopener noreferrer">
               heynota.app
             </a>
+            <a
+              href="https://formations.alkhastvatsaev.dev"
+              rel="noopener noreferrer"
+            >
+              Formations IA
+            </a>
             <a href="mailto:alkhastvatsaev@icloud.com">Email</a>
           </nav>
         </footer>
