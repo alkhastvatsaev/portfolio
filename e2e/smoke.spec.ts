@@ -197,3 +197,16 @@ test("free AI diagnostic: 7 questions → hours per month, shareable link", asyn
   // The page itself scrolls normally (only the home page is horizontal).
   expect(await page.evaluate(() => document.documentElement.scrollHeight > innerHeight)).toBe(true);
 });
+
+test("icons: favicon, Google-friendly 96 px PNG, Apple icon and manifest are served", async ({ page, request }) => {
+  await page.goto("/");
+  const hrefs = await page.evaluate(() =>
+    [...document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"], link[rel="manifest"]')].map((l) => l.getAttribute("href")),
+  );
+  for (const href of ["/favicon.ico", "/icon-96.png", "/apple-touch-icon.png", "/manifest.webmanifest"]) {
+    expect(hrefs).toContain(href);
+    expect((await request.get(href)).ok(), href).toBe(true);
+  }
+  const manifest = await (await request.get("/manifest.webmanifest")).json();
+  expect(manifest.icons.length).toBeGreaterThanOrEqual(2);
+});

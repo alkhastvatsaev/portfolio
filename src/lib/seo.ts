@@ -68,13 +68,16 @@ export function baseMetadata(locale: Locale): Metadata {
       description: descriptions[locale],
       images: ["/og.png"],
     },
+    // Google shows a square icon whose size is a multiple of 48 px: 48 (ico) and 96 (png).
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "48x48" },
-        { url: "/icon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+        { url: "/icon-96.png", type: "image/png", sizes: "96x96" },
+        { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
       ],
-      apple: "/apple-touch-icon.png",
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
     },
+    manifest: "/manifest.webmanifest",
   };
 }
 
