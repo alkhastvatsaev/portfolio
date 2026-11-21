@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const languages = { fr: site.url, en: `${site.url}/en` };
   return [
-    { url: site.url, lastModified: new Date("2026-11-21"), alternates: { languages } },
-    { url: `${site.url}/en`, lastModified: new Date("2026-11-21"), alternates: { languages } },
+    { url: site.url, lastModified: new Date("2026-11-22"), alternates: { languages } },
+    { url: `${site.url}/en`, lastModified: new Date("2026-11-22"), alternates: { languages } },
   ];
 }

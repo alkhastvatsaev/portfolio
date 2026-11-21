@@ -50,10 +50,12 @@ export function OnePage({ locale }: { locale: Locale }) {
         <Panel id="top" label={t.labels[0]}>
           <div className="grid items-end gap-10 md:grid-cols-[1fr_220px]">
             <div>
-              <p className="text-sm text-muted-foreground">{t.intro}</p>
-              <h1 className="mt-5 max-w-3xl text-[clamp(2.2rem,4.6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.02em] text-balance">
+              {/* SEO: the name + role is the page's H1; the big benefit line stays the visual headline. */}
+              <h1 className="text-sm font-medium text-foreground">{t.intro}</h1>
+              <p className="mt-1 text-sm text-muted-foreground">{t.availability}</p>
+              <p className="mt-5 max-w-3xl text-[clamp(2.2rem,4.6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.02em] text-balance">
                 {t.title}
-              </h1>
+              </p>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">{t.lead}</p>
             </div>
             <Image
@@ -121,7 +123,7 @@ export function OnePage({ locale }: { locale: Locale }) {
               </div>
               <div>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.image} alt={p.label} loading="lazy" className="aspect-[16/10] w-full border border-border object-cover object-top" />
+                <img src={p.image} alt={`${p.label} : ${p.title}`} width={1600} height={1000} loading="lazy" decoding="async" className="aspect-[16/10] h-auto w-full border border-border object-cover object-top" />
                 {p.id === "nota" ? (
                   <figure className="mt-5 hidden md:block [@media(max-height:820px)]:!hidden">
                     <figcaption className="text-xs text-muted-foreground">{t.commitsTitle}</figcaption>

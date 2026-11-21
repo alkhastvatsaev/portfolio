@@ -45,7 +45,8 @@ export const dict = {
     skip: "Aller au contenu",
     nav: { contact: "Contact", prev: "Précédent", next: "Suivant", hint: "La suite est à droite" },
     labels: ["Accueil", "En direct", "NOTA", "SHMOT", "Moon", "Alkhast Homes", "Outils", "Garanties", "Contact"],
-    intro: "Alkhast Vatsaev · développeur full-stack TypeScript · disponible tout de suite, en CDI",
+    intro: "Alkhast Vatsaev · développeur full-stack TypeScript & IA · Strasbourg",
+    availability: "Disponible tout de suite, en CDI · hybride ou sur site",
     title: "Des outils IA qui rendent du temps à vos équipes de support et à leurs clients.",
     lead: "Moins de saisie et de tâches répétitives. Des applications testées avant chaque mise en ligne. Un premier prototype visible en quelques jours.",
     stats: [
@@ -149,7 +150,8 @@ export const dict = {
     skip: "Skip to content",
     nav: { contact: "Contact", prev: "Previous", next: "Next", hint: "More to the right" },
     labels: ["Home", "Live", "NOTA", "SHMOT", "Moon", "Alkhast Homes", "Tools", "Guarantees", "Contact"],
-    intro: "Alkhast Vatsaev · full-stack TypeScript developer · available now, full-time",
+    intro: "Alkhast Vatsaev · full-stack TypeScript & AI developer · Strasbourg",
+    availability: "Available now, full-time · hybrid or on site",
     title: "AI tools that give time back to your support teams and their clients.",
     lead: "Less data entry and fewer repetitive tasks. Apps tested before every release. A first prototype you can see within days.",
     stats: [

@@ -1,7 +1,7 @@
 import { Libre_Franklin } from "next/font/google";
 
 import { SiteHeader } from "@/components/site-chrome";
-import { personJsonLd } from "@/lib/seo";
+import { siteJsonLd } from "@/lib/seo";
 import type { Locale } from "@/lib/i18n";
 
 import "@/styles/globals.css";
@@ -15,7 +15,7 @@ export function RootShell({ lang, children }: { lang: Locale; children: React.Re
       <body className="h-dvh overflow-hidden">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd(lang)) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd(lang)) }}
         />
         <SiteHeader />
         {children}

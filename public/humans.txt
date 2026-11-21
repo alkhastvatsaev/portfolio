@@ -1,7 +1,7 @@
 /* TEAM */
 Developer: Alkhast Vatsaev
 Site: https://alkhastvatsaev.dev
-Location: Paris, France
+Location: Strasbourg, France
 Contact: alkhastvatsaev@icloud.com
 GitHub: https://github.com/alkhastvatsaev
 LinkedIn: https://www.linkedin.com/in/alkhast-vatsaev/

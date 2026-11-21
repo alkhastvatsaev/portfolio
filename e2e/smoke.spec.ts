@@ -25,7 +25,7 @@ for (const route of ["/", "/en"]) {
 
 test("home leads with the key message and numbers", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("outils IA");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Alkhast Vatsaev");
   await expect(page.locator("#methode")).toContainText("tests");
 });
 

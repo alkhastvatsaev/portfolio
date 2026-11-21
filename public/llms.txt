@@ -1,14 +1,24 @@
 # Alkhast Vatsaev
 
-> AI Product Engineer in Paris. 23 live apps, 33 projects, 2,278 commits and 783 test files in 10 months (measured 2026-11-21). Available now.
+> Full-stack TypeScript and AI developer based in Strasbourg, France. Builds AI tools and automations that save time for support teams and their clients. 23 applications in production, 783 automated tests, 34 CI pipelines (measured on GitHub, 21 Nov 2026). Available now for full-time roles, hybrid or on site.
 
+## Site
 - Home (FR): https://alkhastvatsaev.dev
 - Home (EN): https://alkhastvatsaev.dev/en
-- Projects (FR): https://alkhastvatsaev.dev/projets
-- Projects (EN): https://alkhastvatsaev.dev/en/projects
-- Resume (FR): https://alkhastvatsaev.dev/cv
-- Resume (EN): https://alkhastvatsaev.dev/en/resume
-- Flagship: NOTA — https://heynota.app
+
+## Featured work
+- NOTA, field-service software (dispatch map, offline technician app, invoicing, 9 AI modules; 819 commits, 630 test files): https://heynota.app
+- SHMOT, fashion marketplace with a native iPhone app (Swift), Next.js, PostgreSQL/pgvector, Python image AI; 226 commits in 10 working days (private code)
+- Moon, open-source macOS screen recorder with on-device background blur (Electron, React, MediaPipe): https://github.com/alkhastvatsaev/moon
+- Alkhast Homes, real-estate assistant: Python engine, native SwiftUI Mac app, Telegram bot and Mini App with HMAC-verified requests (private code)
+
+## Skills
+TypeScript, JavaScript, React, Next.js, Node.js, Swift/SwiftUI, Python, PostgreSQL, Firebase, OpenAI API, LLM integration, automation, Playwright, CI/CD.
+
+## Background
+20 months of 3D modelling in high jewelry (Atelier de l'Objet, pieces for Cartier and Van Cleef & Arpels). Languages: French, Russian, English.
+
+## Contact
+- Email: alkhastvatsaev@icloud.com
 - GitHub: https://github.com/alkhastvatsaev
 - LinkedIn: https://www.linkedin.com/in/alkhast-vatsaev/
-- Email: alkhastvatsaev@icloud.com
