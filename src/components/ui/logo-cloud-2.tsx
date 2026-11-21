@@ -1,73 +1,113 @@
 import { PlusIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 
-export type Logo = {
+type Logo = {
   src: string;
   alt: string;
   width?: number;
   height?: number;
 };
 
-/** Technologies actually used in the shipped projects (see src/data/metrics.ts). */
-export const defaultLogos: readonly Logo[] = [
-  { src: "/logos/nextdotjs.svg", alt: "Next.js" },
-  { src: "/logos/react.svg", alt: "React" },
-  { src: "/logos/typescript.svg", alt: "TypeScript" },
-  { src: "/logos/swift.svg", alt: "Swift" },
-  { src: "/logos/python.svg", alt: "Python" },
-  { src: "/logos/firebase.svg", alt: "Firebase" },
-  { src: "/logos/postgresql.svg", alt: "PostgreSQL" },
-  { src: "/logos/stripe.svg", alt: "Stripe" },
-  { src: "/logos/openai.svg", alt: "OpenAI" },
-  { src: "/logos/claude.svg", alt: "Claude" },
-  { src: "/logos/threedotjs.svg", alt: "Three.js" },
-  { src: "/logos/vercel.svg", alt: "Vercel" },
-];
+type LogoCloudProps = React.ComponentProps<"div">;
 
-type LogoCloudProps = React.ComponentProps<"div"> & {
-  logos?: readonly Logo[];
-};
-
-/**
- * Bordered logo grid with "+" crosshairs on the inner corners.
- * 2 columns on mobile, 3 on tablet, 6 on desktop.
- */
-export function LogoCloud({
-  className,
-  logos = defaultLogos,
-  ...props
-}: LogoCloudProps) {
+// Component pasted as given (21st.dev "logo-cloud-2").
+// Only change: Nvidia, Supabase, Turso and Clerk are swapped for tools
+// actually used in the projects (Next.js, TypeScript, PostgreSQL, Python).
+export function LogoCloud({ className, ...props }: LogoCloudProps) {
   return (
     <div
       className={cn(
-        "relative grid grid-cols-2 border-x border-border sm:grid-cols-3 lg:grid-cols-6",
-        className,
+        "relative grid grid-cols-2 border-x md:grid-cols-4",
+        className
       )}
       {...props}
     >
-      <div className="pointer-events-none absolute -top-px left-1/2 w-screen -translate-x-1/2 border-t border-border" />
+      <div className="-translate-x-1/2 -top-px pointer-events-none absolute left-1/2 w-screen border-t" />
 
-      {logos.map((logo, index) => (
-        <LogoCard
-          className={cn(
-            "border-b border-r border-border",
-            index % 2 === 0 && "bg-secondary/40",
-          )}
-          key={logo.alt}
-          logo={logo}
-        >
-          {index % 3 === 0 ? (
-            <PlusIcon
-              aria-hidden="true"
-              className="absolute -right-[12.5px] -bottom-[12.5px] z-10 size-6 text-muted-foreground"
-              strokeWidth={1}
-            />
-          ) : null}
-        </LogoCard>
-      ))}
+      <LogoCard
+        className="relative border-r border-b bg-secondary dark:bg-secondary/30"
+        logo={{
+          src: "/logos-dark/nextdotjs.svg",
+          alt: "Next.js Logo",
+        }}
+      >
+        <PlusIcon
+          className="-right-[12.5px] -bottom-[12.5px] absolute z-10 size-6"
+          strokeWidth={1}
+        />
+      </LogoCard>
 
-      <div className="pointer-events-none absolute -bottom-px left-1/2 w-screen -translate-x-1/2 border-b border-border" />
+      <LogoCard
+        className="border-b md:border-r"
+        logo={{
+          src: "/logos-dark/typescript.svg",
+          alt: "TypeScript Logo",
+        }}
+      />
+
+      <LogoCard
+        className="relative border-r border-b md:bg-secondary dark:md:bg-secondary/30"
+        logo={{
+          src: "https://cdn.21st.dev/assets/mirror/90/90f01a9537335666282ae5acc80bd4305f86d085a92d60904c3aa3ccc4414570.svg",
+          alt: "GitHub Logo",
+        }}
+      >
+        <PlusIcon
+          className="-right-[12.5px] -bottom-[12.5px] absolute z-10 size-6"
+          strokeWidth={1}
+        />
+        <PlusIcon
+          className="-bottom-[12.5px] -left-[12.5px] absolute z-10 hidden size-6 md:block"
+          strokeWidth={1}
+        />
+      </LogoCard>
+
+      <LogoCard
+        className="relative border-b bg-secondary md:bg-background dark:bg-secondary/30 md:dark:bg-background"
+        logo={{
+          src: "https://cdn.21st.dev/assets/mirror/2b/2bcdd4124223e3bf8e66bc08ce0ac32a6cc42ffe3584bbecfd377847176a188d.svg",
+          alt: "OpenAI Logo",
+        }}
+      />
+
+      <LogoCard
+        className="relative border-r border-b bg-secondary md:border-b-0 md:bg-background dark:bg-secondary/30 md:dark:bg-background"
+        logo={{
+          src: "/logos-dark/postgresql.svg",
+          alt: "PostgreSQL Logo",
+        }}
+      >
+        <PlusIcon
+          className="-right-[12.5px] -bottom-[12.5px] md:-left-[12.5px] absolute z-10 size-6 md:hidden"
+          strokeWidth={1}
+        />
+      </LogoCard>
+
+      <LogoCard
+        className="border-b bg-background md:border-r md:border-b-0 md:bg-secondary dark:md:bg-secondary/30"
+        logo={{
+          src: "/logos-dark/python.svg",
+          alt: "Python Logo",
+        }}
+      />
+
+      <LogoCard
+        className="border-r"
+        logo={{
+          src: "https://cdn.21st.dev/assets/mirror/e8/e8514b1206f79e1abdafcc1d2632393cc7cfbcbbe25426ac5143b17b184b56b8.svg",
+          alt: "Claude AI Logo",
+        }}
+      />
+
+      <LogoCard
+        className="bg-secondary dark:bg-secondary/30"
+        logo={{
+          src: "https://cdn.21st.dev/assets/mirror/56/5624b7c243ac8d60e848fb5ea222ec932c1600df54a2762238b37498372fb0c8.svg",
+          alt: "Vercel Logo",
+        }}
+      />
+
+      <div className="-translate-x-1/2 -bottom-px pointer-events-none absolute left-1/2 w-screen border-b" />
     </div>
   );
 }
@@ -80,23 +120,19 @@ function LogoCard({ logo, className, children, ...props }: LogoCardProps) {
   return (
     <div
       className={cn(
-        "group relative flex flex-col items-center justify-center gap-3 bg-background px-4 py-8 transition-colors hover:bg-secondary md:p-8",
-        className,
+        "flex items-center justify-center bg-background px-4 py-8 md:p-8",
+        className
       )}
       {...props}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         alt={logo.alt}
-        className="pointer-events-none h-5 w-auto select-none opacity-70 brightness-0 invert transition-opacity group-hover:opacity-100 md:h-6"
-        height={logo.height ?? 24}
-        loading="lazy"
+        className="pointer-events-none h-4 select-none md:h-5 dark:brightness-0 dark:invert"
+        height={logo.height || "auto"}
         src={logo.src}
-        width={logo.width ?? 96}
+        width={logo.width || "auto"}
       />
-      <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-        {logo.alt}
-      </span>
       {children}
     </div>
   );

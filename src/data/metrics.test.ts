@@ -3,32 +3,30 @@ import { join } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { commitsByMonth, metrics, showcase } from "./metrics";
-import { projects } from "./projects";
+import { commitsByMonth, metrics, projects } from "./metrics";
 
 describe("metrics data contract", () => {
   it("monthly commits add up to the headline commit count", () => {
-    const sum = commitsByMonth.reduce((total, month) => total + month.commits, 0);
-    expect(sum).toBe(metrics.commits);
+    expect(commitsByMonth.reduce((sum, m) => sum + m.commits, 0)).toBe(metrics.commits);
   });
 
-  it("showcase ids are unique", () => {
-    const ids = showcase.map((project) => project.id);
-    expect(new Set(ids).size).toBe(ids.length);
+
+  it("project slugs are unique and URL-safe", () => {
+    const slugs = projects.map((p) => p.slug);
+    expect(new Set(slugs).size).toBe(slugs.length);
+    for (const slug of slugs) expect(slug).toMatch(/^[a-z0-9-]+$/);
   });
 
-  it("case-study links point to existing project pages", () => {
-    const slugs = new Set(projects.map((project) => project.slug));
-    for (const project of showcase) {
-      if (project.caseStudy) expect(slugs.has(project.caseStudy)).toBe(true);
+  it("every project has FR and EN copy", () => {
+    for (const p of projects) {
+      expect(p.tagline.fr && p.tagline.en).toBeTruthy();
+      expect(p.details.fr.length).toBe(p.details.en.length);
     }
   });
 
   it("every screenshot exists in /public", () => {
-    for (const project of showcase) {
-      if (project.image) {
-        expect(existsSync(join(process.cwd(), "public", project.image))).toBe(true);
-      }
+    for (const p of projects) {
+      if (p.image) expect(existsSync(join(process.cwd(), "public", p.image))).toBe(true);
     }
   });
 });

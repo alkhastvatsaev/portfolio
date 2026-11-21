@@ -20,13 +20,7 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "json-summary"],
-      include: [
-        "src/data/**/*.ts",
-        "src/lib/**/*.ts",
-        "src/components/json-ld.tsx",
-        "src/components/site-header.tsx",
-        "src/components/article-view.tsx",
-      ],
+      include: ["src/data/**/*.ts", "src/lib/**/*.ts"],
       exclude: ["src/**/*.{test,spec}.{ts,tsx}", "src/test/**"],
     },
   },

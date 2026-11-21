@@ -1,14 +1,9 @@
 import type { MetadataRoute } from "next";
 
+import { site } from "@/lib/i18n";
+
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
-    host: "https://alkhastvatsaev.dev",
-    sitemap: "https://alkhastvatsaev.dev/sitemap.xml",
-  };
+  return { rules: { userAgent: "*", allow: "/" }, sitemap: `${site.url}/sitemap.xml` };
 }

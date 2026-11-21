@@ -1,50 +1,29 @@
 # Alkhast Vatsaev — Portfolio
 
-Recruiter-focused portfolio for Alkhast Vatsaev, a fullstack JavaScript
-and TypeScript developer based in Paris.
+Live: [alkhastvatsaev.dev](https://alkhastvatsaev.dev)
 
-**Live site:** [alkhastvatsaev.dev](https://alkhastvatsaev.dev)
+White, numbers-first **one-page** portfolio (French at `/`, English at `/en`) with lots of interactive animations.
 
-## What is included
+## Stack
 
-- A concise, responsive portfolio built around four verifiable projects
-- Direct links to every live project and source repository
-- A print-friendly, one-page project resume at `/resume`
-- SEO, Open Graph, robots and sitemap metadata
-- Accessible navigation, focus states and reduced-motion support
-- Automated lint, type, test and production-build checks
+Next.js 16 (static export) · TypeScript · Tailwind CSS 4 · shadcn structure (`src/components/ui`) · Three.js (scanner card stream) · lucide-react.
 
-The content intentionally avoids invented experience, education, metrics and
-proficiency ratings.
+## Where things live
 
-## Local development
+| Path | Content |
+|---|---|
+| `src/data/metrics.ts` | **Every number** on the site + the projects list (FR/EN) |
+| `src/data/activity.ts` | Commits per day (activity heatmap) |
+| `src/lib/i18n.ts` | All UI copy, routes, language switch |
+| `src/components/one-page.tsx` | The page (all sections) |
+| `src/components/fx.tsx` | Animations: exploration bar, confetti, tilt, cursor glow, count-up, heatmap, project modal |
+| `src/components/ui/` | `scanner-card-stream`, `logo-cloud-2` |
+| `vercel.json` | Redirects from the old site's URLs |
 
-Requires Node.js 20.9 or newer.
+## Commands
 
 ```bash
 npm install
 npm run dev
+npm run check   # lint + types + unit tests + build + e2e
 ```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Quality checks
-
-```bash
-npm run check
-```
-
-Individual commands:
-
-```bash
-npm run lint
-npm run typecheck
-npm run test
-npm run build
-```
-
-## Deployment
-
-The site is a statically exported Next.js application deployed through Vercel.
-Production deploys are linked to the `portfolio-github-alkhast-vatsaev`
-Vercel project.

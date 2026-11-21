@@ -1,70 +1,100 @@
 {
+  "cleanUrls": true,
   "redirects": [
     {
-      "source": "/fr/articles/developpeur-full-stack-junior-france",
-      "destination": "/fr/articles/developpeur-full-stack-france",
+      "source": "/fr",
+      "destination": "/",
       "permanent": true
     },
     {
-      "source": "/fr/articles/comment-verifier-le-travail-dun-developpeur-junior",
-      "destination": "/fr/articles/checklist-recruteur-portfolio-developpeur",
+      "source": "/fr/:path*",
+      "destination": "/",
       "permanent": true
     },
     {
-      "source": "/articles/junior-fullstack-developer-portfolio",
-      "destination": "/articles/fullstack-developer-portfolio",
+      "source": "/projets",
+      "destination": "/#projets",
       "permanent": true
     },
     {
-      "source": "/articles/recruiter-checklist-junior-developer",
-      "destination": "/articles/recruiter-checklist-developer",
+      "source": "/projets/:path*",
+      "destination": "/#projets",
       "permanent": true
-    }
-  ],
-  "headers": [
-    {
-      "source": "/opengraph-image",
-      "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
-      ]
     },
     {
-      "source": "/twitter-image",
-      "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
-      ]
+      "source": "/cv",
+      "destination": "/",
+      "permanent": true
     },
     {
-      "source": "/fr/opengraph-image",
-      "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
-      ]
+      "source": "/projects",
+      "destination": "/en#projets",
+      "permanent": true
     },
     {
-      "source": "/fr/twitter-image",
-      "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
-      ]
+      "source": "/projects/:path*",
+      "destination": "/en#projets",
+      "permanent": true
     },
     {
-      "source": "/opengraph-image.png",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      "source": "/en/projects",
+      "destination": "/en#projets",
+      "permanent": true
     },
     {
-      "source": "/twitter-image.png",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      "source": "/en/projects/:path*",
+      "destination": "/en#projets",
+      "permanent": true
     },
     {
-      "source": "/fr/opengraph-image.png",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      "source": "/en/resume",
+      "destination": "/en",
+      "permanent": true
     },
     {
-      "source": "/fr/twitter-image.png",
-      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      "source": "/resume",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/for-recruiters",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/profiles",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/articles",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:path*",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/news/:path*",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/rss.xml",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/llms-full.txt",
+      "destination": "/llms.txt",
+      "permanent": true
     }
   ]
 }
