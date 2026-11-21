@@ -44,7 +44,7 @@ export function OnePage({ locale }: { locale: Locale }) {
   const proofImages = t.proofs.map((p) => p.image);
 
   return (
-    <main id="main">
+    <main id="main" className="h-dvh overflow-hidden">
       <HorizontalDeck ids={sections} labels={t.labels} hint={t.nav.hint} prevLabel={t.nav.prev} nextLabel={t.nav.next}>
         {/* 1 · Intro ---------------------------------------------------- */}
         <Panel id="top" label={t.labels[0]}>

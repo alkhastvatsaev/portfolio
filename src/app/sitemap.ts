@@ -9,5 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: site.url, lastModified: new Date("2026-11-22"), alternates: { languages } },
     { url: `${site.url}/en`, lastModified: new Date("2026-11-22"), alternates: { languages } },
+    { url: `${site.url}/diagnostic-ia`, lastModified: new Date("2026-11-22") },
   ];
 }

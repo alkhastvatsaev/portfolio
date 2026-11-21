@@ -175,3 +175,25 @@ test("resizing the window keeps the current panel perfectly framed", async ({ pa
     expect(offset.index).toBe(2);
   }
 });
+
+test("free AI diagnostic: 7 questions → hours per month, shareable link", async ({ page }) => {
+  await page.goto("/diagnostic-ia?contact=expert@example.com");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("heures");
+  const next = page.getByRole("button", { name: "Suivant" });
+  await next.click(); // employees (default 20)
+  await page.getByRole("radio", { name: /Microsoft 365/ }).click();
+  await next.click();
+  await next.click(); // copilot: default
+  await page.getByRole("checkbox", { name: /e-mails/ }).click();
+  await page.getByRole("checkbox", { name: /Demandes clients/ }).click();
+  await next.click();
+  await page.getByRole("checkbox", { name: /Rien de particulier/ }).click();
+  await next.click();
+  await next.click(); // access rights
+  await page.getByRole("button", { name: "Voir le diagnostic" }).click();
+  await expect(page.getByRole("heading", { name: /heures par mois/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Parler à un expert" })).toHaveAttribute("href", /^mailto:expert@example\.com/);
+  expect(page.url()).toContain("#e=20");
+  // The page itself scrolls normally (only the home page is horizontal).
+  expect(await page.evaluate(() => document.documentElement.scrollHeight > innerHeight)).toBe(true);
+});

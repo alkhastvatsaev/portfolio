@@ -9,6 +9,10 @@ export function SiteHeader() {
   const pathname = usePathname();
   const locale = localeOf(pathname);
   const t = dict[locale];
+  // On the one-page home, links slide to a panel; elsewhere they go back to the home page.
+  const onHome = pathname === "/" || pathname === "/en";
+  const home = locale === "en" ? "/en" : "/";
+  const anchor = (id: string) => (onHome ? `#${id}` : `${home}#${id}`);
 
   return (
     <>
@@ -20,15 +24,15 @@ export function SiteHeader() {
       </a>
       <header className="fixed inset-x-0 top-0 z-50 bg-background/90">
         <div className="flex h-16 items-center justify-between gap-4 px-4 text-sm md:px-8">
-          <a href="#top" className="font-semibold">
+          <a href={onHome ? "#top" : home} className="font-semibold">
             {site.name}
           </a>
           <nav className="flex items-center gap-6" aria-label={locale === "fr" ? "Liens" : "Links"}>
-            <a href="#contact" className="underline decoration-1 underline-offset-4 hover:text-primary">
+            <a href={anchor("contact")} className="underline decoration-1 underline-offset-4 hover:text-primary">
               {t.nav.contact}
             </a>
             <Link
-              href={switchLocalePath(pathname)}
+              href={onHome ? switchLocalePath(pathname) : "/en"}
               hrefLang={locale === "fr" ? "en" : "fr"}
               className="text-muted-foreground hover:text-foreground"
               aria-label={locale === "fr" ? "English version" : "Version française"}

@@ -12,7 +12,7 @@ const sans = Libre_Franklin({ subsets: ["latin"], variable: "--font-sans-face", 
 export function RootShell({ lang, children }: { lang: Locale; children: React.ReactNode }) {
   return (
     <html lang={lang} className={sans.variable}>
-      <body className="h-dvh overflow-hidden">
+      <body className="min-h-dvh">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd(lang)) }}
