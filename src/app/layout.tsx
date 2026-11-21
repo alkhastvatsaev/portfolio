@@ -1,9 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import "./globals.css";
+
+const geistSans = Geist({ subsets: ["latin", "cyrillic"], variable: "--font-geist-sans" });
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 const siteUrl = "https://alkhastvatsaev.dev";
 
@@ -15,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Alkhast Vatsaev",
   },
   description:
-    "Fullstack JavaScript and TypeScript developer in Paris (hybrid, remote). Production-ready React, Next.js, Firebase and Node.js projects.",
+    "AI-native product engineer in Paris: 23 live apps, 2,278 commits and 783 test files in 10 months. Next.js, TypeScript, Swift, Firebase, OpenAI.",
   keywords: [
     "Alkhast Vatsaev",
     "développeur full stack",
@@ -78,21 +82,21 @@ export const metadata: Metadata = {
     follow: true,
   },
   other: {
-    "msapplication-TileColor": "#f3f0e8",
+    "msapplication-TileColor": "#08080a",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f3f0e8",
+  themeColor: "#08080a",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <StructuredData />
         <a className="skip-link" href="#main-content">
