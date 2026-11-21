@@ -9,8 +9,8 @@ const titles = {
 };
 
 const descriptions = {
-  fr: `Développeur full-stack TypeScript. Depuis février 2026, ${metrics.liveApps} applications en production, dont NOTA (819 commits, 630 fichiers de tests). Disponible tout de suite.`,
-  en: `Full-stack TypeScript developer. Since February 2026, ${metrics.liveApps} applications in production, including NOTA (819 commits, 630 test files). Available now.`,
+  fr: `Des outils IA qui rendent du temps aux équipes de support et à leurs clients. ${metrics.liveApps} applications en production, ${metrics.testFiles} tests automatiques. Développeur full-stack TypeScript, disponible tout de suite.`,
+  en: `AI tools that give time back to support teams and their clients. ${metrics.liveApps} applications in production, ${metrics.testFiles} automated tests. Full-stack TypeScript developer, available now.`,
 };
 
 /** Base metadata for a root layout. */

@@ -88,8 +88,11 @@ async function scannerAlignment(page: import("@playwright/test").Page) {
     const columns = new Float64Array(width);
     for (let y = 0; y < height; y += 2)
       for (let x = 0; x < width; x++) columns[x] += data[(y * width + x) * 4 + 3];
+    // Sparks are born on the line and only drift right: take the left edge of the glow.
+    let max = 0;
+    for (let x = 0; x < width; x++) if (columns[x] > max) max = columns[x];
     let best = 0;
-    for (let x = 1; x < width; x++) if (columns[x] > columns[best]) best = x;
+    while (best < width - 1 && columns[best] < max * 0.25) best++;
     const rect = sparks.getBoundingClientRect();
     const sparksX = rect.left + (best / width) * rect.width;
     const line = section.querySelector(".scanner-line")!.getBoundingClientRect();
@@ -100,7 +103,7 @@ async function scannerAlignment(page: import("@playwright/test").Page) {
 test("scanner sparks stay on the scanner line, even after a resize", async ({ page }) => {
   await gotoPanel2(page);
   let a = await scannerAlignment(page);
-  expect(Math.abs(a.sparksX - a.lineX)).toBeLessThan(8);
+  expect(Math.abs(a.sparksX - a.lineX)).toBeLessThan(5);
 
   for (const width of [900, 1600]) {
     await page.setViewportSize({ width, height: 800 });
@@ -109,7 +112,7 @@ test("scanner sparks stay on the scanner line, even after a resize", async ({ pa
     await page.getByRole("button", { name: "Précédent" }).click();
     await page.waitForTimeout(900);
     a = await scannerAlignment(page);
-    expect(Math.abs(a.sparksX - a.lineX), `width ${width}`).toBeLessThan(8);
+    expect(Math.abs(a.sparksX - a.lineX), `width ${width}`).toBeLessThan(5);
   }
 });
 

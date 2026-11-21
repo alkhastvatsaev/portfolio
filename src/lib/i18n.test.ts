@@ -44,6 +44,15 @@ describe("one-page site copy", () => {
     for (const term of terms) expect(text.includes(term), "a private term is on the site").toBe(false);
   });
 
+  // The site talks about what visitors get, never "I / me / my".
+  it("never speaks in the first person", () => {
+    const fr = allText(dict.fr).join("\n");
+    const en = allText(dict.en).join("\n");
+    // Unicode-aware word edges, so "maîtrisé" is not read as "ma".
+    expect(fr).not.toMatch(/(?<!\p{L})(je|moi|mon|ma|mes)(?!\p{L})|(?<!\p{L})j['’]/iu);
+    expect(en).not.toMatch(/\b(I|I['’]m|I['’]ve|me|my|mine)\b/);
+  });
+
   // Anti "AI-generated" guard: no em dashes, no "not X, but Y" slogans.
   it("avoids the usual AI-writing tells", () => {
     const text = [...allText(dict.fr), ...allText(dict.en)].join("\n");
